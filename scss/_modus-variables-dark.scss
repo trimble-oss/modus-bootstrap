@@ -1,0 +1,24 @@
+$primary-text-dark: #019aeb;
+$secondary-text-dark: #6a6e79;
+$warning-text-dark: #fbad26;
+$danger-text-dark: #da212c;
+$success-text-dark: #1e8a44;
+
+$body-color: $white;
+$body-color-dark: $white;
+$body-bg-dark: #171c1e;
+$headings-color-dark: #fff;
+
+//
+// Forms
+//
+
+$form-label-color-dark: #b7b9c3;
+
+$input-color-dark: #fff;
+$input-border-color-dark: #6a6e79;
+
+$input-placeholder-color-dark: #7d808d;
+
+$accordion-button-wide-icon-dark:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23585c65'><path fill-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m5.26 8.7-4.59 4.59a.996.996 0 0 1-1.41 0L6.67 10.7a1 1 0 0 1 0-1.28 1 1 0 0 1 1.41-.13l3.88 3.88 3.88-3.88c.4-.39 1.03-.39 1.42 0s.39 1.02 0 1.41'/></svg>") !default;
+$accordion-button-wide-active-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23019aeb'><path fill-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m5.26 8.7-4.59 4.59a.996.996 0 0 1-1.41 0L6.67 10.7a1 1 0 0 1 0-1.28 1 1 0 0 1 1.41-.13l3.88 3.88 3.88-3.88c.4-.39 1.03-.39 1.42 0s.39 1.02 0 1.41'/></svg>") !default;

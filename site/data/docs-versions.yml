@@ -1,0 +1,11 @@
+- group: v1.x
+  baseurl: "https://getbootstrap.com"
+  description: "Every minor and patch release from v1 is listed below."
+  versions:
+    - v: "1.0.0"
+
+- group: v2.x
+  baseurl: "https://getbootstrap.com"
+  description: "Every minor and patch release from v2 is listed below."
+  versions:
+    - v: "2.0.0"

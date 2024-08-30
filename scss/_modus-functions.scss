@@ -1,0 +1,35 @@
+// Modus functions
+
+@function trimble-gray($key: "white") {
+  @return map-get($trimble-grays, $key);
+}
+
+$trimble-grays: () !default; // stylelint-disable-line scss/dollar-variable-default
+
+// stylelint-disable-next-line
+$trimble-grays: map-merge(
+  (
+    "gray-light":   $col_gray_light,
+    "gray-0":       $col_gray_0,
+    "gray-1":       $col_gray_1,
+    "gray-2":       $col_gray_2,
+    "gray-3":       $col_gray_3,
+    "gray-4":       $col_gray_4,
+    "gray-5":       $col_gray_5,
+    "gray-6":       $col_gray_6,
+    "gray-7":       $col_gray_7,
+    "gray-8":       $col_gray_8,
+    "gray-9":       $col_gray_9,
+    "gray-10":      $col_gray_10,
+    "trimble-gray": $col_trimble_gray,
+  ),
+  $trimble-grays
+);
+
+// Borders
+
+@each $color, $value in $trimble-grays {
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+}

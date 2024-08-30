@@ -1,0 +1,35 @@
+// Messages
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  border-radius: $border-radius; // stylelint-disable-line property-disallowed-list
+}
+
+.message-primary {
+  color: #0063a3;
+  background-color: #dcedf9;
+}
+
+.message-secondary {
+  color: #252a2e;
+  background-color: #f1f1f6;
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .message-primary {
+      color: #fff;
+      background-color: rgba(1, 154, 235, .2);
+    }
+
+    .message-secondary {
+      color: #fff;
+      background-color: rgba(106, 110, 121, .2);
+    }
+  }
+}

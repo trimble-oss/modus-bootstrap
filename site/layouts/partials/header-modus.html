@@ -1,0 +1,21 @@
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback">
+<!-- To speed up the homepage rendering time the Modus Icons CSS load on every page except homepage where they aren't used -->
+{{- if not .IsHome -}}
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.14.0/dist/modus-outlined/fonts/modus-icons.css">
+{{ end }}
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="noindex, nofollow">
+{{ template "_internal/opengraph.html" . }}
+
+<!-- polyfills for old browsers -->
+<script nomodule crossorigin="anonymous"
+  src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=default,Array.prototype.includes,Array.prototype.find,Number.parseFloat%2CNumber.parse"></script>
+<!-- polyfills for IE 11 -->
+<script
+  nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script>');</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>var baseurl = "{{- .Site.BaseURL -}}"</script>

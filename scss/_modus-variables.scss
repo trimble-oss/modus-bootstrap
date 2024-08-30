@@ -1,0 +1,280 @@
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-50:  #f9f9fb !default;
+$gray-100: #f1f1f6 !default;
+$gray-150: #e0e1e9 !default;
+$gray-200: #cbcdd6 !default;
+$gray-250: #b7b9c3 !default;
+$gray-300: #a3a6b1 !default;
+$gray-350: #90939f !default;
+$gray-400: #7d808d !default;
+$gray-450: #6a6e79 !default;
+$gray-500: #585c65 !default;
+$gray-550: #6a6976 !default;
+$gray-600: #595868 !default;
+$gray-700: #363545 !default;
+$gray-750: #262533 !default;
+$gray-800: #1b1a26 !default;
+$gray-900: #262533 !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue:    $col_trimble_blue;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $col_trimble_blue;
+$secondary:     $col_gray_8;
+$tertiary:      $col_gray_2;
+$success:       $col_green_dark;
+$warning:       $col_yellow_dark;
+$danger:        $col_red;
+$dark:          $col_trimble_gray;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "tertiary":   $tertiary,
+  "success":    $success,
+  "warning":    $warning,
+  "danger":     $danger,
+  "dark":       $dark
+);
+// scss-docs-end theme-colors-map
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rfs:                  true;
+$enable-validation-icons:     false;
+$enable-deprecation-messages: false;
+
+$component-active-bg:         #217cbb !default; // Modus Customized
+
+// Body
+//
+// Settings for the `<body>` element.
+
+// $body-color:                  $col_trimble_gray;
+$body-text-align:             left !default;
+$link-hover-color:            #16517a !default;
+$component-active-bg:         #217cbb !default; // Modus Customized (Blue Light)
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-size-base:              .875rem;
+
+$h1-font-size:                $font-size-base * 1.71465; // 24px
+$h2-font-size:                $font-size-base * 1.449; // 20px
+$h3-font-size:                $font-size-base * 1.286; // 18px
+$h4-font-size:                $font-size-base * 1.148; // 16px
+$h5-font-size:                $font-size-base * 1;     // 14px
+$h6-font-size:                $font-size-base * .88;  // 12px
+
+// Links
+//
+// Style anchor elements.
+
+$link-decoration:             none;
+
+// Display Headings
+
+$display-font-sizes: (
+  1: 4.5rem,
+  2: 2.5rem,
+  3: 1.875rem,
+  4: 1.875rem,
+  5: 1.875rem,
+  6: 1.875rem
+);
+
+$display-font-weight: 600;
+
+$border-radius:               .25rem; // Modus Customized - 4px
+$border-radius-sm:            .125rem; // Modus Customized - 2px
+$border-radius-lg:            .25rem; // Modus Customized - 2px
+
+// Tables
+
+$table-cell-padding-y:        .25rem;
+$table-cell-padding-x:        1rem;
+$table-cell-padding-y-sm:     .25rem;
+$table-cell-padding-x-sm:     .5rem;
+
+$table-th-font-weight:        600;
+
+$table-border-color:          $col_gray_2;
+
+$table-variants: (
+  "dark":       $dark,
+);
+
+// Buttons + Forms
+
+// Buttons
+
+$btn-line-height:             1.75 !default; // Modus Customized
+
+$btn-font-size-sm:            .75rem !default; // Modus Customization
+
+$btn-font-size-lg:            1rem !default; // Modus Customization
+
+$btn-font-weight:             600 !default; // Modus Customization
+$btn-disabled-opacity:        .3 !default; // Modus Customization
+
+// Forms
+
+$form-label-font-size:                  .75rem !default; // Modus Customized
+$form-label-font-weight:                700 !default; // Modus Customized
+
+$input-padding-y:                       .375rem !default; // Modus Customized (6px)
+$input-padding-x:                       .5rem !default; // Modus Customized
+$input-font-size:                       .75rem !default; // Modus Customized
+
+$input-padding-y-sm:                    .1875rem !default; // Modus Customized
+$input-padding-x-sm:                    .75rem !default; // Modus Customized
+$input-font-size-sm:                    .75rem !default; // Modus Customized
+$input-font-size-lg:                    .875rem !default; // Modus Customized
+
+// $input-focus-border-color:              #e0e1e9 !default; // Modus Customized
+// $input-placeholder-color:               #a3a6b1 !default; // Modus Customized
+$form-check-input-width:                  1.125em !default; // Modus Customized
+
+$form-range-track-bg:             #0d6aa8;
+$form-range-thumb-bg:             $white;
+
+// Form validation
+
+// Navs
+
+$nav-link-padding-y:                .655rem !default;
+$nav-link-padding-x:                2rem;
+$nav-link-font-size:                .875rem;
+$nav-link-font-weight:              600;
+// $nav-link-color:                    $body-color;
+$nav-link-transition:               color .1s ease-in-out, background-color .1s ease-in-out, border-color .1s ease-in-out !default;
+$nav-link-disabled-color:           #6c757d; // Modus Customized
+
+$nav-tabs-border-color:             transparent;
+$nav-tabs-border-width:             1px;
+$nav-tabs-border-radius:            .125rem; // Modus Customized
+$nav-tabs-link-active-color:        $col_blue_light;
+$nav-tabs-link-hover-border-color:  transparent;
+$nav-tabs-link-active-bg:           transparent; // Modus Customized
+$nav-tabs-link-active-border-color: $white $white $nav-tabs-link-active-bg;
+
+// Navbar
+
+// Dropdowns
+
+// Pagination
+
+$pagination-color:            $col_trimble_gray;
+$pagination-bg:               transparent;
+$pagination-border-radius:    4px;
+$pagination-border-width:     0;
+$pagination-border-color:     transparent;
+
+$pagination-hover-color:      $col_trimble_gray;
+$pagination-hover-bg:         #e0e1e9;
+
+$pagination-focus-bg:         #e0e1e9;
+$pagination-focus-box-shadow: 0 0 2px rgb(36 35 45 / 30%) !default;
+
+$pagination-active-color:     $col_blue_light;
+$pagination-active-bg:        $col_blue_pale;
+
+// Progress bars
+
+// scss-docs-start progress-variables
+$progress-height:                   1rem;
+$progress-font-size:                .75rem;
+$progress-bg:                       $white;
+$progress-border-radius:            $border-radius-sm;
+// $progress-box-shadow:               $box-shadow-inset;
+$progress-bar-color:                $white;
+$progress-bar-bg:                   $primary;
+$progress-bar-animation-timing:     1s linear infinite;
+$progress-bar-transition:           width .6s ease;
+// scss-docs-end progress-variables
+
+// List group
+$list-group-color:                  $col_trimble_gray; // Modus customized
+
+$list-group-hover-bg:               $col_gray_0 !default;
+$list-group-active-color:           null !default; // Modus customized
+// $list-group-active-bg:              #dcedf9 !default; // Modus customized
+
+// $list-group-disabled-color:         $gray-400 !default;
+
+// Accordion
+$accordion-padding-y:                     .75rem !default; // Modus Customized (height 48px)
+$accordion-padding-x:                     1rem !default; // Modus Customized
+$accordion-color:                         null !default; // Modus Customized
+$accordion-border-width:                  0 !default; // Modus Customized
+$accordion-border-radius:                 4px !default; // Modus Customized
+
+$accordion-body-padding-y:                1rem !default; // Modus Customized
+$accordion-body-padding-x:                1rem !default; // Modus Customized
+
+$accordion-button-wide-icon:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%236a6e79'><path fill-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m5.26 8.7-4.59 4.59a.996.996 0 0 1-1.41 0L6.67 10.7a1 1 0 0 1 0-1.28 1 1 0 0 1 1.41-.13l3.88 3.88 3.88-3.88c.4-.39 1.03-.39 1.42 0s.39 1.02 0 1.41'/></svg>") !default;
+$accordion-button-wide-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%230063a3'><path fill-rule='evenodd' d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m5.26 8.7-4.59 4.59a.996.996 0 0 1-1.41 0L6.67 10.7a1 1 0 0 1 0-1.28 1 1 0 0 1 1.41-.13l3.88 3.88 3.88-3.88c.4-.39 1.03-.39 1.42 0s.39 1.02 0 1.41'/></svg>") !default;
+
+// Tooltips
+
+$tooltip-border-radius:             $border-radius-sm;
+
+// Chips
+
+$chip-font-weight:                  600;
+$chip-border-radius:                1rem;
+$chip-font-size:                    13px;
+$chip-padding-y:                    2px;
+$chip-base-color:                   $gray-200;
+$chip-font-color:                   $gray-700;
+
+$chip-sm-font-size:                 12px;
+$chip-sm-padding-y:                 2px;
+
+// box shadow
+$box-shadow-sm: 0 0 2px rgba(37, 42, 46, .3);
+$box-shadow: 0 0 4px rgba(37, 42, 46, .3);
+$box-shadow-lg: 0 0 8px rgba(37, 42, 46, .3);
+
+// Alerts
+
+// form-range (Sliders)
+
+$form-range-track-bg:               $col_blue;
+
+$form-range-track-disabled:         $gray-300;
+
+$form-range-thumb-bg:               $white;
+$form-range-thumb-border:           2px solid $col_blue;
+
+// checks & radios
+
+$form-check-input-border-radius:  .25em; // Modus customized - 4px
+
+// Breadcrumbs
+
+$breadcrumb-divider-color:          #6c757d !default; // Modus customized light mode only
+$breadcrumb-divider:                str-replace(url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%220%200%2019%2019%22%20width%3D%2712%27%20height%3D%2716%27%3E%3Cpath%20fill%3D%22%23%7B%24breadcrumb-divider-color%7D%22%20d%3D%27M7.2%2C18.4%2C13.52%2C12%2C7.2%2C5.6%2C8.8%2C4l8%2C8-8%2C8Z%27%2F%3E%3C%2Fsvg%3E%0A"), "#", "%23") !default;

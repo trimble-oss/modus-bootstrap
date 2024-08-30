@@ -1,0 +1,55 @@
+{{- /*
+  Usage: `example args`
+
+  `args` are all optional and can be one of the following:
+    * id: the `div`'s id - default: ""
+    * class: any extra class(es) to be added to the `div` - default: ""
+    * lang: language used to display the code - default: "html"
+    * show_markup: if the markup should be output in the HTML - default: `true`
+    * show_preview: if the preview should be output in the HTML - default: `true`
+    * stackblitz_add_js: if extra JS snippet should be added to StackBlitz - default: `false`
+*/ -}}
+
+{{- $id := .Get "id" -}}
+{{- $class := .Get "class" -}}
+{{- $lang := .Get "lang" | default "html" -}}
+{{- $stackblitz_add_js := .Get "stackblitz_add_js" | default false -}}
+{{- $show_markup := .Get "show_markup" | default true -}}
+{{- $show_preview := .Get "show_preview" | default true -}}
+{{- $input := .Inner -}}
+{{- $content := .Inner -}}
+
+<div class="bd-example-snippet bd-code-snippet">
+  {{- if eq $show_preview true -}}
+  <div{{ with $id }} id="{{- . -}}" {{ end }}
+    class="bd-example border-0 m-0 {{ with $class }} {{ . -}}{{- end -}}">
+    {{- $input -}}
+</div>
+{{- end -}}
+
+{{- if eq $show_markup true -}}
+{{- if eq $show_preview true -}}
+<div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1">
+  <small class="font-monospace text-muted text-uppercase">{{- $lang -}}</small>
+  <div class="d-flex ms-auto">
+    <button type="button" class="btn-edit border-0 text-nowrap" {{ with $stackblitz_add_js }}
+      data-sb-js-snippet="{{ $stackblitz_add_js }}" {{ end }} title="Try it on StackBlitz">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="18" width="18" viewBox="0 0 32 32">
+        <path d="M5.853 18.647h8.735L9.45 31l16.697-17.647h-8.735L22.55 1 5.853 18.647z" />
+      </svg>
+    </button>
+    <button type="button" class="btn-clipboard border-0 mt-0 me-0" title="Copy to clipboard">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8 18h4v-2H8zM18 5h-3c0-1.66-1.34-3-3-3S9 3.34 9 5H6c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2m0 15H6V7h2v1h8V7h2zM8 15h8v-2H8zm0-3h8v-2H8z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+{{- end -}}
+
+{{- $content = replaceRE `<svg class="bd-placeholder-img(?:-lg)?(?: *?bd-placeholder-img-lg)? ?(.*?)".*?<\/svg>` `<img src="..." class="$1" alt="...">` $content -}}
+{{- $content = replaceRE `<img class="bd-placeholder-img(?:-lg)?(?: *?bd-placeholder-img-lg)? ?(.*?)".*?>` `<img src="..." class="$1" alt="...">` $content -}}
+{{- $content = replaceRE ` (class=" *?")` "" $content -}}
+{{- highlight (trim $content "\n") $lang "" -}}
+{{- end -}}
+</div>

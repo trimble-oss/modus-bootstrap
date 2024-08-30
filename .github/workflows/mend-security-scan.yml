@@ -1,0 +1,17 @@
+name: Mend Security Scan
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Mend Security Scan Action
+        uses: TheAxZim/Whitesource-Scan-Action@v1.0.0
+        with:
+          wssURL: https://app-eu.whitesourcesoftware.com/agent
+          apiKey: ${{ secrets.WSS_API_KEY }}
+          configFile: "whitesource.config"

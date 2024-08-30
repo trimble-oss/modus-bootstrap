@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US" class="no-js {{ with .Page.Params.html_class }}{{ . -}}{{- end -}}">
+
+<head>
+  {{ partial "meta" . }}
+
+  <!-- Compiles and minifies the sites Sass files from /assets/css/ -->
+  {{- $sassOptions := (dict "enableSourceMap" true) -}}
+  {{ $BSstyles := resources.Get "scss/docs.scss" | toCSS $sassOptions | postCSS | minify }}
+  <link rel="stylesheet" href="{{ $BSstyles.RelPermalink }}?v{{ hugo.Version }}">
+</head>
+
+<body data-url="{{ .RelPermalink }}" class="overflow-x-hidden {{ with .Page.Params.body_class -}}{{ . -}}{{- end -}}"
+  {{ if (eq .Page.Params.toc true) }} data-bs-spy="scroll" data-bs-target="#TableOfContents" {{ end }}
+  {{ if not .Params.disableScrollSpy }}{{- end -}}>
+  {{ partial "skippy" . }}
+  {{ if not .Params.NavbarFalse }}{{ partial "navbar" . }}{{ end }}
+  {{ block "body" . }}{{ block "main" . }}
+  {{- end -}}
+  {{- end -}}
+  <script>
+    // Initialize Bootstrap tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl, {
+        trigger: 'hover',
+        delay: 350
+      });
+    });
+  </script>
+  <script>
+    // Hide Bootstrap tooltips when user presses Escape
+    document.addEventListener('keyup', function (event) {
+      if (event.which === 27) {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+          $(tooltipTriggerEl).tooltip('hide');
+        });
+      }
+    });
+  </script>
+  <script>
+    // Initialize Bootstrap popovers
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+  <script>
+    // Disable all links with #
+    var links = document.querySelectorAll('a[href="#"]');
+    // Add event listener to each link
+    links.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        // Prevent default behavior
+        event.preventDefault();
+      });
+    });
+  </script>
+  {{- if not .IsHome -}}
+
+  {{- end -}}
+  {{ partial "scripts" . }}
+  <button type="button" aria-label="scroll to top" class="btn-to-top border-0 rounded position-fixed d-none">
+    {{ partial "icons/modus-outlined/arrow-up.svg" (dict "class" "mt-n1 text-white opacity-50" "width" "24" "height" "24") }}
+  </button>
+</body>
+
+</html>

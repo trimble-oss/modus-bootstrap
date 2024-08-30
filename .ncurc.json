@@ -1,0 +1,3 @@
+{
+  "reject": ["eslint", "globby", "hugo-bin", "jasmine", "karma-browserstack-launcher", "karma-rollup-preprocessor", "nodemon", "terser"]
+}

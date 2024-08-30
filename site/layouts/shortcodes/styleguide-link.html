@@ -1,0 +1,9 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{- $title := .Get "title" -}}
+{{- $url := .Get "url" -}}
+
+<div class="alert alert-primary my-2 text-dark">
+  View {{.Get "title"}} usage guidance on the
+  <a href="https://modus.trimble.com/{{ $url }}" class="ml-1" target="_blank" rel="noopener">Modus Style
+    Guide</a>
+</div>

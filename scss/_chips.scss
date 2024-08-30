@@ -1,0 +1,275 @@
+// Chips
+
+.chip {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 30px;
+  padding: .125rem 1rem;
+  font-weight: 600;
+  color: $body-color;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  // stylelint-disable-next-line property-disallowed-list
+  border-radius: 1rem;
+  @include button-size(
+    $chip-padding-y,
+    $btn-padding-x,
+    $chip-font-size,
+    $btn-line-height $chip-border-radius
+  );
+  @include transition($btn-transition);
+
+  //@include hover {
+  //  color: $body-color;
+  //  text-decoration: none;
+  //}
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+
+  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+
+  .chip-thumbnail {
+    display: flex;
+    flex-grow: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+    margin-left: -.75rem;
+    overflow: hidden;
+    font-size: .8125rem;
+    // stylelint-disable-next-line property-disallowed-list
+    border-radius: 50%;
+    img {
+      max-width: 1.5rem;
+      max-height: 1.5rem;
+      vertical-align: initial;
+    }
+    // #{$icon-font-classes}
+  }
+  .chip-text {
+    display: inline-block;
+    flex-grow: 1;
+    max-width: 180px;
+    overflow: hidden;
+    font-size: .75rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .chip-icon-right {
+    display: flex;
+    flex-grow: 0;
+    line-height: 1;
+    .chip-icon {
+      transform: rotate(.03deg);
+    }
+  }
+  .chip-icon-left {
+    display: flex;
+    flex-grow: 0;
+    margin-right: .5rem;
+    margin-left: -.5rem;
+    line-height: 1;
+    .chip-icon {
+      transform: rotate(.03deg);
+    }
+  }
+  .chip-delete-right {
+    display: flex;
+    flex-grow: 0;
+    margin-right: -.5rem;
+    margin-left: .5rem;
+    .chip-icon {
+      line-height: 1;
+      transform: rotate(.03deg);
+    }
+  }
+}
+
+.chip-sm {
+  height: 24px !important;
+  padding: .125rem 1rem;
+  line-height: 1.75;
+  // stylelint-disable-next-line property-disallowed-list
+  border-radius: 1rem;
+  .chip-thumbnail {
+    width: 1rem;
+    height: 1rem;
+
+    img {
+      max-width: 1rem;
+      max-height: 1rem;
+    }
+  }
+  .modus-icons {
+    font-size: 1rem;
+  }
+
+  .chip-icon-left i {
+    font-size: 1rem;
+  }
+
+  .chip-text {
+    font-size: .75rem;
+    line-height: 1.5;
+  }
+}
+
+.chip-solid {
+  color: #353a40;
+  background-color: #cbcdd6;
+  border-color: #cbcdd6;
+}
+
+.chip-text {
+  padding-right: 8px;
+  padding-left: 4px;
+}
+
+.chip-solid:hover,
+.chip-solid.hover {
+  color: #353a40;
+  background-color: #dbdce2;
+  border-color: #d5d7de;
+}
+
+.chip-solid.chip-input.error {
+  color: #83141a;
+  background-color: #f4bcc0;
+  border-color: #f4bcc0;
+}
+
+.chip-solid:focus,
+.chip-solid.focus {
+  box-shadow: 0 0 0 .2rem rgba(178, 181, 189, .5);
+}
+
+.chip-solid.disabled,
+.chip-solid:disabled {
+  color: #353a40;
+  background-color: #cbcdd6;
+  border-color: #cbcdd6;
+}
+
+.chip-solid:not(:disabled):not(.disabled):active,
+.chip-solid:not(:disabled):not(.disabled).active,
+.show > .chip-solid.dropdown-toggle {
+  color: #000;
+  background-color: #adaeb6;
+  border-color: #adaeb6;
+}
+
+.chip-solid:not(:disabled):not(.disabled):active:focus,
+.chip-solid:not(:disabled):not(.disabled).active:focus,
+.show > .chip-solid.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(178, 181, 189, .5);
+}
+
+.chip-outline {
+  color: #353a40;
+  border-color: #a2a4ab;
+
+  &:hover,
+  &.hover {
+    color: #4c535c;
+    background-color: #eaebef;
+    border-color: #7a7b80;
+  }
+
+  &.chip-input.error {
+    color: #83141a;
+    background-color: #fbe9ea;
+    border-color: #ed9096;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba(53, 58, 64, .5);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: #353a40;
+    background-color: transparent;
+  }
+}
+
+.chip-outline:not(:disabled):not(.disabled):active,
+.chip-outline:not(:disabled):not(.disabled).active,
+.show > .chip-outline.dropdown-toggle {
+  color: #252a2e;
+  background-color: #d3d5dc;
+  border-color: #7a7b80;
+}
+
+.chip-outline:not(:disabled):not(.disabled):active:focus,
+.chip-outline:not(:disabled):not(.disabled).active:focus,
+.show > .chip-outline.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(53, 58, 64, .5);
+}
+
+.chip-outline:not(:disabled):not(.disabled):not(.error):active,
+.chip-outline:not(:disabled):not(.disabled):not(.error).active {
+  background-color: #dcedf9;
+  border-color: #217cbb;
+}
+
+.chip-outline:not(:disabled):not(.disabled):not(.error):active .chip-delete-right,
+.chip-outline:not(:disabled):not(.disabled):not(.error).active .chip-delete-right {
+  color: #217cbb;
+}
+
+.chip-solid:not(:disabled):not(.disabled):not(.error) {
+  &:active {
+    background-color: rgba(33, 124, 187, .3);
+    border-color: transparent;
+  }
+  &.active {
+    background-color: rgba(33, 124, 187, .3);
+    border-color: transparent;
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .chip-outline:not(.error) {
+      color: #cbcdd6 !important;
+    }
+
+    .chip-outline:not(:disabled):hover,
+    .chip-outline:not(:disabled).hover {
+      background-color: #cbcdd61f !important;
+    }
+
+    .chip-outline:not(:disabled):not(.disabled):not(.error):active,
+    .chip-outline:not(:disabled):not(.disabled):not(.error).active {
+      background-color: rgba(0, 79, 131, .5) !important;
+    }
+  }
+}

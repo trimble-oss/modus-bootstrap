@@ -1,0 +1,145 @@
+languageCode:           "en-US"
+title:                  "Modus Bootstrap"
+# baseURL:              "https://modus-bootstrap.trimble.com/"
+baseURL:                "https://modus-bootstrap.netlify.app/"
+
+security:
+  enableInlineShortcodes: true
+  funcs:
+    getenv:
+      - ^HUGO_
+      - NETLIFY
+
+markup:
+  goldmark:
+    renderer:
+      unsafe:           true
+  highlight:
+    noClasses:          false
+  tableOfContents:
+    startLevel:         2
+    endLevel:           6
+
+build:
+  noJSConfigInAssets:   true
+metaDataFormat:         "yaml"
+disableKinds:           ["taxonomy", "term", "RSS"]
+enableGitInfo:          true
+
+publishDir:             "_site"
+
+outputs:
+  home: ["HTML", "JSON"]
+
+module:
+  mounts:
+    - source:           dist
+      target:           static/docs/v2/dist
+
+    - source:           site/assets
+      target:           assets
+
+    - source:           site/content
+      target:           content
+
+    - source:           site/data
+      target:           data
+
+    - source:           site/static
+      target:           static
+
+    - source:           site/static/favicon.ico
+      target:           static/favicon.ico
+
+    - source:           site/static/favicon.svg
+      target:           static/favicon.svg
+
+    - source: node_modules/@trimble-oss/modus-docs-hugo-theme/assets/
+      target: assets
+      # The main theme CSS and JavaScript
+
+    - source:           site/layouts/
+      target:           layouts/
+
+    - source:           site/layouts/partials
+      target:           layouts/partials
+
+    - source: node_modules/@trimble-oss/modus-docs-hugo-theme/layouts/partials
+      target: layouts/partials
+      # The main theme templates
+
+    - source:           site/layouts/partials/meta.html
+      target:           layouts/partials/meta.html
+
+    - source: node_modules/@trimble-oss/modus-docs-hugo-theme/static/
+      target: static
+      # Includes Trimble favicon and JS for theme toggle and search
+
+    - source: node_modules/@trimble-oss/modus-docs-hugo-theme/static/fonts/
+      target: static/fonts/
+      # Open Sans font
+
+    - source: node_modules/@trimble-oss/modus-icons/dist/modus-solid/sprites/modus-icons.svg
+      target: static/modus-solid-icons.svg
+      # Modus Icons Solid will be available as an SVG sprite
+
+    - source: node_modules/@trimble-oss/modus-icons/dist/modus-outlined/fonts/
+      target: static/fonts/
+      # Modus Icons Outlined will be available as web font
+
+    - source: node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+      target: static/js/bootstrap.bundle.min.js
+
+    - source: node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map
+      target: static/js/bootstrap.bundle.min.js.map
+
+params:
+  title:                "Modus Bootstrap"
+  subtitle:             "HTML, CSS, and JS library"
+  description:          "HTML, CSS, and JS library"
+  GitHubRepo:           "https://github.com/trimble-oss/modus-bootstrap"
+  authors:              "Trimble"
+  disableModusBootstrapCSS: true
+
+  current_version:      "2.0.0"
+  current_ruby_version: "2.0.0"
+  docs_version:         "v2"
+  rfs_version:          "v10.0.0"
+  github_org:           "https://github.com/trimble-oss"
+  repo:                 "https://github.com/trimble-oss/modus-bootstrap"
+  icons:                "https://modus-icons.trimble.com"
+
+  download:
+    source:             "https://github.com/trimble-oss/bootstrap/archive/v1.0.0-beta1.zip"
+    dist:               ""
+    dist_examples:      ""
+
+  cdn:
+    # See https://www.srihash.org for info on how to generate the hashes
+    css:              "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap/dist/css/modus-bootstrap.min.css"
+    css_hash:         ""
+    css_rtl:          ""
+    css_rtl_hash:     ""
+    js:               "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    js_hash:          "sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    js_bundle_hash:   "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    popper:           "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    popper_hash:      "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    popper_esm:       "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js"
+
+  anchors:
+    min: 2
+    max: 5
+
+
+# https://gohugo.io/getting-started/configuration/#configure-minify
+minify:
+  disableJS: true
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepQuotes: true
+      keepWhitespace: true
+    xml:
+      keepWhitespace: true

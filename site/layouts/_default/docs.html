@@ -1,0 +1,91 @@
+{{ define "body_override" }}<body{{ if (eq .Page.Params.toc true) }} data-bs-spy="scroll" data-bs-target="#TableOfContents"{{ end }}>{{ end }}
+{{- define "main" }}
+
+<div class="container-fluid">
+  <div class="row row-main px-0">
+
+    <div class="col-1 col-sidebar px-0 bg-body shadow-sm">
+      {{ partial "col-sidebar" . }}
+    </div>
+
+    <div class="col col-auto px-0 collapse collapse-horizontal bg-dark bg-opacity-10" id="sidebar">
+      <div id="sidebar-menu" class="z-2 sticky-top sticky-offset shadow-sm overflow-auto w-100">
+        {{ partial "col-sidebar-menu" . }}
+      </div>
+    </div>
+
+    <div class="col col-auto col-12 col-main border-start p-0 overflow-y-hidden">
+
+      {{ partial "header" . }}
+
+      <main class="xbd-main container mx-auto mt-5" style="max-width: 1090px;" id="main">
+        <div class="row">
+          <div class="col-12 col-xl-9">
+
+            {{ if and (gt .WordCount 8350 ) (not .Params.hideToc) }}
+            <details class="mb-3 d-print-none d-xl-none">
+              <summary class="mb-1 user-select-none">Contents</summary>
+              {{ .TableOfContents }}
+            </details>
+            {{- end -}}
+            <article class="ps-2 ps-sm-3">
+              {{ .Content }}
+            </article>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="feedback-center">
+                  <!-- {{ partial "was-this-page-helpful.html" . }} -->
+                </div>
+              </div>
+              <div class="col-6">
+                {{- if not .Params.blog -}}
+                {{- if site.Params.GitHubRepo -}}
+                <a class="btn btn-sm btn-outline-secondary mt-5 float-end"
+                  href="{{- site.Params.GitHubRepo -}}/tree/main/content/{{ .Page.File.Path | replaceRE `\\` "/" }}"
+                  title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
+                {{ end }}
+                {{ end }}
+              </div>
+            </div>
+            <footer class="mb-4 pt-0">
+              <!-- this displays date that markdown file was last committed to Git -->
+              {{- if not .Params.hideDate -}}
+              {{- if ne .Lastmod .Date -}}
+              {{- if not .Params.blog -}}
+              <div class="text-secondary small"><em>
+                  Last updated {{ .Lastmod.Format "January 2, 2006" }}.
+                </em></div>
+              {{- end -}}
+              {{- end -}}
+              {{- end -}}
+
+              {{ if .Params.contributors }}
+              <div class="text-secondary small mt-2">
+                Contributors: {{ .Params.contributors }}
+              </div>
+              {{- end -}}
+
+            </footer>
+          </div>
+          <div class="col-12 col-xl-3 menu-right">
+            {{ partial "menu-right" . }}
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="p-2 footer py-4 bg-secondary bg-opacity-10">
+        {{ partial "footer" . }}
+      </footer>
+    </div>
+
+  </div>
+</div>
+
+{{ range .Page.Params.extra_js -}}
+<script{{ with .async }} async{{ end }} src="{{ .src }}">
+</script>
+  {{- end -}}
+  <div class="position-fixed" aria-hidden="true"><input type="text" tabindex="-1"></div>
+{{ end }}

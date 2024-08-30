@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dual Range with Meter</title>
+    <meta name="description" content="Dual Range with Meter" />
+    <link href="https://modus-bootstrap.netlify.app/docs/v2/dist/css/modus-bootstrap.min.css" rel="stylesheet" />
+    <link href="dual-range.css" rel="stylesheet" />
+    <script src="dual-range.js" defer></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌡️</text></svg>" />
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      #fromSlider {
+        z-index: 1;
+        height: 0;
+        margin-top: 3px;
+      }
+    </style>
+  </head>
+
+  <body class="mt-5 overflow-hidden">
+    <div class="d-flex range-container mx-auto">
+      <div class="mb-2">
+        <h4>Temperature Threshold</h4>
+      </div>
+
+      <div class="sliders-control position-relative my-2">
+        <input id="fromSlider" class="w-100 rounded pe-none position-absolute" aria-label="from" type="range" value="30" min="0" max="100" />
+        <input id="toSlider" class="w-100 rounded pe-none position-absolute" aria-label="to" type="range" value="70" min="1" max="100" />
+      </div>
+
+      <form class="d-flex flex-row justify-content-end mt-1">
+        <div class="input-group">
+          <span class="input-group-text border-secondary"> <label for="fromInput" class="text-body">Less than</label></span>
+          <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" id="fromInput" value="30" class="form-control form-control-container-time-input" inputmode="numeric" pattern="[0-9]*" minlength="1" maxlength="2" style="max-width: 34px; height: 32px" required />
+          <span class="input-group-text border-secondary py-0 text-body"><span class="fs-3">&deg;</span>F</span>
+        </div>
+
+        <div class="input-group ms-5">
+          <span class="input-group-text border-secondary ms-2"> <label for="toInput" class="text-body">Greater than</label></span>
+          <input onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          type="text" id="toInput" value="70" class="form-control form-control-container-time-input is-required" inputmode="numeric" pattern="[0-9]*" minlength="2" maxlength="3" style="max-width: 36px; height: 32px" required />
+          <span class="input-group-text border-secondary py-0 text-body"><span class="fs-3">&deg;</span>F</span>
+        </div>
+      </form>
+
+      <div>
+        <details class="mt-5">
+          <summary>Source</summary>
+          <img src="mockup.png" alt="" class="text-center img-fluid" width="460" />
+        </details>
+      </div>
+    </div>
+    <script>
+
+    </script>
+  </body>
+</html>

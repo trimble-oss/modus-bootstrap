@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint"
+  ],
+  "unwantedRecommendations": [
+    "donjayamanne.githistory",
+    "DotJoshJohnson.xml",
+    "ms-kubernetes-tools.vscode-kubernetes-tools"
+  ]
+}

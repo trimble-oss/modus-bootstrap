@@ -1,0 +1,212 @@
+.pagination {
+  // scss-docs-start pagination-css-vars
+  --#{$prefix}pagination-padding-x: #{$pagination-padding-x};
+  --#{$prefix}pagination-padding-y: #{$pagination-padding-y};
+  @include rfs($pagination-font-size, --#{$prefix}pagination-font-size);
+  --#{$prefix}pagination-color: #{$pagination-color};
+  --#{$prefix}pagination-bg: #{$pagination-bg};
+  --#{$prefix}pagination-border-width: #{$pagination-border-width};
+  --#{$prefix}pagination-border-color: #{$pagination-border-color};
+  --#{$prefix}pagination-border-radius: #{$pagination-border-radius};
+  --#{$prefix}pagination-hover-color: #{$pagination-hover-color};
+  --#{$prefix}pagination-hover-bg: #{$pagination-hover-bg};
+  --#{$prefix}pagination-hover-border-color: #{$pagination-hover-border-color};
+  --#{$prefix}pagination-focus-color: #{$pagination-focus-color};
+  --#{$prefix}pagination-focus-bg: #{$pagination-focus-bg};
+  --#{$prefix}pagination-focus-box-shadow: #{$pagination-focus-box-shadow};
+  --#{$prefix}pagination-active-color: #{$pagination-active-color};
+  --#{$prefix}pagination-active-bg: #{$pagination-active-bg};
+  --#{$prefix}pagination-active-border-color: #{$pagination-active-border-color};
+  --#{$prefix}pagination-disabled-color: #{$pagination-disabled-color};
+  --#{$prefix}pagination-disabled-bg: #{$pagination-disabled-bg};
+  --#{$prefix}pagination-disabled-border-color: #{$pagination-disabled-border-color};
+  // scss-docs-end pagination-css-vars
+
+  display: flex;
+  @include list-unstyled();
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: var(--#{$prefix}pagination-padding-y) var(--#{$prefix}pagination-padding-x);
+  @include font-size(var(--#{$prefix}pagination-font-size));
+  color: var(--#{$prefix}pagination-color);
+  text-decoration: if($link-decoration == none, null, none);
+  background-color: var(--#{$prefix}pagination-bg);
+  border: var(--#{$prefix}pagination-border-width) solid var(--#{$prefix}pagination-border-color);
+  border-radius: 4px; // stylelint-disable-line property-disallowed-list
+  @include transition($pagination-transition);
+
+  &:hover {
+    z-index: 2;
+    color: var(--#{$prefix}pagination-hover-color);
+    text-decoration: if($link-hover-decoration == underline, none, null);
+    background-color: var(--#{$prefix}pagination-hover-bg);
+    border-color: var(--#{$prefix}pagination-hover-border-color);
+  }
+
+  &:focus {
+    z-index: 3;
+    color: var(--#{$prefix}pagination-focus-color);
+    background-color: var(--#{$prefix}pagination-focus-bg);
+    outline: $pagination-focus-outline;
+    box-shadow: var(--#{$prefix}pagination-focus-box-shadow);
+  }
+
+  &.active,
+  .active > & {
+    z-index: 3;
+    color: var(--#{$prefix}pagination-active-color);
+    @include gradient-bg(var(--#{$prefix}pagination-active-bg));
+    border-color: var(--#{$prefix}pagination-active-border-color);
+  }
+
+  &.disabled,
+  .disabled > & {
+    color: var(--#{$prefix}pagination-disabled-color);
+    pointer-events: none;
+    background-color: var(--#{$prefix}pagination-disabled-bg);
+    border-color: var(--#{$prefix}pagination-disabled-border-color);
+  }
+}
+
+.page-item {
+  &:not(:first-child) .page-link {
+    margin-left: $pagination-margin-start;
+  }
+
+  @if $pagination-margin-start == calc(#{$pagination-border-width} * -1) {
+    &:first-child {
+      .page-link {
+        @include border-start-radius(var(--#{$prefix}pagination-border-radius));
+      }
+    }
+
+    &:last-child {
+      .page-link {
+        @include border-end-radius(var(--#{$prefix}pagination-border-radius));
+      }
+    }
+  } @else {
+    // Add border-radius to all pageLinks in case they have left margin
+    .page-link {
+      @include border-radius(var(--#{$prefix}pagination-border-radius));
+    }
+  }
+}
+
+
+//
+// Sizing
+//
+
+.pagination-lg {
+  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $pagination-border-radius-lg);
+}
+
+.pagination-sm {
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $pagination-border-radius-sm);
+}
+
+.pagination {
+  .page-link {
+    line-height: 14px;
+
+    & .modus-icons {
+      font-size: .75rem;
+    }
+  }
+
+  &-lg {
+    .page-link {
+      width: 48px;
+      height: 48px;
+      padding: .88rem 1.12rem;
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+
+  &-sm {
+    .page-link {
+      min-width: 24px;
+      height: 24px;
+      padding-top: .313rem;
+      padding-bottom: .313rem;
+      font-size: 12px;
+    }
+  }
+
+  & .page-link-previous {
+    --modus-outlined-chevron-left: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E %3Cpath d='M14.71 6.71a.996.996 0 0 0-1.41 0L8.71 11.3a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41Z'/%3E %3C/svg%3E");
+    mask: var(--modus-outlined-chevron-left) center no-repeat;
+  }
+
+  & .page-link-next {
+    --modus-outlined-chevron-right: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E %3Cpath d='M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01Z'/%3E %3C/svg%3E");
+    mask: var(--modus-outlined-chevron-right) center no-repeat;
+  }
+}
+
+.pagination {
+  .page-link-next,
+  .page-link-previous {
+    width: 32px;
+    height: 32px;
+    background-color: var(--bs-pagination-color);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 24px;
+  }
+
+  &-sm {
+    .page-link-next,
+    .page-link-previous {
+      width: 24px !important;
+      height: 24px !important;
+      mask-size: 16px !important;
+    }
+  }
+
+  &-lg {
+    .page-link-next,
+    .page-link-previous {
+      width: 48px !important;
+      height: 48px !important;
+      mask-size: 32px;
+    }
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .pagination {
+      --bs-pagination-color: #b7b9c3;
+      --bs-pagination-hover-color: #171c1e;
+      --bs-pagination-active-color: #171c1e;
+      --bs-pagination-active-bg: #217cbb;
+    }
+
+    .page-item {
+      .page-link {
+        &:hover {
+          color: #f1f1f6;
+          background-color: #464b52;
+        }
+
+        &.active,
+        .active > & {
+          color: #f1f1f6 !important;
+          background-color: #217cbb !important;
+          border-color: #217cbb;
+        }
+
+        &:focus {
+          color: #f1f1f6;
+          background-color: #464b52;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/structure": "off",
+    "no-inline-styles": "off",
+    "css-prefix-order": "off",
+    "compat-api/css": "off",
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "meta-charset-utf-8": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "img[loading]"
+        ]
+      }
+    ],
+    "meta-viewport": "off",
+    "axe/aria": [
+      "default",
+      {
+        "aria-valid-attr-value": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "autocomplete-valid": "off"
+      }
+    ]
+  }
+}

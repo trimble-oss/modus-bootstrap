@@ -1,0 +1,52 @@
+/*! purgecss start ignore */
+.autocomplete-suggestions {
+  position: absolute;
+  z-index: 33333; // higher than navbar
+  box-sizing: border-box;
+  display: none;
+  max-height: 254px;
+  overflow: hidden;
+  overflow-y: auto;
+  cursor: default;
+  background: var(--bs-body-bg);
+  border: 1px solid #ccc;
+  border-top: 0;
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.autocomplete-suggestion {
+  position: relative;
+  padding: 7px;
+  overflow: hidden;
+  line-height: 23px;
+  color: var(--bs-body-color);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.autocomplete-suggestion b {
+  font-weight: 400;
+  color: #1f8dd6;
+}
+
+.autocomplete-suggestion.selected {
+  color: var(--bs-secondary-color);
+  background: var(--bs-color);
+}
+
+.autocomplete-suggestion:hover {
+  color: var(--bs-secondary-color);
+  background: var(--bs-color);
+}
+
+.autocomplete-suggestion > .context {
+  font-size: 12px;
+  color: #888;
+}
+
+.autocomplete-suggestion.selected > .context {
+  color: #ccc;
+}
+
+/*! purgecss end ignore */

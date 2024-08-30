@@ -1,0 +1,39 @@
+[[headers]]
+  for = "/"
+  [headers.values]
+    Content-Security-Policy = "upgrade-insecure-requests"
+    Permissions-Policy = "microphone=()"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "0"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, s-max-age=1604800, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[redirects]]
+  from = "/docs/v1/*"
+  to = "https://modus-bootstrap-v1.netlify.app/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/docs/v1/css/*"
+  to = "https://modus-bootstrap-v1.netlify.app/css/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/docs/v1/js/*"
+  to = "https://modus-bootstrap-v1.netlify.app/js/:splat"
+  status = 200

@@ -1,0 +1,15 @@
+**/*.min.css
+**/dist/
+**/vendor/
+/_site/
+/js/coverage/
+
+dual-range.css
+/scss/_modus-tables.scss
+_form-check.scss
+_form-control.scss
+_pagination.scss
+_trimble-colors.scss
+_modus-variables.scss
+_modus-variables-dark.scss
+_variables.scss

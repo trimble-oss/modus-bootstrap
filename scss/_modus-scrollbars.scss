@@ -1,0 +1,10 @@
+/**
+ * Custom Scrollbars
+ * This adds custom thinner scrollbars to WebKit/Blink browsers and Firefox.
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling
+ * These styles will NOT apply to the main HTML/Body window
+ */
+
+body :not(body) {
+  scrollbar-width: thin;
+}
