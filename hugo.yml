@@ -1,7 +1,6 @@
 languageCode:           "en-US"
 title:                  "Modus Bootstrap"
-# baseURL:              "https://modus-bootstrap.trimble.com/"
-baseURL:                "https://modus-bootstrap.netlify.app/"
+baseURL:                "https://modus-bootstrap.trimble.com/"
 
 security:
   enableInlineShortcodes: true
