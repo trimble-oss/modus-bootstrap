@@ -4,6 +4,8 @@ title: Popovers
 description: Documentation and examples for adding Modus Bootstrap popovers, like those found in iOS, to any element on your site.
 group: components
 toc: true
+aliases:
+  - "/components/popovers/"
 ---
 
 ## Overview

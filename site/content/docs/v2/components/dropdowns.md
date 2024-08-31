@@ -4,6 +4,8 @@ title: Dropdowns
 description: Toggle contextual overlays for displaying lists of links and more with the Modus Bootstrap dropdown plugin.
 group: components
 toc: true
+aliases:
+  - "/components/dropdown/"
 ---
 
 ## Overview

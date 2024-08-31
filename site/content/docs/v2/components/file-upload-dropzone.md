@@ -4,6 +4,9 @@ title: File Upload Dropzone
 description: "Allows users to upload single or multiple files to the application by dragging and dropping."
 group: components
 toc: true
+aliases:
+  - "/components/file-upload-dropzone/"
+draft: true
 ---
 
 ## Overview

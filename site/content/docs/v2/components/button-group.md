@@ -4,6 +4,8 @@ title: Button group
 description: Group a series of buttons together on a single line or stack them in a vertical column.
 group: components
 toc: true
+aliases:
+  - "/components/button-group/"
 ---
 
 ## Basic example

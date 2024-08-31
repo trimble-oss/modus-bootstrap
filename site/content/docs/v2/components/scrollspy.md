@@ -4,6 +4,8 @@ title: Scrollspy
 description: Automatically update Modus Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.
 group: components
 toc: true
+aliases:
+  - "/components/scrollspy/"
 ---
 
 ## How it works

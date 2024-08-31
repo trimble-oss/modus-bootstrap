@@ -4,6 +4,8 @@ title: File Upload Dropzone
 description:
 group: helpers
 toc: false
+aliases:
+  - "/components/file-upload-dropzone/"
 ---
 
 A single CSS class to be used with file upload user interfaces.

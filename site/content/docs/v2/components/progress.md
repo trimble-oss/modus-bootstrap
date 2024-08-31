@@ -4,6 +4,8 @@ title: Progress
 description: Documentation and examples for using Modus Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.
 group: components
 toc: true
+aliases:
+  - "/components/progress/"
 ---
 
 ## How it works
