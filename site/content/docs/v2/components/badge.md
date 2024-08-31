@@ -4,6 +4,8 @@ title: Badges
 description: Documentation and examples for badges, our small count and labeling component.
 group: components
 toc: true
+aliases:
+  - "/components/badge/"
 ---
 
 ## Examples

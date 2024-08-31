@@ -4,6 +4,8 @@ title: Buttons
 description: Use Modus Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
 group: components
 toc: true
+aliases:
+  - "/components/buttons/"
 ---
 
 ## Base class

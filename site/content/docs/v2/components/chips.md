@@ -7,6 +7,8 @@ description: "Chips are compact elements that represent an input, attribute, or 
 group: components
 StyleGuide: "components/chips/"
 toc: true
+aliases:
+  - "/components/chips/"
 ---
 
 ## Overview

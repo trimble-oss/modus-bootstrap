@@ -4,6 +4,8 @@ title: Date Picker
 description:
 group: forms
 toc: true
+aliases:
+  - "/components/date-picker/"
 ---
 
 Modus Bootstrap doesn't ship with a custom-built Date & Time Picker component but you can style a third-party date picker or use native inputs.
