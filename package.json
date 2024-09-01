@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@stackblitz/sdk": "^1.11.0",
-    "@trimble-oss/modus-docs-hugo-theme": "1.0.0-alpha25",
+    "@trimble-oss/modus-docs-hugo-theme": "1.0.0-alpha26",
     "@trimble-oss/modus-icons": "^1.15.0",
     "autoprefixer": "^10.4.20",
     "bootstrap-forced-colors-css": "^1.0.7",
