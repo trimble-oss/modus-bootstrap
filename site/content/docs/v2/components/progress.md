@@ -6,6 +6,7 @@ group: components
 toc: true
 aliases:
   - "/components/progress/"
+  - "/components/progress-bars/"
 ---
 
 ## How it works

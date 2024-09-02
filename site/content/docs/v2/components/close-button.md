@@ -4,6 +4,8 @@ title: Close button
 description: A generic close button for dismissing content like modals and alerts.
 group: components
 toc: true
+aliases:
+  - "/utilities/close-icon/"
 ---
 
 ## Example
