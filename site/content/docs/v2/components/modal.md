@@ -6,6 +6,7 @@ group: components
 toc: true
 aliases:
   - "/components/modal/"
+  - "/components/modals/"
 ---
 
 ## How it works

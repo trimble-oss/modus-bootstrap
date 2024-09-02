@@ -109,7 +109,7 @@ params:
   icons:                "https://modus-icons.trimble.com"
 
   download:
-    source:             "https://github.com/trimble-oss/bootstrap/archive/v1.0.0-beta1.zip"
+    source:             "https://github.com/trimble-oss/modus-bootstrap/releases"
     dist:               ""
     dist_examples:      ""
 
