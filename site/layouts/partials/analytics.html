@@ -1,3 +1,15 @@
 {{- if not hugo.IsServer -}}
-
+<script src="https://www.googletagmanager.com/gtag/js?id={{- .Site.Config.Services.GoogleAnalytics -}}"
+  async
+  fetchpriority="low"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+  gtag('config', '{{ .Site.Config.Services.GoogleAnalytics }}');
+</script>
 {{ end }}

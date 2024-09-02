@@ -131,6 +131,9 @@ params:
     min: 2
     max: 5
 
+services:
+  googleAnalytics:
+    id: G-T2EGGYVY8J
 
 # https://gohugo.io/getting-started/configuration/#configure-minify
 minify:
