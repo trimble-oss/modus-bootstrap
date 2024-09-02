@@ -6,6 +6,7 @@ group: components
 toc: true
 aliases:
   - "/components/badge/"
+  - "/components/badges/"
 ---
 
 ## Examples

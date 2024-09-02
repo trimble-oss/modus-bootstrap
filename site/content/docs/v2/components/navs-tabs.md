@@ -3,7 +3,9 @@ layout: docs
 title: Navs and Tabs
 description: Documentation and examples for how to use Modus Bootstrap's included navigation components.
 group: components
-aliases: "/docs/v2/components/navs/"
+aliases:
+  - "/components/tabs/"
+  - "/docs/v2/components/navs/"
 toc: true
 ---
 

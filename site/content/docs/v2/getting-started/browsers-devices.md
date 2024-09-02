@@ -4,6 +4,8 @@ title: Browsers and devices
 description: Learn about the browsers and devices, from modern to old, that are supported by Modus Bootstrap, including known quirks and bugs for each.
 group: getting-started
 toc: true
+aliases:
+  - /device-support/
 ---
 
 ## Supported browsers

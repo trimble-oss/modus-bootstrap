@@ -6,6 +6,7 @@ group: components
 toc: true
 aliases:
   - "/components/dropdown/"
+  - "/components/dropdowns/"
 ---
 
 ## Overview

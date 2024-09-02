@@ -5,6 +5,8 @@ description: "Messages provide the user with contextual static information. They
 lower priority than an alert."
 group: components
 components: true
+aliases:
+  - "/components/messages/"
 ---
 
 ## Overview
