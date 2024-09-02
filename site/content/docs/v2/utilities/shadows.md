@@ -4,6 +4,8 @@ title: Shadows
 description: Add or remove shadows to elements with box-shadow utilities.
 group: utilities
 toc: true
+aliases:
+  - "/foundations/shadows-and-depth/"
 ---
 
 ## Examples

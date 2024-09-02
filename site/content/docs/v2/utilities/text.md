@@ -4,6 +4,8 @@ title: Text
 description: Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.
 group: utilities
 toc: true
+aliases:
+  - "/utilities/text/"
 ---
 
 ## Text alignment

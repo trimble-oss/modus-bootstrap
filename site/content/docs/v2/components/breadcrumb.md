@@ -7,6 +7,7 @@ toc: true
 aliases:
   - "/components/breadcrumb/"
   - "/components/breadcrumbs/"
+  - "/docs/v2/components/breadcrumbs/"
 ---
 
 ## Example

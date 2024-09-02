@@ -6,7 +6,7 @@ group: getting-started
 toc: true
 ---
 
-## Compiled CSS and JS
+## Compiled CSS and JS (Recommended)
 
 Download ready-to-use compiled code for **Modus Bootstrap v{{< param current_version >}}** to easily drop into your project, which includes compiled and minified CSS bundles (see [CSS files comparison]({{< docsref "/getting-started/contents#css-files" >}}))
 
@@ -14,7 +14,7 @@ This doesn't include documentation, source files, or any optional JavaScript dep
 
 <a href="https://github.com/trimble-oss/modus-bootstrap/releases" class="btn btn-primary">Download</a>
 
-## Source files (Recommended)
+## Source files
 
 Compile Modus Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:
 
@@ -53,7 +53,7 @@ Bootstrap's `package.json` contains some additional metadata under the following
 
 ### yarn
 
-Install Modus Bootstrap in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/@trimble-inc/modus-bootstrap):
+Install Modus Bootstrap in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/@trimble-oss/modus-bootstrap):
 
 ```sh
 yarn add @trimble-oss/modus-bootstrap
