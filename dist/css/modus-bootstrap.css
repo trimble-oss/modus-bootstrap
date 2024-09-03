@@ -8081,12 +8081,9 @@ input.form-control-lg[type=file] {
   border-bottom: 1px solid var(--bs-border-color-translucent);
 }
 
-/* stylelint-disable-next-line */
 .sidebar-open > .modus-sidebar ul {
   padding: 0;
 }
-
-/* stylelint-disable-next-line */
 .sidebar-open > .modus-sidebar ul li {
   list-style: none;
 }
@@ -8136,7 +8133,7 @@ input.form-control-lg[type=file] {
   flex: 1 1 auto;
   flex-direction: column;
   max-height: 100%;
-  background-color: var(--bs-border-color-translucent);
+  background-color: var(--bs-secondary-bg-subtle);
 }
 .modus-panel.panel-sm {
   min-width: 256px;
@@ -8161,6 +8158,7 @@ input.form-control-lg[type=file] {
   flex: 0 0 48px;
   align-items: center;
   justify-content: center;
+  color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
   border-bottom: 1px solid var(--bs-border-color-translucent);
 }
