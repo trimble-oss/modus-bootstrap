@@ -6,6 +6,7 @@ group: components
 toc: true
 aliases:
   - "/components/navbar/"
+  - "/components/navbars/"
 ---
 
 ## How it works
