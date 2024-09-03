@@ -7,6 +7,7 @@ aliases:
   - "/docs/v2/getting-started/"
   - "/docs/getting-started/"
   - "/getting-started/"
+  - "/status/"
 toc: true
 ---
 
@@ -45,12 +46,12 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
      </head>
      <body>
        <h1>Hello, world!</h1>
-       <script src="{{< param "cdn.js_bundle" >}}"></script>
+       <script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
      </body>
    </html>
    ```
 
-   You can also include [Popper](https://popper.js.org/) and our JS separately. If you don't plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.
+   You can also include [Popper](https://popper.js.org/docs/v2/) and our JS separately. If you don't plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.
 
    ```html
    <script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
