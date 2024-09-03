@@ -4,6 +4,10 @@ title: Floating labels
 description: Create beautifully simple form labels that float over your input fields.
 group: forms
 toc: true
+hidden: true
+private: true
+sitemap:
+  disable: true
 ---
 
 ## Example
