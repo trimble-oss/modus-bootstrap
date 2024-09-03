@@ -3,6 +3,10 @@ layout: docs
 title: Icons
 description: Guidance and suggestions for using external icon libraries with Bootstrap.
 group: extend
+hidden: true
+private: true
+sitemap:
+  disable: true
 ---
 
 While Bootstrap doesn't include an icon set by default, we do have our own comprehensive icon library called Bootstrap Icons. Feel free to use them or any other icon set in your project. We've included details for Bootstrap Icons and other preferred icon sets below.

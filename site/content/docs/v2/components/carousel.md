@@ -4,6 +4,10 @@ title: Carousel
 description: A slideshow component for cycling through elements—images or slides of text—like a carousel.
 group: components
 toc: true
+hidden: true
+private: true
+sitemap:
+  disable: true
 ---
 
 ## How it works
