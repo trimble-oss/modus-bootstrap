@@ -6,6 +6,8 @@ group: about
 aliases:
   - "/about/"
   - "/docs/v2/about/"
+sitemap:
+  - disable: true
 ---
 
 ## Get involved
