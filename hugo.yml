@@ -115,10 +115,8 @@ params:
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
-    css:              "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap/dist/css/modus-bootstrap.min.css"
-    css_hash:         ""
-    css_rtl:          ""
-    css_rtl_hash:     ""
+    css:              "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.0.0/dist/css/modus-bootstrap.min.css"
+    css_hash:         "sha256-yBYLVGf16Xx2i+YY+bwyMlGqxQMIfnyAjdYS1KR4kTE="
     js:               "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     js_hash:          "sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

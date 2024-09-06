@@ -49,6 +49,10 @@ Modus Bootstrap includes support for the [`prefers-reduced-motion` media feature
 
 On browsers that support `prefers-reduced-motion`, and where the user has *not* explicitly signaled that they'd prefer reduced motion (i.e. where `prefers-reduced-motion: no-preference`), Modus Bootstrap enables smooth scrolling using the `scroll-behavior` property.
 
+## Windows high contrast mode
+
+Modus Bootstrap has been optimized to work in [Windows high contrast mode](https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/).
+
 ## Additional resources
 
 - [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG/)

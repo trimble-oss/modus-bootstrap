@@ -19,34 +19,18 @@ bootstrap/
 │   ├── modus-bootstrap-grid.css.map
 │   ├── modus-bootstrap-grid.min.css
 │   ├── modus-bootstrap-grid.min.css.map
-│   ├── modus-bootstrap-grid.rtl.css
-│   ├── modus-bootstrap-grid.rtl.css.map
-│   ├── modus-bootstrap-grid.rtl.min.css
-│   ├── modus-bootstrap-grid.rtl.min.css.map
 │   ├── modus-bootstrap-reboot.css
 │   ├── modus-bootstrap-reboot.css.map
 │   ├── modus-bootstrap-reboot.min.css
 │   ├── modus-bootstrap-reboot.min.css.map
-│   ├── modus-bootstrap-reboot.rtl.css
-│   ├── modus-bootstrap-reboot.rtl.css.map
-│   ├── modus-bootstrap-reboot.rtl.min.css
-│   ├── modus-bootstrap-reboot.rtl.min.css.map
 │   ├── modus-bootstrap-utilities.css
 │   ├── modus-bootstrap-utilities.css.map
 │   ├── modus-bootstrap-utilities.min.css
 │   ├── modus-bootstrap-utilities.min.css.map
-│   ├── modus-bootstrap-utilities.rtl.css
-│   ├── modus-bootstrap-utilities.rtl.css.map
-│   ├── modus-bootstrap-utilities.rtl.min.css
-│   ├── modus-bootstrap-utilities.rtl.min.css.map
 │   ├── modus-bootstrap.css
 │   ├── modus-bootstrap.css.map
 │   ├── modus-bootstrap.min.css
 │   ├── modus-bootstrap.min.css.map
-│   ├── modus-bootstrap.rtl.css
-│   ├── modus-bootstrap.rtl.css.map
-│   ├── modus-bootstrap.rtl.min.css
-│   └── modus-bootstrap.rtl.min.css.map
 ```
 
 This is the most basic form of Modus Bootstrap: precompiled files for quick drop-in usage in nearly any web project.
