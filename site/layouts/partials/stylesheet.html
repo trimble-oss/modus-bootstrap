@@ -3,7 +3,7 @@
 {{ if eq .Page.Params.direction "rtl" -}}
 
 {{- else -}}
-<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/modus-bootstrap.css" rel="stylesheet">
+<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/modus-bootstrap.min.css?v{{ hugo.Version }}" rel="stylesheet">
 {{- end -}}
 {{- else -}}
 <link

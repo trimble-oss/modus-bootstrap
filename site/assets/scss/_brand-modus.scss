@@ -69,6 +69,11 @@ main a[class] { // stylelint-disable-line
   text-decoration: none;
 }
 
+.form-control-search {
+  top: 0 !important;
+  right: -5px !important;
+}
+
 .alert-link {
   text-decoration: underline !important;
 }

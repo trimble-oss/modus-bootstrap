@@ -30,7 +30,6 @@ Set heights using classes like `.form-control-lg` and `.form-control-sm`.
 {{< example >}}
 <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
 <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
 {{< /example >}}
 
 ## Form text
@@ -142,10 +141,6 @@ If you want to have `<input readonly>` elements in your form styled as plain tex
   <label for="formFileDisabled" class="form-label">Disabled file input example</label>
   <input class="form-control" type="file" id="formFileDisabled" disabled>
 </div>
-<div class="mb-3">
-  <label for="formFileSm" class="form-label">Small file input example</label>
-  <input class="form-control form-control-sm" id="formFileSm" type="file">
-</div>
 <div>
   <label for="formFileLg" class="form-label">Large file input example</label>
   <input class="form-control form-control-lg" id="formFileLg" type="file">
@@ -217,19 +212,7 @@ You can also place any of Bootstrap's [spinners]({{< docsref "/components/spinne
 
 ### Sizing
 
-Add `.form-control-sm` or `.form-control-lg` to your `.form-control` and the `.form-control-icon` will automatically resize. However, the sizing of the icons themselves is up to you.
-
-{{< example >}}
-<label for="formControlWithIconSm" class="form-label">Email address</label>
-<div class="form-control-with-icon">
-  <input type="email" class="form-control form-control-sm" id="formControlWithIconSm" placeholder="name@example.com">
-  <div class="form-control-icon">
-    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-    </svg>
-  </div>
-</div>
-{{< /example >}}
+Add `.form-control-lg` to your `.form-control` and the `.form-control-icon` will automatically resize. However, the sizing of the icons themselves is up to you.
 
 {{< example >}}
 <label for="formControlWithIconLg" class="form-label">Email address</label>
