@@ -130,3 +130,11 @@
     @include border-start-radius(0);
   }
 }
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .input-group-text {
+      border-color: #464b52;
+    }
+  }
+}

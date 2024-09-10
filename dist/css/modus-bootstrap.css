@@ -2121,9 +2121,6 @@ progress {
 [data-bs-theme=dark] .form-text {
   color: #b7b9c3;
 }
-[data-bs-theme=dark] .input-group-text {
-  border-color: #464b52;
-}
 
 .form-control {
   display: block;
@@ -3031,6 +3028,10 @@ input.form-control-lg[type=file] {
 .input-group > .form-floating:not(:first-child) > .form-select {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+[data-bs-theme=dark] .input-group-text {
+  border-color: #464b52;
 }
 
 .valid-feedback {
