@@ -55,7 +55,7 @@
   text-align: center;
   white-space: nowrap;
   background-color: $input-bg; // Modus Customized
-  border: $input-border-width solid $input-group-addon-border-color;
+  border: $input-border-width solid #6a6e79; // Modus Customized
   @include border-radius($input-border-radius);
 }
 
@@ -128,5 +128,13 @@
   > .form-floating:not(:first-child) > .form-control,
   > .form-floating:not(:first-child) > .form-select {
     @include border-start-radius(0);
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .input-group-text {
+      border-color: #464b52;
+    }
   }
 }
