@@ -58,7 +58,7 @@
 <!-- no need to define additional Twitter card meta tags as fallback to Open Graph -->
 <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#twitter-cards-and-open-graph -->
 
-{{- if not .Params.private -}}
+{{- if .Params.private -}}
 <meta name="robots" content="noindex, nofollow">
 {{ end }}
 

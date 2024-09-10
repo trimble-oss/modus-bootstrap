@@ -108,6 +108,9 @@ params:
   repo:                 "https://github.com/trimble-oss/modus-bootstrap"
   icons:                "https://modus-icons.trimble.com"
 
+  social:
+    twitter:            "TrimbleCorpNews"
+
   download:
     source:             "https://github.com/trimble-oss/modus-bootstrap/releases"
     dist:               ""

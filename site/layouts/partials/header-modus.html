@@ -3,11 +3,10 @@
 <!-- To speed up the homepage rendering time the Modus Icons CSS load on every page except homepage where they aren't used -->
 {{- if not .IsHome -}}
 <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.14.0/dist/modus-outlined/fonts/modus-icons.css">
+  href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.15.0/dist/modus-outlined/fonts/modus-icons.css">
 {{ end }}
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="robots" content="noindex, nofollow">
 {{ template "_internal/opengraph.html" . }}
 
 <!-- polyfills for old browsers -->
