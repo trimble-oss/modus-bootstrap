@@ -55,7 +55,7 @@
   text-align: center;
   white-space: nowrap;
   background-color: $input-bg; // Modus Customized
-  border: $input-border-width solid $input-group-addon-border-color;
+  border: $input-border-width solid #6a6e79; // Modus Customized
   @include border-radius($input-border-radius);
 }
 
