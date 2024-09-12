@@ -6,6 +6,7 @@ aliases: "/examples/"
 private: true
 sitemap:
   - disable: true
+robots: noindex,nofollow
 hideDate: true
 hideToc: true
 ---
