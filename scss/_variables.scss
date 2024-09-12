@@ -1570,7 +1570,7 @@ $progress-border-radius:            $border-radius-sm !default; // Modus customi
 $progress-box-shadow:               var(--#{$prefix}box-shadow-inset) !default;
 $progress-bar-color:                $white !default;
 $progress-bar-bg:                   $primary !default;
-$progress-bar-animation-timing:     1s linear infinite !default;
+$progress-bar-animation-timing:     1.5s linear infinite !default;
 $progress-bar-transition:           width .6s ease !default;
 // scss-docs-end progress-variables
 

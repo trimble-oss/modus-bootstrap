@@ -5724,7 +5724,16 @@ input.form-control-lg[type=file] {
 
 @keyframes progress-bar-stripes {
   0% {
-    background-position-x: 1rem;
+    left: -50%;
+    width: 50%;
+  }
+  50% {
+    left: 25%;
+    width: 50%;
+  }
+  100% {
+    left: 100%;
+    width: 50%;
   }
 }
 .progress,
@@ -5778,7 +5787,10 @@ input.form-control-lg[type=file] {
 }
 
 .progress-bar-animated {
-  animation: 1s linear infinite progress-bar-stripes;
+  position: relative;
+  min-width: 50% !important;
+  max-width: 50% !important;
+  animation: 1.5s linear infinite progress-bar-stripes;
 }
 @media (prefers-reduced-motion: reduce) {
   .progress-bar-animated {
