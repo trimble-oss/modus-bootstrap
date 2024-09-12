@@ -51,7 +51,7 @@ Modus Bootstrap provides a handful of [utilities for setting width]({{< docsref 
 
 {{< example >}}
 <div class="progress progress-sm">
-  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar w-75" role="progressbar" aria-label="Small progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 {{< /example >}}
 
@@ -59,7 +59,17 @@ Modus Bootstrap provides a handful of [utilities for setting width]({{< docsref 
 
 {{< example >}}
 <div class="progress progress-xs">
-  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar w-75" role="progressbar" aria-label="XS progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+{{< /example >}}
+
+## Indeterminate State
+
+An animated indeterminate state can be used with the `.progress-bar-animated` class and is set to be 50% width.
+
+{{< example >}}
+<div class="progress">
+  <div class="progress-bar progress-bar-animated" role="progressbar" aria-label="Animated progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 {{< /example >}}
 

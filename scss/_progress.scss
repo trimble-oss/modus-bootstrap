@@ -3,7 +3,20 @@
 // scss-docs-start progress-keyframes
 @if $enable-transitions {
   @keyframes progress-bar-stripes {
-    0% { background-position-x: $progress-height; }
+    0% {
+      left: -50%;
+      width: 50%;
+    }
+
+    50% {
+      left: 25%;
+      width: 50%;
+    }
+
+    100% {
+      left: 100%;
+      width: 50%;
+    }
   }
 }
 // scss-docs-end progress-keyframes
@@ -59,6 +72,9 @@
 
 @if $enable-transitions {
   .progress-bar-animated {
+    position: relative;
+    min-width: 50% !important;
+    max-width: 50% !important;
     animation: $progress-bar-animation-timing progress-bar-stripes;
 
     @if $enable-reduced-motion {
@@ -70,7 +86,6 @@
 }
 
 // Modus Customized
-
 .progress-sm {
   height: $progress-height * .5;
 }
