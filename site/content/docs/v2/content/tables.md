@@ -3,6 +3,8 @@ layout: docs
 title: Tables
 description: Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Modus Bootstrap.
 group: content
+aliases:
+  - "/components/tables/"
 toc: true
 ---
 

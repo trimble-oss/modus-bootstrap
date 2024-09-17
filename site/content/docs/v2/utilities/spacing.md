@@ -5,6 +5,8 @@ description: Bootstrap includes a wide range of shorthand responsive margin, pad
 group: utilities
 toc: true
 aliases:
+  - "/foundations/grid-and-spacing/"
+  - "/utilities/padding-and-margin/"
   - "/utilities/sizing/"
 ---
 
