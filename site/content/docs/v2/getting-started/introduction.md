@@ -7,6 +7,7 @@ aliases:
   - "/docs/v2/getting-started/"
   - "/docs/getting-started/"
   - "/getting-started/"
+  - "/setup/"
   - "/status/"
 toc: true
 ---

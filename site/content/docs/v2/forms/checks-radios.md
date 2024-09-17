@@ -6,6 +6,7 @@ group: forms
 aliases:
   - "/components/checkboxes/"
   - "/components/radio-buttons/"
+  - "/components/switches/"
   - "/docs/v2/forms/checks/"
 toc: true
 ---
