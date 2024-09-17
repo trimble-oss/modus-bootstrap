@@ -1,0 +1,371 @@
+---
+layout: examples
+title: Web App
+body_class: "h-100 w-100"
+html_class: "h-100 w-100"
+extra_js:
+  - src: "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap/dist/js/modus-layout.min.js"
+extra_css:
+  - src: "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.14.0/dist/transportation/fonts/modus-icons.css"
+sitemap:
+  disable: true
+---
+
+<style>
+.bd-mode-toggle {
+  display: none !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  margin: 0 !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.14.0/dist/transportation/fonts/modus-icons.css" />
+
+<div class="modus-layout d-flex flex-column margin-0 h-100 overflow-hidden">
+      <nav class="navbar navbar-expand-sm flex-nowrap modus-header">
+        <button
+          class="btn btn-lg btn-icon-only mx-1"
+          data-modus-item="menu-btn"
+          aria-label="Toggle Navigation"
+          type="button">
+          <i class="modus-icons menu-btn notranslate" aria-hidden="true"
+            >menu</i
+          >
+        </button>
+        <a href="#" class="navbar-brand d-none d-md-block">
+          <img
+            src="http://modus.trimble.com/img/trimble-logo.svg"
+            alt="home"
+            height="28"
+            width="125"
+            />
+        </a>
+        <div class="navbar-text text-truncate">
+          <div class="h4 mt-2 pt-2">Map Example</div>
+        </div>
+        <div class="ms-auto border-left px-3 py-2">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="DarkModeSwitch" />
+            <label class="form-check-label" for="DarkModeSwitch"
+              >Dark Mode</label
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- .modus-header -->
+
+      <div class="modus-body sidebar-closed" data-modus-item="body">
+        <nav class="nav flex-column modus-sidebar">
+          <ul>
+            <li>
+              <a href="index.html" class="nav-link">
+                <span class="left-nav-icon"
+                  ><i class="modus-icons notranslate">home</i></span
+                >
+                Sample Page
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link active">
+                <span class="left-nav-icon"
+                  ><i class="modus-icons notranslate">map</i></span
+                >
+                Map Example
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- .modus-sidebar -->
+
+        <div class="modus-content-rows">
+          <div class="modus-toolbar" data-modus-item="app-toolbar">
+            <div class="toolbar-dropdown">
+              <label for="RoutingProfile">Routing Profile</label>
+              <div class="btn-group me-5">
+                <button
+                  type="button"
+                  id="RoutingProfile"
+                  class="btn btn-sm btn-outline dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  RP Dropdown
+                </button>
+                <div class="dropdown-menu rp-menu">
+                  <h6 class="dropdown-header">ALK Profiles</h6>
+                  <a class="dropdown-item" href="#">Profile 1</a>
+                  <a class="dropdown-item" href="#">Profile 2</a>
+                  <a class="dropdown-item" href="#">Profile 3</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Company Profiles</h6>
+                  <a class="dropdown-item" href="#">Profile 1</a>
+                  <a class="dropdown-item" href="#">Profile 2</a>
+                  <a class="dropdown-item" href="#">Profile 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="toolbar-dropdown">
+              <label>Routing Profile</label>
+              <div class="btn-group me-5">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  RP Dropdown
+                </button>
+                <div class="dropdown-menu rp-menu">
+                  <h6 class="dropdown-header">ALK Profiles</h6>
+                  <a class="dropdown-item" href="#">Profile 1</a>
+                  <a class="dropdown-item" href="#">Profile 2</a>
+                  <a class="dropdown-item" href="#">Profile 3</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Company Profiles</h6>
+                  <a class="dropdown-item" href="#">Profile 1</a>
+                  <a class="dropdown-item" href="#">Profile 2</a>
+                  <a class="dropdown-item" href="#">Profile 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="toolbar-dropdown">
+              <label>Routing Profile</label>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  RP Dropdown
+                </button>
+                <div class="dropdown-menu rp-menu">
+                  <h6 class="dropdown-header">ALK Profiles</h6>
+                  <a class="dropdown-item" href="#">Profile 1</a>
+                  <a class="dropdown-item" href="#">Profile 2</a>
+                  <a class="dropdown-item" href="#">Profile 3</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Company Profiles</h6>
+                  <a class="dropdown-item" href="#">Profile 1</a>
+                  <a class="dropdown-item" href="#">Profile 2</a>
+                  <a class="dropdown-item" href="#">Profile 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .modus-toolbar -->
+          <div class="modus-content-columns">
+            <div class="modus-panel panel-lg">
+              <!-- Panel Header-->
+              <div class="panel-header">
+                <div class="position-absolute ms-2" style="left: 0">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      aria-label="Example Switch"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckChecked"
+                      checked />
+                  </div>
+                </div>
+                <h5>Panel Header</h5>
+                <div class="position-absolute me-2" style="right: 0">
+                  <button type="button" class="btn btn-icon-only btn-text-dark">
+                    <i class="modus-icons notranslate">unloaded_orders</i>
+                  </button>
+                </div>
+              </div>
+              <!-- .panel-header -->
+
+              <!-- Panel Body-->
+              <div class="panel-body">
+                <div class="static-container">
+                  <div class="d-flex">
+                    <button
+                      type="button"
+                      class="btn btn-icon-only btn-text-dark"
+                      data-bs-toggle="tooltip"
+                      title="Filter"
+                      >
+                      <i class="modus-icons notranslate" aria-hidden="true">filter</i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon-only btn-text-dark"
+                      data-bs-toggle="tooltip"
+                      title="Layout"
+                      >
+                      <i class="modus-icons notranslate" aria-hidden="true">layout</i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon-only btn-text-dark"
+                      data-bs-toggle="tooltip"
+                      title="Create Route">
+                      <i class="modus-icons notranslate" aria-hidden="true">create_route</i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon-only btn-text-dark"
+                      title="Finalize Route"
+                      disabled>
+                      <i class="modus-icons notranslate" aria-hidden="true">finalize_route</i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon-only btn-text-dark"
+                      disabled>
+                      <i class="modus-icons notranslate">trim_fake_orders</i>
+                    </button>
+                  </div>
+                  <div class="d-flex">
+                    <button
+                      type="button"
+                      class="btn btn-icon-only btn-text-dark align-self-end">
+                      <i class="modus-icons notranslate">sort</i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="scroll-container p-2">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Panel Content</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo asperiores doloremque dolorum qui ducimus quae
+                        eius alias perspiciatis, quod, libero fuga recusandae
+                        quidem molestias nobis non soluta. Doloremque, in iusto?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Panel Content</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo asperiores doloremque dolorum qui ducimus quae
+                        eius alias perspiciatis, quod, libero fuga recusandae
+                        quidem molestias nobis non soluta. Doloremque, in iusto?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Panel Content</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo asperiores doloremque dolorum qui ducimus quae
+                        eius alias perspiciatis, quod, libero fuga recusandae
+                        quidem molestias nobis non soluta. Doloremque, in iusto?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Panel Content</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo asperiores doloremque dolorum qui ducimus quae
+                        eius alias perspiciatis, quod, libero fuga recusandae
+                        quidem molestias nobis non soluta. Doloremque, in iusto?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Panel Content</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo asperiores doloremque dolorum qui ducimus quae
+                        eius alias perspiciatis, quod, libero fuga recusandae
+                        quidem molestias nobis non soluta. Doloremque, in iusto?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Panel Content</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo asperiores doloremque dolorum qui ducimus quae
+                        eius alias perspiciatis, quod, libero fuga recusandae
+                        quidem molestias nobis non soluta. Doloremque, in iusto?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .panel-body-->
+
+              <!-- Panel Footer-->
+              <div class="panel-footer small">Panel footer</div>
+            </div>
+            <!-- .modus-panel -->
+            <div class="modus-content">
+              <div id="map" class="h-100"></div>
+            </div>
+            <!-- .modus-content -->
+          </div>
+          <!-- .modus-content-columns -->
+        </div>
+        <!-- .modus-content-rows -->
+      </div>
+      <!-- .modus-body -->
+
+      <div class="modus-footer d-flex align-items-center">
+        <div class="small">&copy; Copyright {{< year >}}, Trimble Inc.</div>
+      </div>
+      <!-- .modus-footer -->
+    </div>
+    <!-- .modus-layout -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@trimblemaps/trimblemaps-js@3.18.0/trimblemaps.min.js"></script>
+    <script>
+      TrimbleMaps.APIKey = "68B06901AF7DA34884CE5FB7A202A743";
+
+      let map = (window.map = new TrimbleMaps.Map({
+        container: "map",
+        zoom: 12.5,
+        center: [-77.01866, 38.888],
+        hash: true,
+      }));
+
+      let nav = new TrimbleMaps.NavigationControl();
+      map.addControl(nav, "top-right");
+    </script>
+
+    <script>
+      // Get the DarkModeSwitch element
+      var darkModeSwitch = document.querySelector("#DarkModeSwitch");
+
+      // Listen for a click event on the DarkModeSwitch
+      darkModeSwitch.addEventListener("click", function () {
+        // Get the html element
+        var html = document.querySelector("html");
+
+        // Check the current theme
+        if (html.getAttribute("data-bs-theme") === "light") {
+          // If it's light, change it to dark
+          html.setAttribute("data-bs-theme", "dark");
+        } else {
+          // If it's not light (i.e., it's dark), change it to light
+          html.setAttribute("data-bs-theme", "light");
+        }
+      });
+    </script>
+    <script>
+      // Initialize Bootstrap tooltips
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]'),
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl, {
+          trigger: "hover",
+        });
+      });
+    </script>
+  </body>
+</html>
