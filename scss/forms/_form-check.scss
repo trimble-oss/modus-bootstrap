@@ -59,7 +59,7 @@
 
   &:focus {
     border-color: $form-check-input-checked-bg-color;
-    outline: 2px solid #019AEB;
+    outline: 2px solid #019aeb;
     outline-offset: 2px;
     box-shadow: $form-check-input-focus-box-shadow;
   }
@@ -187,12 +187,9 @@
 
 @if $enable-dark-mode {
   @include color-mode(dark) {
-    .form-switch .form-check-input:not(:checked):not(:focus) {
-      --#{$prefix}form-switch-bg: #{escape-svg($form-switch-bg-image-dark)};
-    }
     .form-check-input:checked {
-      background-color: #019AEB;
-      border-color: #019AEB;
+      background-color: #019aeb;
+      border-color: #019aeb;
     }
     .form-check-input:checked:hover {
       background-color: #217cbb;
@@ -209,7 +206,7 @@
       border-color: #90939f;
     }
     .form-check-input[type="checkbox"]:indeterminate {
-      background-color: #019AEB;
+      background-color: #019aeb;
     }
     .form-check-label {
       color: #b7b9c3;
@@ -217,13 +214,13 @@
   }
 }
 
-.form-switch {
-  .form-check-input {
+.form-switch { // stylelint-disable-line no-duplicate-selectors
+  .form-check-input { // stylelint-disable-line no-duplicate-selectors
     min-width: 2.125rem; // Modus Customized
-  }
 
-  .form-check-input:not(:checked) {
-    background-color: #90939f; // Modus Customized
+    &:not(:checked) {
+      background-color: #90939f; // Modus Customized
+    }
   }
 
   .form-check-label {
@@ -235,7 +232,7 @@
   background-size: 125%; // Modus Customized
 }
 
-.form-check-input[type="checkbox"]:indeterminate {
+.form-check-input[type="checkbox"]:indeterminate { // stylelint-disable-line no-duplicate-selectors
   background-size: 135%; // Modus Customized
 }
 
