@@ -32,6 +32,7 @@ Modus Bootstrap includes several button variants, each serving its own semantic 
 <button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-tertiary">Tertiary</button>
 <button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Special</button>
 {{< /buttons.inline >}}
 <button type="button" class="btn btn-link">Link</button>
 {{< /example >}}

@@ -3593,6 +3593,7 @@ input.form-control-lg[type=file] {
 }
 
 .btn-tertiary {
+  color: #252a2e;
   background-color: #cbcdd6;
 }
 
@@ -3619,6 +3620,15 @@ input.form-control-lg[type=file] {
   --bs-btn-active-color: #004470;
   --bs-btn-active-bg: rgba(0, 99, 163, .3);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn-warning {
+  color: #252a2e;
+  background-color: #fbad26;
+  border: 1px solid #b44e2a;
+}
+.btn-warning:focus {
+  background-color: #e49325;
 }
 
 [data-bs-theme=dark] .btn-primary {
