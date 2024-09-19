@@ -68,6 +68,7 @@
     pointer-events: none;
     background-color: var(--#{$prefix}pagination-disabled-bg);
     border-color: var(--#{$prefix}pagination-disabled-border-color);
+    opacity: 0.3; // Modus Customization
   }
 }
 
