@@ -7,6 +7,7 @@ toc: true
 aliases:
   - "/components/modal/"
   - "/components/modals/"
+  - "/docs/v2/components/modals/"
 ---
 
 ## How it works
