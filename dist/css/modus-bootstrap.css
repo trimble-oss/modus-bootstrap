@@ -3613,8 +3613,7 @@ input.form-control-lg[type=file] {
 
 .btn-text-primary {
   --bs-btn-color: #0063a3;
-  border-color: transparent !important;
-  --bs-btn-border-color: transparent;
+  --bs-btn-border-color: transparent !important;
   --bs-btn-hover-color: #0082d6;
   --bs-btn-hover-bg: rgba(0, 99, 163, .2);
   --bs-btn-active-color: #004470;
@@ -3626,9 +3625,11 @@ input.form-control-lg[type=file] {
   --bs-btn-color: #252a2e;
   --bs-btn-bg: #fbad26;
   --bs-btn-border-color: #b44e2a;
+  --bs-btn-hover-bg: #fec157;
+  --bs-btn-hover-border-color: #b44e2a;
 }
-.btn-warning:focus {
-  --bs-btn-bg: #e49325;
+.btn-warning:focus-visible {
+  background-color: #e49325;
 }
 
 [data-bs-theme=dark] .btn-primary {
