@@ -100,8 +100,8 @@ params:
   authors:              "Trimble"
   disableModusBootstrapCSS: true
 
-  current_version:      "2.0.1"
-  current_ruby_version: "2.0.1"
+  current_version:      "2.0.2"
+  current_ruby_version: "2.0.2"
   docs_version:         "v2"
   rfs_version:          "v10.0.0"
   github_org:           "https://github.com/trimble-oss"
