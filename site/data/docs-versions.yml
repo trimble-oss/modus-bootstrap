@@ -6,4 +6,4 @@
 - group: v2.x
   baseurl: "https://modus-bootstrap.trimble.com/"
   versions:
-    - v: "2.0.1"
+    - v: "2.0.2"
