@@ -4,9 +4,7 @@ title: Web App
 body_class: "h-100 w-100"
 html_class: "h-100 w-100"
 extra_js:
-  - src: "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap/dist/js/modus-layout.min.js"
-extra_css:
-  - src: "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.14.0/dist/transportation/fonts/modus-icons.css"
+  - src: "/docs/v2/dist/js/modus-layout.min.js"
 sitemap:
   disable: true
 ---
@@ -19,7 +17,8 @@ sitemap:
   margin: 0 !important;
 }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.14.0/dist/transportation/fonts/modus-icons.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@trimblemaps/trimblemaps-js@3.18.0/trimblemaps.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.15.0/dist/transportation/fonts/modus-icons.css" />
 
 <div class="modus-layout d-flex flex-column margin-0 h-100 overflow-hidden">
       <nav class="navbar navbar-expand-sm flex-nowrap modus-header">
@@ -357,6 +356,8 @@ sitemap:
       });
     </script>
     <script>
+      window.onload = function() {
+        setTimeout(function() {
       // Initialize Bootstrap tooltips
       var tooltipTriggerList = [].slice.call(
         document.querySelectorAll('[data-bs-toggle="tooltip"]'),
@@ -366,6 +367,8 @@ sitemap:
           trigger: "hover",
         });
       });
+    }, 3000); // Delay execution by 2000 milliseconds (2 seconds)
+  };
     </script>
   </body>
 </html>
