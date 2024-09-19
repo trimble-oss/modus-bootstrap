@@ -3593,8 +3593,8 @@ input.form-control-lg[type=file] {
 }
 
 .btn-tertiary {
-  color: #252a2e;
-  background-color: #cbcdd6;
+  --bs-btn-color: #252a2e;
+  --bs-bgn-bg: #cbcdd6;
 }
 
 .btn-outline-primary {
@@ -3623,12 +3623,12 @@ input.form-control-lg[type=file] {
 }
 
 .btn-warning {
-  color: #252a2e;
-  background-color: #fbad26;
-  border: 1px solid #b44e2a;
+  --bs-btn-color: #252a2e;
+  --bs-btn-bg: #fbad26;
+  --bs-btn-border-color: #b44e2a;
 }
 .btn-warning:focus {
-  background-color: #e49325;
+  --bs-btn-bg: #e49325;
 }
 
 [data-bs-theme=dark] .btn-primary {
@@ -3647,43 +3647,43 @@ input.form-control-lg[type=file] {
   --bs-btn-border-color: #004f83;
 }
 [data-bs-theme=dark] .btn-tertiary {
-  color: #171c1e;
-  background-color: #cbcdd6;
-  border-color: #cbcdd6;
+  --bs-btn-color: #171c1e;
+  --bs-btn-bg: #cbcdd6;
+  --bs-btn-border-color: #cbcdd6;
 }
 [data-bs-theme=dark] .btn-danger {
-  background-color: #da212c;
-  border-color: #da212c;
+  --bs-btn-bg: #da212c;
+  --bs-btn-border-color: #da212c;
 }
 [data-bs-theme=dark] .btn-outline-primary:hover,
 [data-bs-theme=dark] .btn-outline-primary.hover {
-  color: #20b2ff;
-  background-color: rgba(0, 154, 236, 0.15);
-  border-color: #20b2ff;
+  --bs-btn-color: #20b2ff;
+  --bs-btn-bg: rgba(0, 154, 236, .15);
+  --bs-btn-border-color: #20b2ff;
 }
 [data-bs-theme=dark] .btn-outline-primary:active,
 [data-bs-theme=dark] .btn-outline-primary.active {
-  background-color: #004f83;
+  --bs-btn-bg: #004f83;
 }
 [data-bs-theme=dark] .btn-outline-secondary:active,
 [data-bs-theme=dark] .btn-outline-secondary.active {
-  background-color: #4f5459;
+  --bs-btn-bg: #4f5459;
 }
 [data-bs-theme=dark] .btn-outline-secondary {
-  color: #f1f1f6 !important;
-  border-color: #f1f1f6 !important;
+  --bs-btn-color: #f1f1f6 !important;
+  --bs-btn-border-color: #f1f1f6 !important;
 }
 [data-bs-theme=dark] .btn-outline-secondary:hover,
 [data-bs-theme=dark] .btn-outline-secondary.hover {
-  background-color: rgba(198, 202, 219, 0.15);
+  --bs-btn-bg: rgba(198, 202, 219, .15);
 }
 [data-bs-theme=dark] .btn-outline-tertiary:hover,
 [data-bs-theme=dark] .btn-outline-tertiary.hover {
-  background-color: rgba(95, 105, 132, 0.15);
+  --bs-btn-bg: rgba(95, 105, 132, .15);
 }
 [data-bs-theme=dark] .btn-outline-danger:hover,
 [data-bs-theme=dark] .btn-outline-danger.hover {
-  background-color: rgba(231, 20, 33, 0.15);
+  --bs-btn-bg: rgba(231, 20, 33, .15);
 }
 
 .fade {

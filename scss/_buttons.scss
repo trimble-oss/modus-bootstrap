@@ -277,8 +277,8 @@
 }
 
 .btn-tertiary {
-  color: #252a2e;
-  background-color: #cbcdd6;
+  --bs-btn-color: #252a2e;
+  --bs-bgn-bg: #cbcdd6;
 }
 
 .btn-outline-primary {
@@ -297,8 +297,7 @@
 
 .btn-text-primary {
   --bs-btn-color: #0063a3;
-  border-color: transparent !important;
-  --bs-btn-border-color: transparent;
+  --bs-btn-border-color: transparent !important;
   --bs-btn-hover-color: #0082d6;
   --bs-btn-hover-bg: rgba(0, 99, 163, .2);
   --bs-btn-active-color: #004470;
@@ -307,12 +306,12 @@
 }
 
 .btn-warning {
-  color: #252a2e;
-  background-color: #fbad26;
-  border: 1px solid #b44e2a;
+  --bs-btn-color: #252a2e;
+  --bs-btn-bg: #fbad26;
+  --bs-btn-border-color: #b44e2a;
 
   &:focus {
-    background-color: #e49325;
+    --bs-btn-bg: #e49325;
   }
 }
 
@@ -339,50 +338,50 @@
   }
 
   .btn-tertiary {
-    color: #171c1e;
-    background-color: #cbcdd6;
-    border-color: #cbcdd6;
+    --bs-btn-color: #171c1e;
+    --bs-btn-bg: #cbcdd6;
+    --bs-btn-border-color: #cbcdd6;
   }
 
   .btn-danger {
-    background-color: #da212c;
-    border-color: #da212c;
+    --bs-btn-bg: #da212c;
+    --bs-btn-border-color: #da212c;
   }
 
   .btn-outline-primary:hover,
   .btn-outline-primary.hover {
-    color: #20b2ff;
-    background-color: rgba(0, 154, 236, .15);
-    border-color: #20b2ff;
+    --bs-btn-color: #20b2ff;
+    --bs-btn-bg: rgba(0, 154, 236, .15);
+    --bs-btn-border-color: #20b2ff;
   }
 
   .btn-outline-primary:active,
   .btn-outline-primary.active {
-    background-color: #004f83;
+    --bs-btn-bg: #004f83;
   }
 
   .btn-outline-secondary:active,
   .btn-outline-secondary.active {
-    background-color: #4f5459;
+    --bs-btn-bg: #4f5459;
   }
 
   .btn-outline-secondary {
-    color: #f1f1f6 !important;
-    border-color: #f1f1f6 !important;
+    --bs-btn-color: #f1f1f6 !important;
+    --bs-btn-border-color: #f1f1f6 !important;
   }
 
   .btn-outline-secondary:hover,
   .btn-outline-secondary.hover {
-    background-color: rgba(198, 202, 219, .15);
+    --bs-btn-bg: rgba(198, 202, 219, .15);
   }
 
   .btn-outline-tertiary:hover,
   .btn-outline-tertiary.hover {
-    background-color: rgba(95, 105, 132, .15);
+    --bs-btn-bg: rgba(95, 105, 132, .15);
   }
 
   .btn-outline-danger:hover,
   .btn-outline-danger.hover {
-    background-color: rgba(231, 20, 33, .15);
+    --bs-btn-bg: rgba(231, 20, 33, .15);
   }
 }
