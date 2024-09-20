@@ -7,6 +7,7 @@ toc: true
 aliases:
   - "/components/badge/"
   - "/components/badges/"
+  - "/docs/v2/components/badges/"
 ---
 
 ## Examples
