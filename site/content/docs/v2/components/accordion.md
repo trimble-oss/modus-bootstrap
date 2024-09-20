@@ -7,6 +7,7 @@ aliases:
   - "/components/"
   - "/components/accordions/"
   - "/docs/v2/components/"
+  - "/docs/v2/components/accordions/"
 toc: true
 ---
 
