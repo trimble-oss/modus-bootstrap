@@ -4235,8 +4235,8 @@ input.form-control-lg[type=file] {
   --bs-nav-link-padding-x: 2rem;
   --bs-nav-link-padding-y: 0.655rem;
   --bs-nav-link-font-size: 0.875rem;
-  --bs-nav-link-font-weight: 600;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-font-weight: 700;
+  --bs-nav-link-color: var(--bs-body);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -4277,7 +4277,7 @@ input.form-control-lg[type=file] {
 .nav-tabs {
   --bs-nav-tabs-border-width: 1px;
   --bs-nav-tabs-border-color: transparent;
-  --bs-nav-tabs-border-radius: 0.125rem;
+  --bs-nav-tabs-border-radius: 0.25rem;
   --bs-nav-tabs-link-hover-border-color: transparent;
   --bs-nav-tabs-link-active-color: #217cbb;
   --bs-nav-tabs-link-active-bg: transparent;
@@ -4286,17 +4286,15 @@ input.form-control-lg[type=file] {
 }
 .nav-tabs .nav-link {
   margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
-  text-transform: uppercase;
   background: none;
   border: var(--bs-nav-tabs-border-width) solid transparent;
   border-top-left-radius: var(--bs-nav-tabs-border-radius);
   border-top-right-radius: var(--bs-nav-tabs-border-radius);
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  background-color: #dcedf9;
+  background-color: #e0e1e9;
   isolation: isolate;
   border-color: var(--bs-nav-tabs-link-hover-border-color);
-  border-bottom: 0.1875rem solid #dcedf9;
 }
 .nav-tabs .nav-link.disabled, .nav-tabs .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -4309,7 +4307,6 @@ input.form-control-lg[type=file] {
   color: var(--bs-nav-tabs-link-active-color);
   background-color: var(--bs-nav-tabs-link-active-bg);
   border-color: var(--bs-nav-tabs-link-active-border-color);
-  border-bottom: 0.1875rem solid #217cbb;
 }
 .nav-tabs .dropdown-menu {
   margin-top: calc(-1 * var(--bs-nav-tabs-border-width));
@@ -4396,30 +4393,39 @@ input.form-control-lg[type=file] {
 
 .nav-tabs .nav-item .nav-link:not(.active) {
   color: #252a2e;
+  border: 1px solid transparent;
 }
 
-.nav-tabs .nav-item:hover .nav-link,
 .nav-tabs .nav-item .nav-link.active {
-  color: #217cbb;
+  color: #fff !important;
+  background-color: #217cbb !important;
 }
 
-[data-bs-theme=dark] .nav-tabs .nav-link:not(.active) {
-  color: #f1f1f6;
+.nav-tabs .nav-item .nav-link:active {
+  color: #fff !important;
+  background-color: #0063a3 !important;
 }
+
 [data-bs-theme=dark] .nav-tabs .nav-link.active,
 [data-bs-theme=dark] .nav-tabs .nav-item.show .nav-link {
-  color: #0c77be;
   border-top-color: transparent;
   border-right-color: transparent;
   border-left-color: transparent;
 }
-[data-bs-theme=dark] .nav-tabs .nav-link:hover {
-  color: #f1f1f6;
-  background-color: #464b52 !important;
-  border-bottom-color: #6a6e79 !important;
+[data-bs-theme=dark] .nav-tabs .nav-link {
+  color: #fff !important;
 }
-[data-bs-theme=dark] .nav-tabs .nav-link:focus {
-  background-color: #464b52 !important;
+[data-bs-theme=dark] .nav-tabs .nav-link.active {
+  background-color: rgba(1, 154, 235, 0.3) !important;
+  border: 1px solid #019aeb !important;
+}
+[data-bs-theme=dark] .nav-tabs .nav-link:active {
+  background-color: #019aeb !important;
+  border-bottom-color: #019aeb;
+}
+[data-bs-theme=dark] .nav-tabs .nav-link:focus, [data-bs-theme=dark] .nav-tabs .nav-link:hover {
+  background-color: #464b52;
+  border-bottom-color: #464b52;
 }
 
 .navbar {
@@ -4479,7 +4485,7 @@ input.form-control-lg[type=file] {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.655rem;
   --bs-nav-link-font-size: 0.875rem;
-  --bs-nav-link-font-weight: 600;
+  --bs-nav-link-font-weight: 700;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
@@ -5424,6 +5430,7 @@ input.form-control-lg[type=file] {
   pointer-events: none;
   background-color: var(--bs-pagination-disabled-bg);
   border-color: var(--bs-pagination-disabled-border-color);
+  opacity: 0.3;
 }
 
 .page-item:not(:first-child) .page-link {
