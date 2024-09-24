@@ -101,7 +101,7 @@ Toggle a working modal demo by clicking the button below. It will slide down and
         <p>Woo-hoo, you're reading this text in a modal!</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
@@ -132,7 +132,7 @@ Toggle a working modal demo by clicking the button below. It will slide down and
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
@@ -155,7 +155,7 @@ When backdrop is set to static, the modal will not close when clicking outside o
         <p>I will not close if you click outside of me. Don't even try to press escape key.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Understood</button>
       </div>
     </div>
@@ -186,7 +186,7 @@ When backdrop is set to static, the modal will not close when clicking outside o
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Understood</button>
       </div>
     </div>
@@ -209,7 +209,7 @@ When modals become too long for the user's viewport or device, they scroll indep
         <p>This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text the modal, we use an inline style set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will move the modal as needed.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
@@ -237,7 +237,7 @@ You can also create a scrollable modal that allows scroll the modal body by addi
         <p>This content should appear at the bottom after you scroll.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
@@ -272,7 +272,7 @@ Add `.modal-dialog-centered` to `.modal-dialog` to vertically center the modal.
         <p>This is a vertically centered modal.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
@@ -292,7 +292,7 @@ Add `.modal-dialog-centered` to `.modal-dialog` to vertically center the modal.
         <p>Just like that.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
@@ -339,7 +339,7 @@ Add `.modal-dialog-centered` to `.modal-dialog` to vertically center the modal.
         <p><a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">that link</a> have tooltips on hover.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
@@ -402,7 +402,7 @@ Utilize the Bootstrap grid system within a modal by nesting `.container-fluid` w
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
@@ -663,6 +663,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenLg">Full screen below lg</button>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXl">Full screen below xl</button>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXxl">Full screen below xxl</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenToggle">Full screen toggle</button>
 </div>
 
 ```html
@@ -683,7 +684,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -700,7 +701,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -717,7 +718,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -734,7 +735,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -751,7 +752,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -768,7 +769,39 @@ Another override is the option to pop up a modal that covers the user viewport, 
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalFullscreenToggle" tabindex="-1" aria-labelledby="exampleModalFullscreenToggleLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="exampleModalFullscreenToggleLabel">Full screen toggle</h1>
+        <div class="d-flex">
+          <button type="button" class="btn-close btn-fullscreen me-2" aria-label="Toggle" id="fullscreenToggle">
+            <i class="modus-icons menu-btn notranslate" aria-hidden="true">expand</i>
+          </button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="modal-body">
+        ...
+      <style>
+        .btn-fullscreen{background-image:none;}
+      </style>
+      <script>
+      // clicking on #fullscreenToggle should add the `modal-fullscreen` class to the `modal-dialog` div within this modal
+      document.getElementById('fullscreenToggle').addEventListener('click', function() {
+      var modalDialog = document.querySelector('#exampleModalFullscreenToggle .modal-dialog');
+      modalDialog.classList.toggle('modal-fullscreen');
+      });
+      </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
