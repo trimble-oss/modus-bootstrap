@@ -169,14 +169,14 @@ $form-range-thumb-bg:             $white;
 $nav-link-padding-y:                .655rem !default;
 $nav-link-padding-x:                2rem;
 $nav-link-font-size:                .875rem;
-$nav-link-font-weight:              600;
-// $nav-link-color:                    $body-color;
+$nav-link-font-weight:              700; // Modus Customized
+$nav-link-color:                    var(--bs-body) !default;
 $nav-link-transition:               color .1s ease-in-out, background-color .1s ease-in-out, border-color .1s ease-in-out !default;
 $nav-link-disabled-color:           #6c757d; // Modus Customized
 
 $nav-tabs-border-color:             transparent;
 $nav-tabs-border-width:             1px;
-$nav-tabs-border-radius:            .125rem; // Modus Customized
+$nav-tabs-border-radius:            .25rem; // Modus Customized 4px
 $nav-tabs-link-active-color:        $col_blue_light;
 $nav-tabs-link-hover-border-color:  transparent;
 $nav-tabs-link-active-bg:           transparent; // Modus Customized

@@ -70,18 +70,16 @@
 
   .nav-link {
     margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
-    text-transform: uppercase; // Modus Customized
     background: none;
     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
     @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
 
     &:hover,
     &:focus {
-      background-color: #dcedf9; // Modus Customized
+      background-color: #e0e1e9; // Modus Customized -Neutral-Gray-0
       // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
       isolation: isolate;
       border-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
-      border-bottom: .1875rem solid #dcedf9; // Modus Customized
     }
 
     &.disabled,
@@ -98,7 +96,6 @@
     color: var(--#{$prefix}nav-tabs-link-active-color);
     background-color: var(--#{$prefix}nav-tabs-link-active-bg);
     border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
-    border-bottom: .1875rem solid #217cbb; // Modus Customized
   }
 
   .dropdown-menu {
@@ -227,35 +224,52 @@
 
 .nav-tabs .nav-item .nav-link:not(.active) {
   color: #252a2e;
+  border: 1px solid transparent;
 }
 
-.nav-tabs .nav-item:hover .nav-link,
+// Active (selected) tab
 .nav-tabs .nav-item .nav-link.active {
-  color: #217cbb;
+  color: #fff !important;
+  background-color: #217cbb !important;
+}
+
+// Pressed tab
+.nav-tabs .nav-item .nav-link:active {
+  color: #fff !important;
+  background-color: #0063a3 !important;
 }
 
 @if $enable-dark-mode {
   @include color-mode(dark) {
-    .nav-tabs .nav-link:not(.active) {
-      color: #f1f1f6;
-    }
-
     .nav-tabs .nav-link.active,
     .nav-tabs .nav-item.show .nav-link {
-      color: #0c77be;
       border-top-color: transparent;
       border-right-color: transparent;
       border-left-color: transparent;
     }
 
-    .nav-tabs .nav-link:hover {
-      color: #f1f1f6;
-      background-color: #464b52 !important;
-      border-bottom-color: #6a6e79 !important;
-    }
+    .nav-tabs {
+      border-bottom: 1px solid #464b52;
 
-    .nav-tabs .nav-link:focus {
-      background-color: #464b52 !important;
+      .nav-link {
+        color: #fff !important;
+
+        &.active {
+          background-color: rgba(1, 154, 235, .3) !important;
+          border: 1px solid #019aeb !important;
+        }
+
+        &:active {
+          background-color: #019aeb !important;
+          border-bottom-color: #019aeb;
+        }
+
+        &:focus,
+        &:hover {
+          background-color: #464b52;
+          border-bottom-color: #464b52;
+        }
+      }
     }
   }
 }
