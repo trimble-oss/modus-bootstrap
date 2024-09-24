@@ -4412,6 +4412,9 @@ input.form-control-lg[type=file] {
   border-right-color: transparent;
   border-left-color: transparent;
 }
+[data-bs-theme=dark] .nav-tabs {
+  border-bottom: 1px solid #464b52;
+}
 [data-bs-theme=dark] .nav-tabs .nav-link {
   color: #fff !important;
 }
