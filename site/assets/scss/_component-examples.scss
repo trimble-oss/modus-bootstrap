@@ -402,3 +402,7 @@
 .bd-content .bd-code-snippet {
   margin-bottom: 1rem;
 }
+
+.bd-example.bg-transparent {
+  background-image: repeating-linear-gradient(-45deg, rgba(133, 133, 133, .1) 0, rgba(133, 133, 133, .1) 15px, transparent 15px, transparent 30px) !important;
+}

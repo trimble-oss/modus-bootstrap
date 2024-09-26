@@ -4280,21 +4280,22 @@ input.form-control-lg[type=file] {
 }
 .nav-tabs .nav-link {
   margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
-  background: none;
+  background-color: var(--bs-body-bg);
   border: var(--bs-nav-tabs-border-width) solid transparent;
   border-top-left-radius: var(--bs-nav-tabs-border-radius);
   border-top-right-radius: var(--bs-nav-tabs-border-radius);
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   background-color: #e0e1e9;
+  color: var(--bs-body-color);
   isolation: isolate;
   border-color: var(--bs-nav-tabs-link-hover-border-color);
 }
 .nav-tabs .nav-link.disabled, .nav-tabs .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
-  background-color: transparent;
+  background-color: var(--bs-body-bg);
   border-color: transparent;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
@@ -4386,7 +4387,6 @@ input.form-control-lg[type=file] {
 }
 
 .nav-tabs .nav-item .nav-link:not(.active) {
-  color: #252a2e;
   border: 1px solid transparent;
 }
 
@@ -4400,6 +4400,11 @@ input.form-control-lg[type=file] {
   background-color: #0063a3 !important;
 }
 
+.nav-tabs .nav-item .nav-link:not(.active):not(:active):not(:hover) {
+  color: var(--bs-body-color);
+  border-bottom-color: #cbcdd6;
+}
+
 [data-bs-theme=dark] .nav-tabs .nav-link.active,
 [data-bs-theme=dark] .nav-tabs .nav-item.show .nav-link {
   border-top-color: transparent;
@@ -4410,7 +4415,8 @@ input.form-control-lg[type=file] {
   border-bottom: 1px solid #464b52;
 }
 [data-bs-theme=dark] .nav-tabs .nav-link {
-  color: #fff !important;
+  color: var(--bs-body-color);
+  border-bottom-color: #464b52 !important;
 }
 [data-bs-theme=dark] .nav-tabs .nav-link.active {
   background-color: rgba(1, 154, 235, 0.3) !important;
@@ -5576,10 +5582,26 @@ input.form-control-lg[type=file] {
   font-size: 1rem;
 }
 
+.badge.bg-danger {
+  background-color: #da212c;
+}
+
+.badge.bg-warning {
+  --bs-badge--color: #252a2e;
+  background-color: #fbad26;
+}
+
 [data-bs-theme=dark] .badge.bg-primary,
 [data-bs-theme=dark] .badge.text-bg-primary {
   --bs-primary-rgb: 1, 154, 235;
   color: #171c1e !important;
+}
+[data-bs-theme=dark] .badge.bg-high-contrast {
+  --bs-badge-color: #171c1e;
+  background-color: #f1f1f6;
+}
+[data-bs-theme=dark] .badge.bg-success {
+  background-color: #1e8a44;
 }
 
 .alert {
