@@ -60,10 +60,13 @@ You can also replace the `.badge` class with a few more utilities without a coun
 Set a `background-color` with contrasting foreground `color` with [our `.text-bg-{color}` helpers]({{< docsref "helpers/color-background" >}}). Previously it was required to manually pair your choice of [`.text-{color}`]({{< docsref "/utilities/colors" >}}) and [`.bg-{color}`]({{< docsref "/utilities/background" >}}) utilities for styling, which you still may use if you prefer.
 
 {{< example >}}
-{{< badge.inline >}}
-{{- range (index $.Site.Data "theme-colors") }}
-<span class="badge text-bg-{{ .name }}">{{ .name | title }}</span>{{- end -}}
-{{< /badge.inline >}}
+<span class="badge text-bg-primary">Primary</span>
+<span class="badge text-bg-secondary">Secondary</span>
+<span class="badge text-bg-tertiary">Tertiary</span>
+<span class="badge text-bg-success">Success</span>
+<span class="badge text-bg-danger">Danger</span>
+<span class="badge text-bg-warning">Warning</span>
+<span class="badge bg-high-contrast">High Contrast</span>
 {{< /example >}}
 
 {{< callout info >}}
@@ -77,8 +80,8 @@ Use the `.badge-pill` modifier class to make badges more rounded
 <div class="mb-3">
   <span class="badge badge-pill bg-primary">1</span>
   <span class="badge badge-pill bg-secondary">2</span>
-  <span class="badge badge-pill bg-tertiary">3</span>
-  <span class="badge badge-pill bg-dark">4</span>
+  <span class="badge badge-pill text-bg-tertiary">3</span>
+  <span class="badge badge-pill bg-high-contrast">4</span>
   <span class="badge badge-pill bg-success">5</span>
   <span class="badge badge-pill bg-danger">6</span>
   <span class="badge badge-pill bg-warning">7</span>
@@ -91,6 +94,16 @@ By default Badges scale according to their immediate parent element but there ar
 <span class="badge badge-sm bg-primary">Small</span>
 <span class="badge bg-primary">Default</span>
 <span class="badge badge-lg bg-primary">Large</span>
+
+## Text Badges
+
+{{< example >}}
+<span class="badge text-primary">Primary</span>
+<span class="badge text-secondary">Secondary</span>
+<span class="badge text-body">High Contrast</span>
+<span class="badge text-success">Success</span>
+<span class="badge text-danger">Danger</span>
+{{< /example >}}
 
 ## CSS
 
