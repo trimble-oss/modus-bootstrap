@@ -70,13 +70,14 @@
 
   .nav-link {
     margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
-    background: none;
+    background-color: var(--#{$prefix}body-bg); // Modus Customized
     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
     @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
 
     &:hover,
     &:focus {
       background-color: #e0e1e9; // Modus Customized -Neutral-Gray-0
+      color: var(--bs-body-color); // Modus Customized
       // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
       isolation: isolate;
       border-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
@@ -85,9 +86,9 @@
     &.disabled,
     &:disabled {
       color: var(--#{$prefix}nav-link-disabled-color);
-      background-color: transparent;
+      background-color: var(--#{$prefix}body-bg); // Modus Customized
       border-color: transparent;
-      opacity: .3; // Modus Customized
+      opacity: .4; // Modus Customized
     }
   }
 
@@ -223,7 +224,6 @@
 }
 
 .nav-tabs .nav-item .nav-link:not(.active) {
-  color: #252a2e;
   border: 1px solid transparent;
 }
 
@@ -239,6 +239,11 @@
   background-color: #0063a3 !important;
 }
 
+.nav-tabs .nav-item .nav-link:not(.active):not(:active):not(:hover) {
+  color: var(--bs-body-color);
+  border-bottom-color: #cbcdd6;
+}
+
 @if $enable-dark-mode {
   @include color-mode(dark) {
     .nav-tabs .nav-link.active,
@@ -252,7 +257,8 @@
       border-bottom: 1px solid #464b52;
 
       .nav-link {
-        color: #fff !important;
+        color: var(--bs-body-color);
+        border-bottom-color: #464b52 !important;
 
         &.active {
           background-color: rgba(1, 154, 235, .3) !important;

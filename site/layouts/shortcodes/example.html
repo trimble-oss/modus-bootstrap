@@ -53,3 +53,20 @@
 {{- highlight (trim $content "\n") $lang "" -}}
 {{- end -}}
 </div>
+<script>
+  window.onload = function() {
+    var searchParams = new URLSearchParams(window.location.search);
+    var exampleClass = {
+      'transparent': 'bg-transparent',
+      'dark': 'bg-dark',
+      'white': 'bg-white'
+    };
+    for (var key in exampleClass) {
+      if (searchParams.has('example') && searchParams.get('example') === key) {
+        document.querySelectorAll('.bd-example').forEach(function (el) {
+          el.classList.add(exampleClass[key]);
+        });
+      }
+    }
+  };
+</script>
