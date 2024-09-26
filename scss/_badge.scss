@@ -52,10 +52,28 @@
   font-size: 1rem;
 }
 
+.badge.bg-danger {
+  background-color: #da212c;
+}
+
+.badge.bg-warning {
+  --bs-badge--color: #252a2e;
+  background-color: #fbad26;
+}
+
 @include color-mode(dark) {
   .badge.bg-primary,
   .badge.text-bg-primary {
     --bs-primary-rgb: 1, 154, 235;
     color: #171c1e !important;
+  }
+
+  .badge.bg-high-contrast {
+    --bs-badge-color: #171c1e;
+    background-color: #f1f1f6;
+  }
+
+  .badge.bg-success {
+    background-color: #1e8a44;
   }
 }
