@@ -54,7 +54,6 @@
 {{- end -}}
 </div>
 <script>
-  window.onload = function() {
     var searchParams = new URLSearchParams(window.location.search);
     var exampleClass = {
       'transparent': 'bg-transparent',
@@ -67,6 +66,5 @@
           el.classList.add(exampleClass[key]);
         });
       }
-    }
-  };
+    };
 </script>
