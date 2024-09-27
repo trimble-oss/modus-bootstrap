@@ -77,8 +77,8 @@
 
 .card-title {
   margin-bottom: var(--#{$prefix}card-title-spacer-y);
-  color: var(--#{$prefix}card-title-color);
   font-weight: 600; // Modus Customized
+  color: var(--#{$prefix}card-title-color);
 }
 
 .card-subtitle {
@@ -196,8 +196,7 @@
     // The child selector allows nested `.card` within `.card-group`
     // to display properly.
     > .card {
-      // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
-      flex: 1 0 0%;
+      flex: 1 0 0;
       margin-bottom: 0;
 
       + .card {

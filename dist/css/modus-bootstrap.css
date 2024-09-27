@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* Modus Bootstrap  v2.0.4 (https://modus-bootstrap.trimble.com/)
+* Modus Bootstrap  v2.0.5 (https://modus-bootstrap.trimble.com/)
  * Copyright 2024 Trimble Inc.
  * Licensed under MIT (https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE)
  * This a fork of Bootstrap: Initial license below
@@ -164,7 +164,7 @@
   --bs-border-radius: .25rem;
   --bs-border-radius-sm: .125rem;
   --bs-border-radius-lg: .25rem;
-  --bs-border-radius-xl: 0.5rem;
+  --bs-border-radius-xl: .5rem;
   --bs-border-radius-xxl: 1rem;
   --bs-border-radius-2xl: var(--bs-border-radius-xxl);
   --bs-border-radius-pill: 50rem;
@@ -894,7 +894,7 @@ progress {
 }
 
 .col {
-  flex: 1 0 0%;
+  flex: 1 0 0;
 }
 
 .row-cols-auto > * {
@@ -1103,7 +1103,7 @@ progress {
 
 @media (min-width: 576px) {
   .col-sm {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
   .row-cols-sm-auto > * {
     flex: 0 0 auto;
@@ -1272,7 +1272,7 @@ progress {
 }
 @media (min-width: 768px) {
   .col-md {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
   .row-cols-md-auto > * {
     flex: 0 0 auto;
@@ -1441,7 +1441,7 @@ progress {
 }
 @media (min-width: 992px) {
   .col-lg {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
   .row-cols-lg-auto > * {
     flex: 0 0 auto;
@@ -1610,7 +1610,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .col-xl {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
   .row-cols-xl-auto > * {
     flex: 0 0 auto;
@@ -1779,7 +1779,7 @@ progress {
 }
 @media (min-width: 1600px) {
   .col-xxl {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
   .row-cols-xxl-auto > * {
     flex: 0 0 auto;
@@ -4286,8 +4286,8 @@ input.form-control-lg[type=file] {
   border-top-right-radius: var(--bs-nav-tabs-border-radius);
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  background-color: #e0e1e9;
   color: var(--bs-body-color);
+  background-color: #e0e1e9;
   isolation: isolate;
   border-color: var(--bs-nav-tabs-link-hover-border-color);
 }
@@ -4940,8 +4940,8 @@ input.form-control-lg[type=file] {
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
-  color: var(--bs-card-title-color);
   font-weight: 600;
+  color: var(--bs-card-title-color);
 }
 
 .card-subtitle {
@@ -5033,7 +5033,7 @@ input.form-control-lg[type=file] {
     flex-flow: row wrap;
   }
   .card-group > .card {
-    flex: 1 0 0%;
+    flex: 1 0 0;
     margin-bottom: 0;
   }
   .card-group > .card + .card {

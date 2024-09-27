@@ -1,5 +1,5 @@
 /*!
-* Modus Bootstrap Utilities v2.0.4 (https://modus-bootstrap.trimble.com/)
+* Modus Bootstrap Utilities v2.0.5 (https://modus-bootstrap.trimble.com/)
  * Copyright 2024 Trimble Inc.
  * Licensed under MIT (https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE)
  * This a fork of Bootstrap: Initial license below
@@ -111,7 +111,7 @@
   --bs-border-radius: .25rem;
   --bs-border-radius-sm: .125rem;
   --bs-border-radius-lg: .25rem;
-  --bs-border-radius-xl: 0.5rem;
+  --bs-border-radius-xl: .5rem;
   --bs-border-radius-xxl: 1rem;
   --bs-border-radius-2xl: var(--bs-border-radius-xxl);
   --bs-border-radius-pill: 50rem;

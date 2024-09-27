@@ -76,8 +76,8 @@
 
     &:hover,
     &:focus {
-      background-color: #e0e1e9; // Modus Customized -Neutral-Gray-0
       color: var(--bs-body-color); // Modus Customized
+      background-color: #e0e1e9; // Modus Customized -Neutral-Gray-0
       // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
       isolation: isolate;
       border-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
