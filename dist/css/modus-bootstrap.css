@@ -3050,7 +3050,7 @@ input.form-control-lg[type=file] {
   font-size: 0.75rem;
   color: #fff;
   background-color: var(--bs-success);
-  border-radius: 0.125rem;
+  border-radius: var(--bs-border-radius);
 }
 
 .was-validated :valid ~ .valid-feedback,
@@ -3120,7 +3120,7 @@ input.form-control-lg[type=file] {
   font-size: 0.75rem;
   color: #fff;
   background-color: var(--bs-danger);
-  border-radius: 0.125rem;
+  border-radius: var(--bs-border-radius);
 }
 
 .was-validated :invalid ~ .invalid-feedback,
@@ -6719,7 +6719,7 @@ input.form-control-lg[type=file] {
   --bs-tooltip-font-size: 0.75rem;
   --bs-tooltip-color: #fff;
   --bs-tooltip-bg: #585c65;
-  --bs-tooltip-border-radius: 0.125rem;
+  --bs-tooltip-border-radius: var(--bs-border-radius);
   --bs-tooltip-opacity: 0.95;
   --bs-tooltip-arrow-width: 0.8rem;
   --bs-tooltip-arrow-height: 0.4rem;
