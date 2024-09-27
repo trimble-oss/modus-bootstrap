@@ -241,7 +241,14 @@ $accordion-button-wide-active-icon: url("data:image/svg+xml,<svg xmlns='http://w
 
 // Tooltips
 
-$tooltip-border-radius:             $border-radius-sm;
+$tooltip-font-size:                 .75rem !default;
+$tooltip-color:                     #fff !default; // Modus Customized
+$tooltip-bg:                        #585c65 !default; // Modus Customized
+$tooltip-opacity:                   0.95 !default;
+
+// Popovers
+
+$popover-header-bg:                 transparent !default; // Modus Customized
 
 // Chips
 
