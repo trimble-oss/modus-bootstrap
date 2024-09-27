@@ -78,11 +78,13 @@
 .card-title {
   margin-bottom: var(--#{$prefix}card-title-spacer-y);
   color: var(--#{$prefix}card-title-color);
+  font-weight: 600; // Modus Customized
 }
 
 .card-subtitle {
   margin-top: calc(-.5 * var(--#{$prefix}card-title-spacer-y)); // stylelint-disable-line function-disallowed-list
   margin-bottom: 0;
+  font-weight: 700;
   color: var(--#{$prefix}card-subtitle-color);
 }
 
