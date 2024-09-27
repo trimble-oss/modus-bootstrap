@@ -164,8 +164,8 @@
   --bs-border-radius: .25rem;
   --bs-border-radius-sm: .125rem;
   --bs-border-radius-lg: .25rem;
-  --bs-border-radius-xl: 1rem;
-  --bs-border-radius-xxl: 2rem;
+  --bs-border-radius-xl: 0.5rem;
+  --bs-border-radius-xxl: 1rem;
   --bs-border-radius-2xl: var(--bs-border-radius-xxl);
   --bs-border-radius-pill: 50rem;
   --bs-box-shadow: 0 0 4px rgba(37, 42, 46, .3);
@@ -4884,9 +4884,9 @@ input.form-control-lg[type=file] {
   --bs-card-subtitle-color: ;
   --bs-card-border-width: var(--bs-border-width);
   --bs-card-border-color: var(--bs-border-color-translucent);
-  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-border-radius: 0.5rem;
   --bs-card-box-shadow: 0 0 4px rgba(37, 42, 46, 0.3) !important;
-  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-card-inner-border-radius: calc(0.5rem - (var(--bs-border-width)));
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: ;
@@ -4941,11 +4941,13 @@ input.form-control-lg[type=file] {
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
   color: var(--bs-card-title-color);
+  font-weight: 600;
 }
 
 .card-subtitle {
   margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
   margin-bottom: 0;
+  font-weight: 700;
   color: var(--bs-card-subtitle-color);
 }
 

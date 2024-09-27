@@ -111,6 +111,8 @@ $display-font-weight: 600;
 $border-radius:               .25rem; // Modus Customized - 4px
 $border-radius-sm:            .125rem; // Modus Customized - 2px
 $border-radius-lg:            .25rem; // Modus Customized - 2px
+$border-radius-xl:            0.5rem; // Modus Customized - 8px
+$border-radius-xxl:           1rem; // Modus Customized - 16px
 
 // Tables
 
@@ -223,6 +225,10 @@ $list-group-color:                  $col_trimble_gray; // Modus customized
 $list-group-hover-bg:               $col_gray_0 !default;
 $list-group-active-color:           null !default; // Modus customized
 // $list-group-active-bg:              #dcedf9 !default; // Modus customized
+
+// Cards
+$card-border-radius:                $border-radius-xl;
+$card-cap-bg:                       null !default; // Modus Customized (no header or footer bg color)
 
 // $list-group-disabled-color:         $gray-400 !default;
 
