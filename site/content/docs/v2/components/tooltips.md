@@ -55,24 +55,6 @@ Hover over the links below to see tooltips:
 {{< partial "callouts/warning-data-bs-title-vs-title.md" >}}
 {{< /callout >}}
 
-### Custom tooltips
-
-{{< added-in "5.2.0" >}}
-
-You can customize the appearance of tooltips using [CSS variables](#variables). We set a custom class with `data-bs-custom-class="custom-tooltip"` to scope our custom appearance and use it to override a local CSS variable.
-
-{{< scss-docs name="custom-tooltip" file="site/assets/scss/_component-examples.scss" >}}
-
-
-{{< example class="tooltip-demo" stackblitz_add_js="true" >}}
-<button type="button" class="btn btn-secondary"
-        data-bs-toggle="tooltip" data-bs-placement="top"
-        data-bs-custom-class="custom-tooltip"
-        data-bs-title="This top tooltip is themed via CSS variables.">
-  Custom tooltip
-</button>
-{{< /example >}}
-
 ### Directions
 
 Hover over the buttons below to see the four tooltips directions: top, right, bottom, and left. Directions are mirrored when using Bootstrap in RTL.
