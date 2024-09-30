@@ -2344,7 +2344,7 @@ input.form-control-lg[type=file] {
   line-height: 1.6;
 }
 
-[data-bs-theme=dark] input.form-control {
+[data-bs-theme=dark] .form-control {
   color: #fff;
   background-color: #171c1e;
 }
@@ -5064,6 +5064,10 @@ input.form-control-lg[type=file] {
   .card-group > .card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
+}
+
+[data-bs-theme=dark] .card {
+  background-color: #353a40;
 }
 
 .accordion {

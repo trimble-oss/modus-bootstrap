@@ -249,12 +249,10 @@ input.form-control-lg[type="file"] {
 
 @if $enable-dark-mode {
   @include color-mode(dark) {
-    input.form-control {
+    .form-control {
       color: #fff;
       background-color: #171c1e; // Gray 10
-    }
 
-    .form-control {
       &::placeholder {
         color: #7d808d;
       }

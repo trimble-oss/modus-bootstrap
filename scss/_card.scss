@@ -239,3 +239,11 @@
     }
   }
 }
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .card {
+      background-color: #353a40;
+    }
+  }
+}
