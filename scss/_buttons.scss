@@ -351,8 +351,10 @@
   }
 
   .btn-outline-primary {
+    --bs-btn-color: #019aeb;
     --bs-btn-active-color: #019aeb;
     --bs-btn-active-bg: rgba(1, 154, 235, .3);
+    --bs-btn-border-color: #019aeb;
     --bs-btn-active-border-color: #019aeb;
     --bs-btn-hover-color: #20b2ff;
     --bs-btn-hover-bg: rgba(0, 154, 236, .15);

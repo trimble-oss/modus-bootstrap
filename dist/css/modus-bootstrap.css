@@ -3657,8 +3657,10 @@ input.form-control-lg[type=file] {
   --bs-btn-border-color: #da212c;
 }
 [data-bs-theme=dark] .btn-outline-primary {
+  --bs-btn-color: #019aeb;
   --bs-btn-active-color: #019aeb;
   --bs-btn-active-bg: rgba(1, 154, 235, .3);
+  --bs-btn-border-color: #019aeb;
   --bs-btn-active-border-color: #019aeb;
   --bs-btn-hover-color: #20b2ff;
   --bs-btn-hover-bg: rgba(0, 154, 236, .15);
@@ -8038,6 +8040,7 @@ input.form-control-lg[type=file] {
 }
 [data-bs-theme=dark] .file-drop-zone.disabled {
   background-color: #252a2e;
+  border-color: #6a6e79;
 }
 [data-bs-theme=dark] .file-drop-zone.disabled > * {
   color: #fff !important;
