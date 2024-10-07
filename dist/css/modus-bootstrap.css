@@ -5532,7 +5532,7 @@ input.form-control-lg[type=file] {
   --bs-pagination-color: #b7b9c3;
   --bs-pagination-hover-color: #171c1e;
   --bs-pagination-active-color: #171c1e;
-  --bs-pagination-active-bg: #217cbb;
+  --bs-pagination-active-bg: #019AEB;
 }
 [data-bs-theme=dark] .page-item .page-link:hover {
   color: #f1f1f6;
@@ -5540,8 +5540,8 @@ input.form-control-lg[type=file] {
 }
 [data-bs-theme=dark] .page-item .page-link.active, .active > [data-bs-theme=dark] .page-item .page-link {
   color: #f1f1f6 !important;
-  background-color: #217cbb !important;
-  border-color: #217cbb;
+  background-color: #019AEB !important;
+  border-color: #019AEB;
 }
 [data-bs-theme=dark] .page-item .page-link:focus {
   color: #f1f1f6;
