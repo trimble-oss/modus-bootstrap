@@ -1,5 +1,32 @@
 .file-drop-zone {
+  background-color: #f1f1f6;
   border: 2px dotted $col_gray_3;
   /* stylelint-disable-next-line property-disallowed-list */
   border-radius: $border_radius;
+
+  &.disabled {
+    cursor: not-allowed;
+
+    > * {
+      color: #b7b9c3 !important;
+    }
+  }
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .file-drop-zone {
+      background-color: rgba(37, 42, 46, .4);
+
+      &.disabled {
+        background-color: #252a2e;
+        border-color: #6a6e79;
+
+        > * {
+          color: #fff !important;
+          opacity: .4;
+        }
+      }
+    }
+  }
 }

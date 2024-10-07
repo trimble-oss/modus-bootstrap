@@ -8021,9 +8021,27 @@ input.form-control-lg[type=file] {
 }
 
 .file-drop-zone {
+  background-color: #f1f1f6;
   border: 2px dotted #a3a6b1;
   /* stylelint-disable-next-line property-disallowed-list */
   border-radius: 0.25rem;
+}
+.file-drop-zone.disabled {
+  cursor: not-allowed;
+}
+.file-drop-zone.disabled > * {
+  color: #b7b9c3 !important;
+}
+
+[data-bs-theme=dark] .file-drop-zone {
+  background-color: rgba(37, 42, 46, 0.4);
+}
+[data-bs-theme=dark] .file-drop-zone.disabled {
+  background-color: #252a2e;
+}
+[data-bs-theme=dark] .file-drop-zone.disabled > * {
+  color: #fff !important;
+  opacity: 0.4;
 }
 
 .modus-header {
