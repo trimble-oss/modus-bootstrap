@@ -2721,6 +2721,14 @@ input.form-control-lg[type=file] {
     forced-color-adjust: none;
   }
 }
+.form-check-input:disabled:not(:checked):not(:indeterminate) {
+  background-color: #e0e1e9;
+}
+
+[data-bs-theme=dark] .form-check-input:disabled:not(:checked):not(:indeterminate) {
+  background-color: #585c65;
+}
+
 .form-range {
   width: 100%;
   height: 1.5rem;

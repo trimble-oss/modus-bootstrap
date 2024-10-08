@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Typography
-description: Documentation and examples for Modus Bootstrap typography, including global settings, headings, body text, lists, and more.
+description: Documentation and examples for Modus  typography, including global settings, headings, body text, lists, and more.
 group: content
 toc: true
 ---
 
 ## Global settings
 
-Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the [textual utility classes]({{< docsref "/utilities/text" >}}).
+Sets basic global display, typography, and link styles. When more control is needed, check out the [textual utility classes]({{< docsref "/utilities/text" >}}).
 
 - Use the `$font-family-base`, `$font-size-base`, and `$line-height-base` attributes as our typographic base applied to the `<body>`.
 - Set the global link color via `$link-color`.
