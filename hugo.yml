@@ -100,8 +100,8 @@ params:
   authors:              "Trimble"
   disableModusBootstrapCSS: true
 
-  current_version:      "2.0.5"
-  current_ruby_version: "2.0.5"
+  current_version:      "2.0.6"
+  current_ruby_version: "2.0.6"
   docs_version:         "v2"
   rfs_version:          "v10.0.0"
   github_org:           "https://github.com/trimble-oss"
@@ -118,8 +118,8 @@ params:
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
-    css:              "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.0.4/dist/css/modus-bootstrap.min.css"
-    css_hash:         "sha256-DBsCml3ZmgO5u2jtDXhxYXa7cqIl1jlzvC4Jw4wZ3lM="
+    css:              "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.0.5/dist/css/modus-bootstrap.min.css"
+    css_hash:         "sha256-4fb5F6oU9+Kp51+FcAYADjU9zExna/ZI7LGjOQfhutI="
     js:               "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     js_hash:          "sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
