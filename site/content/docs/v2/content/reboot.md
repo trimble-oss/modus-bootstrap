@@ -56,12 +56,12 @@ All heading elements—e.g., `<h1>`—and `<p>` are reset to have their `margin-
 {{< bs-table "table" >}}
 | Heading | Example |
 | --- | --- |
-| `<h1></h1>` | <span class="h1">h1. Bootstrap heading</span> |
-| `<h2></h2>` | <span class="h2">h2. Bootstrap heading</span> |
-| `<h3></h3>` | <span class="h3">h3. Bootstrap heading</span> |
-| `<h4></h4>` | <span class="h4">h4. Bootstrap heading</span> |
-| `<h5></h5>` | <span class="h5">h5. Bootstrap heading</span> |
-| `<h6></h6>` | <span class="h6">h6. Bootstrap heading</span> |
+| `<h1></h1>` | <span class="h1">h1. Modus heading</span> |
+| `<h2></h2>` | <span class="h2">h2. Modus heading</span> |
+| `<h3></h3>` | <span class="h3">h3. Modus heading</span> |
+| `<h4></h4>` | <span class="h4">h4. Modus heading</span> |
+| `<h5></h5>` | <span class="h5">h5. Modus heading</span> |
+| `<h6></h6>` | <span class="h6">h6. Modus heading</span> |
 {{< /bs-table >}}
 
 ## Paragraphs
