@@ -263,3 +263,15 @@
     forced-color-adjust: none;
   }
 }
+
+.form-check-input:disabled:not(:checked):not(:indeterminate) {
+  background-color: #e0e1e9;
+}
+
+@if $enable-dark-mode {
+  @include color-mode(dark) {
+    .form-check-input:disabled:not(:checked):not(:indeterminate) {
+      background-color: #585c65;
+    }
+  }
+}
