@@ -43,6 +43,14 @@
   // scss-docs-end spinner-border-sm-css-vars
 }
 
+.spinner-border-lg {
+  // scss-docs-start spinner-border-lg-css-vars
+  --#{$prefix}spinner-width: #{$spinner-width-lg};
+  --#{$prefix}spinner-height: #{$spinner-height-lg};
+  --#{$prefix}spinner-border-width: #{$spinner-border-width-lg};
+  // scss-docs-end spinner-border-lg-css-vars
+}
+
 @if $enable-reduced-motion {
   @media (prefers-reduced-motion: reduce) {
     .spinner-border {

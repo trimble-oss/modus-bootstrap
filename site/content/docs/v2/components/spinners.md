@@ -36,6 +36,24 @@ Use the border spinners for a lightweight loading indicator.
 </div>
 {{< /example >}}
 
+## Large Variant
+
+Use the `.spinner-border-lg` for a larger spinner.
+
+{{< example >}}
+<div class="spinner-border spinner-border-lg" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-border spinner-border-lg text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-border spinner-border-lg text-tertiary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+{{< /example >}}
+
 ## Alignment
 
 Spinners in Modus Bootstrap are built with `rem`s, `currentColor`, and `display: inline-flex`. This means they can easily be resized, recolored, and quickly aligned.

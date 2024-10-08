@@ -7218,6 +7218,12 @@ input.form-control-lg[type=file] {
   --bs-spinner-border-width: 0.2em;
 }
 
+.spinner-border-lg {
+  --bs-spinner-width: 4rem;
+  --bs-spinner-height: 4rem;
+  --bs-spinner-border-width: 5px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .spinner-border {
     --bs-spinner-animation-speed: 1.5s;
