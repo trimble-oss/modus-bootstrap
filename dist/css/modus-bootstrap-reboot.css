@@ -257,18 +257,22 @@ h2 {
 
 h3 {
   font-size: 1.00625;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 0.91875;
+  font-weight: 600;
 }
 
 h5 {
   font-size: 0.875;
+  font-weight: 700;
 }
 
 h6 {
   font-size: 0.875;
+  font-weight: 700;
 }
 
 p {

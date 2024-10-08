@@ -244,14 +244,14 @@
   @include color-mode(dark) {
     .accordion-button {
       background-color: #171c1e; // Gray 10
-    }
 
-    .accordion-button:hover {
-      background-color: #464b52; // Gray 8
-    }
+      &:hover {
+        background-color: #464b52; // Gray 8
+      }
 
-    .accordion-button:not(.collapsed) {
-      background-color: rgba(1, 154, 235, .3);
+      &:not(.collapsed) {
+        background-color: rgba(1, 154, 235, .3);
+      }
     }
 
     .accordion.accordion-wide .accordion-button::after {
