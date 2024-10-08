@@ -26,7 +26,7 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
      <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Modus Bootstrap demo</title>
+       <title>Modus demo</title>
      </head>
      <body>
        <h1>Hello, world!</h1>
@@ -34,7 +34,7 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
    </html>
    ```
 
-2. **Include Bootstrap's CSS and JS.** Place the `<link>` tag in the `<head>` for our CSS, and the `<script>` tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing `</body>`. Learn more about our [CDN links](#cdn-links).
+2. **Include Modus Bootstrap CSS and Bootstrap JS.** Place the `<link>` tag in the `<head>` for our CSS, and the `<script>` tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing `</body>`. Learn more about our [CDN links](#cdn-links).
 
    ```html
    <!doctype html>
@@ -42,7 +42,7 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
      <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Bootstrap demo</title>
+       <title>Modus demo</title>
        <link href="{{< param "cdn.css" >}}" rel="stylesheet">
      </head>
      <body>

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Color modes
-description: Bootstrap now supports color modes, or themes, as of v5.3.0. Explore our default light color mode and the new dark mode, or create your own using our styles as your template.
+description: Modus Bootstrap supports color modes - explore our default light color mode and the new dark mode, or create your own using our styles as your template.
 group: customize
 toc: true
 added: "5.3"
@@ -49,7 +49,7 @@ For example, to change the color mode of a dropdown menu, add `data-bs-theme="li
 
 ## How it works
 
-- As shown above, color mode styles are controlled by the `data-bs-theme` attribute. This attribute can be applied to the `<html>` element, or to any other element or Bootstrap component. If applied to the `<html>` element, it will apply to everything. If applied to a component or element, it will be scoped to that specific component or element.
+- As shown above, color mode styles are controlled by the `data-bs-theme` attribute. This attribute can be applied to the `<html>` element, or to any other element or Modus Bootstrap component. If applied to the `<html>` element, it will apply to everything. If applied to a component or element, it will be scoped to that specific component or element.
 
 - For each color mode you wish to support, you'll need to add new overrides for the shared global CSS variables. We do this already in our `_root.scss` stylesheet for dark mode, with light mode being the default values. In writing color mode specific styles, use the mixin:
 
@@ -74,7 +74,7 @@ Enable the built in dark color mode across your entire project by adding the `da
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Modus demo</title>
     <link href="{{< param "cdn.css" >}}" rel="stylesheet" crossorigin="anonymous">
   </head>
   <body>

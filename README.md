@@ -1,7 +1,10 @@
 # Modus Bootstrap
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/trimble-oss/modus-bootstrap/main/LICENSE)
+[![GitHub Super-Linter](https://github.com/trimble-oss/modus-bootstrap/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![npm Version](https://img.shields.io/npm/v/@trimble-oss/modus-bootstrap)](https://www.npmjs.com/package/@trimble-oss/modus-bootstrap)
+[![npm Downloads](https://img.shields.io/npm/dt/@trimble-oss/modus-bootstrap.svg)](https://www.npmjs.com/package/@trimble-oss/modus-bootstrap)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/@trimble-oss/modus-bootstrap/badge)](https://www.jsdelivr.com/package/npm/@trimble-oss/modus-bootstrap)
 
 ## Quick start
 
@@ -22,6 +25,6 @@ Our default branch (main) is for development of our Modus Bootstrap v2 release.
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2023 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+Code and documentation copyright 2011-2024 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
 
 Modus Bootstrap code and documentation copyright 2024 Trimble Inc. Code released under the [MIT License](https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
