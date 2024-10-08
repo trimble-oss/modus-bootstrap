@@ -8,7 +8,7 @@ aliases:
   - "/components/date-picker/"
 ---
 
-Modus Bootstrap doesn't ship with a custom-built Date & Time Picker component but you can style a third-party date picker or use native inputs.
+Modus Bootstrap doesn't ship with a custom-built Date & Time Picker component but you can style a third-party date picker or use native inputs with the `form-control` class.
 
 {{< example class="w-50 border-0" >}}
 <label for="date" class="form-label">Date</label>

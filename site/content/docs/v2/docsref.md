@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Docs reference
-description: Examples of Bootstrap's documentation-specific components and styles.
+description: Examples of Modus Bootstrap's documentation-specific components and styles.
 aliases: "/docsref/"
 toc: true
 robots: noindex,follow
