@@ -5319,32 +5319,26 @@ input.form-control-lg[type=file] {
 details.accordion-item {
   box-shadow: none !important;
 }
-
 details.accordion-item:not([open]) .accordion-button {
   background-color: var(--bs-accordion-bg);
 }
-
-details.accordion-item .accordion-header {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-details.accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: var(--bs-accordion-border-radius);
-  border-top-right-radius: var(--bs-accordion-border-radius);
-}
-
-details.accordion-item:not([open]):last-of-type .accordion-button {
-  border-bottom-right-radius: var(--bs-accordion-border-radius);
-  border-bottom-left-radius: var(--bs-accordion-border-radius);
-}
-
 details.accordion-item:not([open]) .accordion-button::after {
   background-image: var(--bs-accordion-btn-active-icon);
   transform: unset;
 }
-
+details.accordion-item:not([open]):last-of-type .accordion-button {
+  border-bottom-right-radius: var(--bs-accordion-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-border-radius);
+}
+details.accordion-item.accordion-header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+details.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: var(--bs-accordion-border-radius);
+  border-top-right-radius: var(--bs-accordion-border-radius);
+}
 details.accordion-item[open] .accordion-button::after {
   background-image: var(--bs-accordion-btn-icon);
   transform: var(--bs-accordion-btn-icon-transform);
