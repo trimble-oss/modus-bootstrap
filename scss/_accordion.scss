@@ -83,6 +83,16 @@
 
 .accordion-header {
   margin-bottom: 0;
+
+  &:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  &:last-of-type {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
 }
 
 .accordion-item {
@@ -123,7 +133,6 @@
   padding: var(--#{$prefix}accordion-body-padding-y) var(--#{$prefix}accordion-body-padding-x);
 }
 
-
 // Flush accordion items
 //
 // Remove borders and border-radius to keep accordion items edge-to-edge.
@@ -134,8 +143,12 @@
     border-left: 0;
     @include border-radius(0);
 
-    &:first-child { border-top: 0; }
-    &:last-child { border-bottom: 0; }
+    &:first-child {
+      border-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
 
     // stylelint-disable selector-max-class
     > .accordion-collapse,
@@ -174,22 +187,27 @@
 
 // Small Accordion
 
-.accordion.accordion-sm .accordion-header {
-  padding: 0;
-}
+// stylelint-disable-next-line no-duplicate-selectors
+.accordion {
+  &.accordion-sm {
+    .accordion-header {
+      padding: 0;
 
-.accordion.accordion-sm .accordion-header::after {
-  right: .25rem;
-}
+      &::after {
+        right: .25rem;
+      }
+    }
 
-.accordion.accordion-sm .accordion-button {
-  padding: .25rem 1rem;  // height: 32px
-  font-size: .875rem;
-  line-height: calc(16 / 12); // stylelint-disable-line function-disallowed-list
-}
+    .accordion-button {
+      padding: .25rem 1rem; // height: 32px
+      font-size: .875rem;
+      line-height: calc(16 / 12); // stylelint-disable-line function-disallowed-list
+    }
 
-.accordion.accordion-sm .accordion-body {
-  font-size: .75rem;
+    .accordion-body {
+      font-size: .75rem;
+    }
+  }
 }
 
 // Individual accordion item
@@ -280,4 +298,45 @@
   .accordion {
     border: 1px solid transparent;
   }
+}
+
+details.accordion-item {
+  box-shadow: none !important;
+}
+
+details.accordion-item:not([open]) .accordion-button {
+  background-color: var(--bs-accordion-bg);
+}
+
+details.accordion-item:not(:last-of-type) {
+  // border-bottom-width: 0;
+}
+
+details.accordion-item .accordion-header {
+  user-select: none;
+}
+
+details.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: var(--bs-accordion-border-radius);
+  border-top-right-radius: var(--bs-accordion-border-radius);
+}
+
+details.accordion-item:not([open]):last-of-type .accordion-button {
+  border-bottom-right-radius: var(--bs-accordion-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-border-radius);
+}
+
+details.accordion-item:not([open]) .accordion-button::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: unset;
+}
+
+details.accordion-item[open] .accordion-button::after {
+  background-image: var(--bs-accordion-btn-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+/* Hide the default disclosure triangle on Safari */
+summary.accordion-button::-webkit-details-marker {
+  display: none;
 }

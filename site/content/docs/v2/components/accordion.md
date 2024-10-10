@@ -285,6 +285,39 @@ Add `.accordion-wide` for wide version. The size is the same as the default acco
 
 Please read the [collapse accessibility section]({{< docsref "/components/collapse#accessibility" >}}) for more information.
 
+### Accordions with the details element
+
+Experimental feature: You can create an accordion without requiring JavaScript using the details / summary elements. Note that this doesn't have expand / collapse animation.
+
+{{< example class="bg-body-secondary bg-opacity-25" >}}
+<div class="accordion">
+  <details class="accordion-item">
+    <summary class="accordion-button">
+      <div class="accordion-header">Accordion Title 1</div>
+    </summary>
+    <div class="accordion-body">
+      <p>....</p>
+    </div>
+  </details>
+  <details class="accordion-item">
+    <summary class="accordion-button">
+      <div class="accordion-header">Accordion Title 2</div>
+    </summary>
+    <div class="accordion-body">
+      <p>....</p>
+    </div>
+  </details>
+  <details class="accordion-item">
+    <summary class="accordion-button">
+      <div class="accordion-header">Accordion Title 3</div>
+    </summary>
+    <div class="accordion-body">
+      <p>....</p>
+    </div>
+  </details>
+</div>
+{{< /example >}}
+
 ## CSS
 
 ### Variables

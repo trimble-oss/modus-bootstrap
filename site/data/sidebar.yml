@@ -61,6 +61,7 @@
   pages:
     - title: Overview
     - title: Form control
+    - title: Date Picker
     - title: Select
     - title: Checks & radios
     - title: Range
@@ -68,7 +69,6 @@
 #    - title: Floating labels
     - title: Layout
     - title: Validation
-    - title: Date Picker
 
 - title: Components
   icon: menu-button-wide-fill
