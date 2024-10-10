@@ -5151,6 +5151,14 @@ input.form-control-lg[type=file] {
 .accordion-header {
   margin-bottom: 0;
 }
+.accordion-header:first-of-type {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.accordion-header:last-of-type {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
 
 .accordion-item {
   font-size: 0.875rem;
@@ -5221,17 +5229,14 @@ input.form-control-lg[type=file] {
 .accordion.accordion-sm .accordion-header {
   padding: 0;
 }
-
 .accordion.accordion-sm .accordion-header::after {
   right: 0.25rem;
 }
-
 .accordion.accordion-sm .accordion-button {
   padding: 0.25rem 1rem;
   font-size: 0.875rem;
   line-height: 1.3333333333;
 }
-
 .accordion.accordion-sm .accordion-body {
   font-size: 0.75rem;
 }
@@ -5311,6 +5316,39 @@ input.form-control-lg[type=file] {
     border: 1px solid transparent;
   }
 }
+details.accordion-item {
+  box-shadow: none !important;
+}
+details.accordion-item:not([open]) .accordion-button {
+  background-color: var(--bs-accordion-bg);
+}
+details.accordion-item:not([open]) .accordion-button::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: unset;
+}
+details.accordion-item:not([open]):last-of-type .accordion-button {
+  border-bottom-right-radius: var(--bs-accordion-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-border-radius);
+}
+details.accordion-item.accordion-header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+details.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: var(--bs-accordion-border-radius);
+  border-top-right-radius: var(--bs-accordion-border-radius);
+}
+details.accordion-item[open] .accordion-button::after {
+  background-image: var(--bs-accordion-btn-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+/* Hide the default disclosure triangle on Safari */
+summary.accordion-button::-webkit-details-marker {
+  display: none;
+}
+
 .breadcrumb {
   --bs-breadcrumb-padding-x: 0;
   --bs-breadcrumb-padding-y: 0;
