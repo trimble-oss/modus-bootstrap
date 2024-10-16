@@ -7,6 +7,7 @@ toc: true
 aliases:
   - "/components/progress/"
   - "/components/progress-bars/"
+  - "/docs/v2/components/progress-bars/"
 ---
 
 ## How it works

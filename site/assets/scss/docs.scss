@@ -40,7 +40,7 @@ $enable-cssgrid: true; // stylelint-disable-line scss/dollar-variable-default
 @import "masthead";
 // @import "ads";
 @import "content";
-// @import "font-open-sans";
+@import "font-open-sans";
 // @import "skippy";
 @import "sidebar";
 @import "layout";
