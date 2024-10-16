@@ -4,6 +4,7 @@ title: Get started with Modus Bootstrap
 description: Modus Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
 group: getting-started
 aliases:
+  - "/developers/"
   - "/docs/v2/getting-started/"
   - "/docs/getting-started/"
   - "/getting-started/"
@@ -50,13 +51,6 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
        <script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
      </body>
    </html>
-   ```
-
-   You can also include [Popper](https://popper.js.org/docs/v2/) and our JS separately. If you don't plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.
-
-   ```html
-   <script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
-   <script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
    ```
 
 3. **Hello, world!** Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own [layout]({{< docsref "/layout/grid" >}}), adding dozens of [components]({{< docsref "/components/buttons" >}}), and utilizing [our official examples]({{< docsref "/examples" >}}).

@@ -7,6 +7,7 @@ toc: true
 aliases:
   - "/components/navbar/"
   - "/components/navbars/"
+  - "/docs/v2/components/navbars/"
 ---
 
 ## How it works
