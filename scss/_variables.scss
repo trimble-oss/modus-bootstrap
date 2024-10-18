@@ -1511,8 +1511,8 @@ $modal-content-border-color:        var(--#{$prefix}border-color-translucent) !d
 $modal-content-border-width:        var(--#{$prefix}border-width) !default;
 $modal-content-border-radius:       var(--#{$prefix}border-radius-lg) !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
-$modal-content-box-shadow-xs:       $box-shadow-sm !default;
-$modal-content-box-shadow-sm-up:    $box-shadow !default;
+$modal-content-box-shadow-xs:       $box-shadow !default;
+$modal-content-box-shadow-sm-up:    $box-shadow-lg !default;
 
 $modal-backdrop-bg:                 $black !default;
 $modal-backdrop-opacity:            .75 !default; // Modus Customized

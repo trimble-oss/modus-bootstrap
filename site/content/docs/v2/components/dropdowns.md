@@ -659,6 +659,25 @@ By default, the dropdown menu is closed when clicking inside or outside the drop
 </div>
 {{< /example >}}
 
+## Details / Summary Dropdown
+
+Experimental feature: You can create a dropdown without requiring JavaScript using the details / summary elements. Note that this doesn’t have expand / collapse animation.
+
+{{< example >}}
+<details class="dropdown mb-5">
+  <summary class="btn btn-primary dropdown-toggle">
+    Open dropdown
+  </summary>
+  <div>
+    <ul class="dropdown-menu" style="display: revert;">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+</details>
+{{< /example >}}
+
 ## CSS
 
 ### Variables
