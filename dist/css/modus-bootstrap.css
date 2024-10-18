@@ -4083,6 +4083,15 @@ input.form-control-lg[type=file] {
     color: #000;
   }
 }
+details.dropdown .dropdown-menu {
+  display: revert;
+}
+
+/* Hide the default disclosure triangle on Safari */
+summary.dropdown-toggle::-webkit-details-marker {
+  display: none;
+}
+
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -6444,7 +6453,7 @@ summary.accordion-button::-webkit-details-marker {
   --bs-modal-border-color: var(--bs-border-color-translucent);
   --bs-modal-border-width: var(--bs-border-width);
   --bs-modal-border-radius: var(--bs-border-radius-lg);
-  --bs-modal-box-shadow: 0 0 2px rgba(37, 42, 46, 0.3);
+  --bs-modal-box-shadow: 0 0 4px rgba(37, 42, 46, 0.3);
   --bs-modal-inner-border-radius: calc(var(--bs-border-radius-lg) - (var(--bs-border-width)));
   --bs-modal-header-padding-x: 1rem;
   --bs-modal-header-padding-y: 1.25rem;
@@ -6587,7 +6596,7 @@ summary.accordion-button::-webkit-details-marker {
 @media (min-width: 576px) {
   .modal {
     --bs-modal-margin: 1.75rem;
-    --bs-modal-box-shadow: 0 0 4px rgba(37, 42, 46, 0.3);
+    --bs-modal-box-shadow: 0 0 8px rgba(37, 42, 46, 0.3);
   }
   .modal-dialog {
     max-width: var(--bs-modal-width);
@@ -7291,7 +7300,7 @@ summary.accordion-button::-webkit-details-marker {
   --bs-offcanvas-bg: var(--bs-body-bg);
   --bs-offcanvas-border-width: var(--bs-border-width);
   --bs-offcanvas-border-color: var(--bs-border-color-translucent);
-  --bs-offcanvas-box-shadow: 0 0 2px rgba(37, 42, 46, 0.3);
+  --bs-offcanvas-box-shadow: 0 0 4px rgba(37, 42, 46, 0.3);
   --bs-offcanvas-transition: transform 0.3s ease-in-out;
   --bs-offcanvas-title-line-height: 1.5;
 }

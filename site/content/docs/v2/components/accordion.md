@@ -281,13 +281,9 @@ Add `.accordion-wide` for wide version. The size is the same as the default acco
 </div>
 {{< /example >}}
 
-## Accessibility
+## Details / Summary Accordion
 
-Please read the [collapse accessibility section]({{< docsref "/components/collapse#accessibility" >}}) for more information.
-
-### Accordions with the details element
-
-Experimental feature: You can create an accordion without requiring JavaScript using the details / summary elements. Note that this doesn't have expand / collapse animation.
+Experimental feature: You can create an accordion without requiring JavaScript using the details / summary elements. Note that this doesn't have expand / collapse animation and doesn't close with <kbd>Esc</kbd> key.
 
 {{< example class="bg-body-secondary bg-opacity-25" >}}
 <div class="accordion">
@@ -317,6 +313,10 @@ Experimental feature: You can create an accordion without requiring JavaScript u
   </details>
 </div>
 {{< /example >}}
+
+## Accessibility
+
+Please read the [collapse accessibility section]({{< docsref "/components/collapse#accessibility" >}}) for more information.
 
 ## CSS
 

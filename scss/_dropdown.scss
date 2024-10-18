@@ -296,3 +296,12 @@
     color: #000;
   }
 }
+
+details.dropdown .dropdown-menu {
+  display: revert;
+}
+
+/* Hide the default disclosure triangle on Safari */
+summary.dropdown-toggle::-webkit-details-marker {
+  display: none;
+}
