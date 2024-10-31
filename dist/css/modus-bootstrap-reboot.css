@@ -1,5 +1,5 @@
 /*!
-* Modus Bootstrap Reboot v2.0.6 (https://modus-bootstrap.trimble.com/)
+* Modus Bootstrap Reboot v2.0.7 (https://modus-bootstrap.trimble.com/)
  * Copyright 2024 Trimble Inc.
  * Licensed under MIT (https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE)
  * This a fork of Bootstrap: Initial license below
@@ -156,13 +156,12 @@
   --bs-primary-text-emphasis: #019aeb;
   --bs-secondary-text-emphasis: #6a6e79;
   --bs-success-text-emphasis: #006638;
-  --bs-info-text-emphasis: #6edff6;
   --bs-warning-text-emphasis: #fbad26;
   --bs-danger-text-emphasis: #da212c;
   --bs-light-text-emphasis: #f1f1f6;
   --bs-dark-text-emphasis: #e0e1e9;
   --bs-primary-bg-subtle: #0c5b85;
-  --bs-secondary-bg-subtle: #40454c;
+  --bs-secondary-bg-subtle: #464b52;
   --bs-success-bg-subtle: #051b11;
   --bs-info-bg-subtle: #032830;
   --bs-warning-bg-subtle: #332701;

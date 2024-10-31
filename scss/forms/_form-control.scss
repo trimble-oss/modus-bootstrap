@@ -108,7 +108,9 @@
   }
 
   &:hover:not(:disabled):not([readonly])::file-selector-button {
+    color: var(--#{$prefix}body-color); // Modus Customized
     background-color: $form-file-button-hover-bg;
+    opacity: .9; // Modus Customized
   }
 }
 
