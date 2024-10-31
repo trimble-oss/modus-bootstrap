@@ -40,7 +40,7 @@ sitemap:
             />
         </a>
         <div class="navbar-text text-truncate">
-          <div class="h4 mt-2 pt-2">Map Example</div>
+          <h1 class="h4 mt-2 pt-2">Map Example</h1>
         </div>
         <div class="ms-auto border-left px-3 py-2">
           <div class="form-check form-switch">
@@ -57,8 +57,8 @@ sitemap:
       </nav>
       <!-- .modus-header -->
 
-      <div class="modus-body sidebar-closed" data-modus-item="body">
-        <nav class="nav flex-column modus-sidebar">
+      <main class="modus-body sidebar-closed" data-modus-item="body">
+        <nav class="nav flex-column modus-sidebar" aria-label="Side Navigation">
           <ul>
             <li>
               <a href="index.html" class="nav-link">
@@ -169,7 +169,7 @@ sitemap:
                       checked />
                   </div>
                 </div>
-                <h5>Panel Header</h5>
+                <h2 class="h5">Panel Header</h2>
                 <div class="position-absolute me-2" style="right: 0">
                   <button type="button" class="btn btn-icon-only btn-text-dark">
                     <i class="modus-icons notranslate">unloaded_orders</i>
@@ -184,33 +184,33 @@ sitemap:
                   <div class="d-flex">
                     <button
                       type="button"
-                      class="btn btn-icon-only btn-text-dark"
+                      class="btn btn-icon-only btn-text-secondary"
                       data-bs-toggle="tooltip"
                       title="Filter"
                       >
-                      <i class="modus-icons notranslate" aria-hidden="true">filter</i>
+                      <i class="modus-icons notranslate">filter</i>
                     </button>
                     <button
                       type="button"
-                      class="btn btn-icon-only btn-text-dark"
+                      class="btn btn-icon-only btn-text-secondary"
                       data-bs-toggle="tooltip"
                       title="Layout"
                       >
-                      <i class="modus-icons notranslate" aria-hidden="true">layout</i>
+                      <i class="modus-icons notranslate">layout</i>
                     </button>
                     <button
                       type="button"
                       class="btn btn-icon-only btn-text-dark"
                       data-bs-toggle="tooltip"
                       title="Create Route">
-                      <i class="modus-icons notranslate" aria-hidden="true">create_route</i>
+                      <i class="modus-icons notranslate">create_route</i>
                     </button>
                     <button
                       type="button"
                       class="btn btn-icon-only btn-text-dark"
                       title="Finalize Route"
                       disabled>
-                      <i class="modus-icons notranslate" aria-hidden="true">finalize_route</i>
+                      <i class="modus-icons notranslate">finalize_route</i>
                     </button>
                     <button
                       type="button"
@@ -231,7 +231,7 @@ sitemap:
                 <div class="scroll-container p-2">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Panel Content</h5>
+                      <h3 class="card-title h5">Panel Content</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Explicabo asperiores doloremque dolorum qui ducimus quae
@@ -242,7 +242,7 @@ sitemap:
                   </div>
                   <div class="card mt-3">
                     <div class="card-body">
-                      <h5 class="card-title">Panel Content</h5>
+                      <h3 class="card-title h5">Panel Content</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Explicabo asperiores doloremque dolorum qui ducimus quae
@@ -253,7 +253,7 @@ sitemap:
                   </div>
                   <div class="card mt-3">
                     <div class="card-body">
-                      <h5 class="card-title">Panel Content</h5>
+                      <h3 class="card-title h5">Panel Content</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Explicabo asperiores doloremque dolorum qui ducimus quae
@@ -264,7 +264,7 @@ sitemap:
                   </div>
                   <div class="card mt-3">
                     <div class="card-body">
-                      <h5 class="card-title">Panel Content</h5>
+                      <h3 class="card-title h5">Panel Content</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Explicabo asperiores doloremque dolorum qui ducimus quae
@@ -275,7 +275,7 @@ sitemap:
                   </div>
                   <div class="card mt-3">
                     <div class="card-body">
-                      <h5 class="card-title">Panel Content</h5>
+                      <h3 class="card-title h5">Panel Content</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Explicabo asperiores doloremque dolorum qui ducimus quae
@@ -286,7 +286,7 @@ sitemap:
                   </div>
                   <div class="card mt-3">
                     <div class="card-body">
-                      <h5 class="card-title">Panel Content</h5>
+                      <h3 class="card-title h5">Panel Content</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Explicabo asperiores doloremque dolorum qui ducimus quae
@@ -311,12 +311,12 @@ sitemap:
           <!-- .modus-content-columns -->
         </div>
         <!-- .modus-content-rows -->
-      </div>
+      </main>
       <!-- .modus-body -->
 
-      <div class="modus-footer d-flex align-items-center">
+      <footer class="modus-footer d-flex align-items-center">
         <div class="small">&copy; Copyright {{< year >}}, Trimble Inc.</div>
-      </div>
+      </footer>
       <!-- .modus-footer -->
     </div>
     <!-- .modus-layout -->

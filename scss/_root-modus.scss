@@ -28,7 +28,7 @@
   --bs-secondary: #6a6e79; // Gray 6
 
   --bs-success: #006638; // Green Dark
-  --bs-tertiary: #b7b9c3;
+  --bs-tertiary: #b7b9c3; // Gray 2
   --bs-warning: #e49325; // Yellow Dark
   --bs-danger: #da212c; // Red
   --bs-light: #f1f1f6; // $col_gray_light
@@ -127,14 +127,14 @@
 
 [data-bs-theme="dark"] {
   color-scheme: dark;
-  --bs-blue: #019aeb; // Blue
+  --bs-blue: #019aeb; // Highlight Blue
   --bs-body-color: #fff;
   --bs-body-color-rgb: 255, 255, 255;
   --bs-body-bg: #171c1e; // Gray 10
   --bs-body-bg-rgb: 23, 28, 30;
   --bs-emphasis-color: #f1f1f6; // Gray Light
   --bs-emphasis-color-rgb: 241, 241, 246;
-  --bs-primary: #019aeb; // Blue
+  --bs-primary: #019aeb; // Highlight Blue
   --bs-primary-bg: #004f83; // Trimble Dark Blue
   --bs-success: #1e8a44; // Green
   --bs-secondary-color: rgba(255, 255, 255, .75);
@@ -145,16 +145,16 @@
   --bs-tertiary-color-rgb: 255, 255, 255;
   --bs-tertiary-bg: #21202d;
   --bs-tertiary-bg-rgb: 33, 32, 45;
-  --bs-primary-text-emphasis: #019aeb;
+  --bs-primary-text-emphasis: #019aeb; // Highlight Blue
   --bs-secondary-text-emphasis: #6a6e79;
   --bs-success-text-emphasis: #006638;
-  --bs-info-text-emphasis: #6edff6;
+  // --bs-info-text-emphasis: #6edff6;
   --bs-warning-text-emphasis: #fbad26; // Trimble Yellow
   --bs-danger-text-emphasis: #da212c; // Danger Color
   --bs-light-text-emphasis: #f1f1f6; // Gray Light
   --bs-dark-text-emphasis: #e0e1e9; // Gray 0
   --bs-primary-bg-subtle: #0c5b85;
-  --bs-secondary-bg-subtle: #40454c;
+  --bs-secondary-bg-subtle: #464b52; // Gray 8
   --bs-success-bg-subtle: #051b11;
   --bs-info-bg-subtle: #032830;
   --bs-warning-bg-subtle: #332701;
@@ -183,7 +183,7 @@
   --bs-form-invalid-border-color: #ea868f;
   --bs-form-label-color: #b7b9c3;
   --bs-form-control-border-bottom: #6a6e79;
-  --bs-btn-bg: #019aeb;
+  --bs-btn-bg: #019aeb; // Highlight Blue
 
   --bs-alert-link-color: #f1f1f6;
 
