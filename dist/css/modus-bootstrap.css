@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* Modus Bootstrap  v2.0.6 (https://modus-bootstrap.trimble.com/)
+* Modus Bootstrap  v2.0.7 (https://modus-bootstrap.trimble.com/)
  * Copyright 2024 Trimble Inc.
  * Licensed under MIT (https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE)
  * This a fork of Bootstrap: Initial license below
@@ -209,13 +209,12 @@
   --bs-primary-text-emphasis: #019aeb;
   --bs-secondary-text-emphasis: #6a6e79;
   --bs-success-text-emphasis: #006638;
-  --bs-info-text-emphasis: #6edff6;
   --bs-warning-text-emphasis: #fbad26;
   --bs-danger-text-emphasis: #da212c;
   --bs-light-text-emphasis: #f1f1f6;
   --bs-dark-text-emphasis: #e0e1e9;
   --bs-primary-bg-subtle: #0c5b85;
-  --bs-secondary-bg-subtle: #40454c;
+  --bs-secondary-bg-subtle: #464b52;
   --bs-success-bg-subtle: #051b11;
   --bs-info-bg-subtle: #032830;
   --bs-warning-bg-subtle: #332701;
@@ -2206,10 +2205,14 @@ progress {
   }
 }
 .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
-  background-color: var(--bs-secondary-bg);
+  color: var(--bs-body-color);
+  background-color: var(--bs-tertiary-bg);
+  opacity: 0.9;
 }
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
-  background-color: var(--bs-secondary-bg);
+  color: var(--bs-body-color);
+  background-color: var(--bs-tertiary-bg);
+  opacity: 0.9;
 }
 
 .form-control-plaintext {
@@ -4359,8 +4362,8 @@ summary.dropdown-toggle::-webkit-details-marker {
 
 .nav-justified > .nav-link,
 .nav-justified .nav-item {
-  flex-basis: 0;
   flex-grow: 1;
+  flex-basis: 0;
   text-align: center;
 }
 
@@ -4524,8 +4527,8 @@ summary.dropdown-toggle::-webkit-details-marker {
 }
 
 .navbar-collapse {
-  flex-basis: 100%;
   flex-grow: 1;
+  flex-basis: 100%;
   align-items: center;
 }
 
