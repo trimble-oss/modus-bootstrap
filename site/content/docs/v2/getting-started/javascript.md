@@ -20,7 +20,7 @@ A better alternative for those using this type of frameworks is to use a framewo
 
 - React: [React Bootstrap](https://react-bootstrap.github.io/)
 - Vue 3: [BootstrapVueNext](https://bootstrap-vue-next.github.io/bootstrap-vue-next/) (currently alpha)
-- Angular: [ng-bootstrap](https://ng-bootstrap.github.io/)
+- Angular: [ng-bootstrap](https://ng-bootstrap.github.io/) or [ngx-bootstrap](https://valor-software.com/ngx-bootstrap)
 
 ## Using Bootstrap as a module
 
@@ -91,7 +91,7 @@ To fix this, you can use an `importmap` to resolve the arbitrary module names to
 
 Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs.
 
-Our dropdowns, popovers, and tooltips also depend on [Popper](https://popper.js.org/).
+Our dropdowns, popovers, and tooltips also depend on [Popper](https://popper.js.org/docs/v2/).
 
 ## Data attributes
 
@@ -115,9 +115,7 @@ All infinitive events provide [`preventDefault()`](https://developer.mozilla.org
 const myModal = document.querySelector('#myModal')
 
 myModal.addEventListener('show.bs.modal', event => {
-  if (!data) {
-    return event.preventDefault() // stops modal from being shown
-  }
+  return event.preventDefault() // stops modal from being shown
 })
 ```
 
@@ -162,30 +160,41 @@ const alert = bootstrap.Alert.getOrCreateInstance('#myAlert')
 
 ### Asynchronous functions and transitions
 
-All programmatic API methods are **asynchronous** and return to the caller once the transition is started but **before it ends**.
-
-In order to execute an action once the transition is complete, you can listen to the corresponding event.
+All programmatic API methods are **asynchronous** and return to the caller once the transition is started, but **before it ends**. In order to execute an action once the transition is complete, you can listen to the corresponding event.
 
 ```js
-var myCollapseEl = document.getElementById('myCollapse')
+const myCollapseEl = document.querySelector('#myCollapse')
 
-myCollapseEl.addEventListener('shown.bs.collapse', function (event) {
+myCollapseEl.addEventListener('shown.bs.collapse', event => {
   // Action to execute once the collapsible area is expanded
 })
 ```
 
-In addition a method call on a **transitioning component will be ignored**.
+In addition, a method call on a **transitioning component will be ignored**.
 
 ```js
-var myCarouselEl = document.getElementById('myCarousel')
-var carousel = bootstrap.Carousel.getInstance(myCarouselEl) // Retrieve a Carousel instance
+const myCarouselEl = document.querySelector('#myCarousel')
+const carousel = bootstrap.Carousel.getInstance(myCarouselEl) // Retrieve a Carousel instance
 
-myCarouselEl.addEventListener('slid.bs.carousel', function (event) {
+myCarouselEl.addEventListener('slid.bs.carousel', event => {
   carousel.to('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
 })
 
 carousel.to('1') // Will start sliding to the slide 1 and returns to the caller
 carousel.to('2') // !! Will be ignored, as the transition to the slide 1 is not finished !!
+```
+
+#### `dispose` method
+
+While it may seem correct to use the `dispose` method immediately after `hide()`, it will lead to incorrect results. Here's an example of the problem use:
+
+```js
+const myModal = document.querySelector('#myModal')
+myModal.hide() // it is asynchronous
+
+myModal.addEventListener('shown.bs.hidden', event => {
+  myModal.dispose()
+})
 ```
 
 ### Default settings
@@ -197,32 +206,24 @@ You can change the default settings for a plugin by modifying the plugin's `Cons
 bootstrap.Modal.Default.keyboard = false
 ```
 
-## No conflict (only if you use jQuery)
+## Methods and properties
 
-Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call `.noConflict` on the plugin you wish to revert the value of.
+Every Bootstrap plugin exposes the following methods and static properties.
 
-```js
-var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
-$.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
-```
+{{< bs-table "table" >}}
+| Method | Description |
+| --- | --- |
+| `dispose` | Destroys an element's modal. (Removes stored data on the DOM element) |
+| `getInstance` | *Static* method which allows you to get the modal instance associated with a DOM element. |
+| `getOrCreateInstance` | *Static* method which allows you to get the modal instance associated with a DOM element, or create a new one in case it wasn't initialized. |
+{{< /bs-table >}}
 
-## Version numbers
-
-The version of each of Bootstrap's plugins can be accessed via the `VERSION` property of the plugin's constructor. For example, for the tooltip plugin:
-
-```js
-bootstrap.Tooltip.VERSION // => "{{< param current_version >}}"
-```
-
-## No special fallbacks when JavaScript is disabled
-
-Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
-
-{{< callout warning >}}
-##### Third-party libraries
-
-**Bootstrap does not officially support third-party JavaScript libraries** like Prototype or jQuery UI. Despite `.noConflict` and namespaced events, there may be compatibility problems that you need to fix on your own.
-{{< /callout >}}
+{{< bs-table "table" >}}
+| Static property | Description |
+| --- | --- |
+| `NAME` | Returns the plugin name. (Example: `bootstrap.Tooltip.NAME`) |
+| `VERSION` | The version of each of Bootstrap's plugins can be accessed via the `VERSION` property of the plugin's constructor (Example: `bootstrap.Tooltip.VERSION`) |
+{{< /bs-table >}}
 
 ## Sanitizer
 
@@ -230,47 +231,12 @@ Tooltips and Popovers use our built-in sanitizer to sanitize options which accep
 
 The default `allowList` value is the following:
 
-```js
-var ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i
-var DefaultAllowlist = {
-  // Global attributes allowed on any supplied element below.
-  '*': ['class', 'dir', 'id', 'lang', 'role', ARIA_ATTRIBUTE_PATTERN],
-  a: ['target', 'href', 'title', 'rel'],
-  area: [],
-  b: [],
-  br: [],
-  col: [],
-  code: [],
-  div: [],
-  em: [],
-  hr: [],
-  h1: [],
-  h2: [],
-  h3: [],
-  h4: [],
-  h5: [],
-  h6: [],
-  i: [],
-  img: ['src', 'srcset', 'alt', 'title', 'width', 'height'],
-  li: [],
-  ol: [],
-  p: [],
-  pre: [],
-  s: [],
-  small: [],
-  span: [],
-  sub: [],
-  sup: [],
-  strong: [],
-  u: [],
-  ul: []
-}
-```
+{{< js-docs name="allow-list" file="js/src/util/sanitizer.js" >}}
 
 If you want to add new values to this default `allowList` you can do the following:
 
 ```js
-var myDefaultAllowList = bootstrap.Tooltip.Default.allowList
+const myDefaultAllowList = bootstrap.Tooltip.Default.allowList
 
 // To allow table elements
 myDefaultAllowList.table = []
@@ -280,17 +246,62 @@ myDefaultAllowList.td = ['data-bs-option']
 
 // You can push your custom regex to validate your attributes.
 // Be careful about your regular expressions being too lax
-var myCustomRegex = /^data-my-app-[\w-]+/
+const myCustomRegex = /^data-my-app-[\w-]+/
 myDefaultAllowList['*'].push(myCustomRegex)
 ```
 
 If you want to bypass our sanitizer because you prefer to use a dedicated library, for example [DOMPurify](https://www.npmjs.com/package/dompurify), you should do the following:
 
 ```js
-var yourTooltipEl = document.getElementById('yourTooltip')
-var tooltip = new bootstrap.Tooltip(yourTooltipEl, {
-  sanitizeFn: function (content) {
+const yourTooltipEl = document.querySelector('#yourTooltip')
+const tooltip = new bootstrap.Tooltip(yourTooltipEl, {
+  sanitizeFn(content) {
     return DOMPurify.sanitize(content)
   }
 })
 ```
+
+## Optionally using jQuery
+
+**You don't need jQuery in Bootstrap 5**, but it's still possible to use our components with jQuery. If Bootstrap detects `jQuery` in the `window` object, it'll add all of our components in jQuery's plugin system. This allows you to do the following:
+
+```js
+// to enable tooltips with the default configuration
+$('[data-bs-toggle="tooltip"]').tooltip()
+
+// to initialize tooltips with given configuration
+$('[data-bs-toggle="tooltip"]').tooltip({
+  boundary: 'clippingParents',
+  customClass: 'myClass'
+})
+
+// to trigger the `show` method
+$('#myTooltip').tooltip('show')
+```
+
+The same goes for our other components.
+
+### No conflict
+
+Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call `.noConflict` on the plugin you wish to revert the value of.
+
+```js
+const bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+$.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
+```
+
+Bootstrap does not officially support third-party JavaScript libraries like Prototype or jQuery UI. Despite `.noConflict` and namespaced events, there may be compatibility problems that you need to fix on your own.
+
+### jQuery events
+
+Bootstrap will detect jQuery if `jQuery` is present in the `window` object and there is no `data-bs-no-jquery` attribute set on `<body>`. If jQuery is found, Bootstrap will emit events thanks to jQuery's event system. So if you want to listen to Bootstrap's events, you'll have to use the jQuery methods (`.on`, `.one`) instead of `addEventListener`.
+
+```js
+$('#myTab a').on('shown.bs.tab', () => {
+  // do something...
+})
+```
+
+## Disabled JavaScript
+
+Bootstrap's plugins have no special fallback when JavaScript is disabled. If you care about the user experience in this case, use [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.
