@@ -528,11 +528,11 @@ Put a form within a dropdown menu, or make it into a dropdown menu, and use [mar
   <form class="px-4 py-3">
     <div class="mb-3">
       <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1">
     </div>
     <div class="mb-3">
       <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleDropdownFormPassword1" autocomplete="current-password" placeholder="Password">
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" autocomplete="current-password">
     </div>
     <div class="mb-3">
       <div class="form-check">
