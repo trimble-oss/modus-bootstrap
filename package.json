@@ -84,18 +84,18 @@
     "ip": "^2.0.1",
     "lockfile-lint": "^4.14.0",
     "nodemon": "^3.1.7",
-    "npm-run-all2": "^6.2.3",
-    "postcss": "^8.4.47",
+    "npm-run-all2": "^7.0.1",
+    "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
     "postcss-drop-empty-css-vars": "^0.0.0",
     "rtlcss": "^4.3.0",
     "sass": "1.78.0",
     "sass-true": "^8.1.0",
     "shelljs": "^0.8.5",
-    "stylelint": "^16.10.0",
+    "stylelint": "^16.11.0",
     "stylelint-config-twbs-bootstrap": "^15.1.0",
-    "terser": "^5.36.0",
-    "vnu-jar": "23.4.11"
+    "terser": "^5.37.0",
+    "vnu-jar": "24.10.17"
   },
   "files": [
     "dist/{css,js}/*.{css,js,map}",
