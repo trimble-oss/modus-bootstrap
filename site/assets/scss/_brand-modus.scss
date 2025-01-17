@@ -105,13 +105,6 @@ main a[class] { // stylelint-disable-line
   }
 }
 
-// stylelint-disable-next-line
-#sidebar.show + div {
-  min-width: 444px !important;
-  // stylelint-disable-next-line
-  max-width: calc(100vw - 315px - var(--scrollbar-width)) !important;
-}
-
 // stylelint-disable-next-line selector-no-qualifying-type
 nav.navbar-blue.sticky-top {
   z-index: 1040;
