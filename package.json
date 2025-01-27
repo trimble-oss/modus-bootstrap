@@ -64,7 +64,7 @@
   "devDependencies": {
     "@stackblitz/sdk": "^1.11.0",
     "@trimble-oss/modus-docs-hugo-theme": "1.0.0-alpha28",
-    "@trimble-oss/modus-icons": "^1.15.0",
+    "@trimble-oss/modus-icons": "^1.16.0",
     "autoprefixer": "^10.4.20",
     "bootstrap-print-css": "^1.0.1",
     "bundlewatch": "^0.4.0",
@@ -80,7 +80,7 @@
     "find-unused-sass-variables": "^6.0.0",
     "globby": "^14.0.2",
     "hammer-simulator": "0.0.1",
-    "hugo-bin": "^0.137.2",
+    "hugo-bin": "^0.139.0",
     "ip": "^2.0.1",
     "lockfile-lint": "^4.14.0",
     "nodemon": "^3.1.7",
@@ -92,7 +92,7 @@
     "sass": "1.78.0",
     "sass-true": "^8.1.0",
     "shelljs": "^0.8.5",
-    "stylelint": "^16.13.2",
+    "stylelint": "^16.14.0",
     "stylelint-config-twbs-bootstrap": "^15.1.0",
     "terser": "^5.37.0",
     "vnu-jar": "24.10.17"

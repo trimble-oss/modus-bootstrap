@@ -143,3 +143,9 @@ nav.navbar-blue.sticky-top {
   background-position: 0 -760px;
   background-size: cover;
 }
+
+@media (max-width: 767px) {
+  #sidebar.show {
+    width: 100% !important;
+  }
+}
