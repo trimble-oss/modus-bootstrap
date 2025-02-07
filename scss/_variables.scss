@@ -1300,7 +1300,7 @@ $pagination-color:                  var(--#{$prefix}link-color) !default;
 $pagination-bg:                     var(--#{$prefix}body-bg) !default;
 $pagination-border-radius:          var(--#{$prefix}border-radius) !default;
 $pagination-border-width:           var(--#{$prefix}border-width) !default;
-$pagination-margin-start:           calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
+$pagination-margin-start:           calc(-1 * #{$pagination-border-width}) !default; // stylelint-disable-line function-disallowed-list
 $pagination-border-color:           var(--#{$prefix}border-color) !default;
 
 $pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
@@ -1651,6 +1651,7 @@ $carousel-control-width:             15% !default;
 $carousel-control-opacity:           .5 !default;
 $carousel-control-hover-opacity:     .9 !default;
 $carousel-control-transition:        opacity .15s ease !default;
+$carousel-control-icon-filter:       null !default;
 
 $carousel-indicator-width:           30px !default;
 $carousel-indicator-height:          3px !default;
@@ -1668,17 +1669,17 @@ $carousel-caption-spacer:            1.25rem !default;
 
 $carousel-control-icon-width:        2rem !default;
 
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>") !default;
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>") !default;
 
 $carousel-transition-duration:       .6s !default;
 $carousel-transition:                transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
 // scss-docs-end carousel-variables
 
 // scss-docs-start carousel-dark-variables
-$carousel-dark-indicator-active-bg:  $black !default;
-$carousel-dark-caption-color:        $black !default;
-$carousel-dark-control-icon-filter:  invert(1) grayscale(100) !default;
+$carousel-dark-indicator-active-bg:  $black !default; // Deprecated in v5.3.4
+$carousel-dark-caption-color:        $black !default; // Deprecated in v5.3.4
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100) !default; // Deprecated in v5.3.4
 // scss-docs-end carousel-dark-variables
 
 
@@ -1711,7 +1712,8 @@ $btn-close-opacity:          1 !default; // Modus customized
 $btn-close-hover-opacity:    .75 !default;
 $btn-close-focus-opacity:    1 !default;
 $btn-close-disabled-opacity: .25 !default;
-$btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default;
+$btn-close-filter:           null !default;
+$btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default; // Deprecated in v5.3.4
 // scss-docs-end close-variables
 
 
