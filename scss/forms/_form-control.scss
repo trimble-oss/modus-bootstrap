@@ -256,9 +256,9 @@ input.form-control-lg[type="file"] {
       background-color: #171c1e; // Gray 10
 
       &::placeholder {
-        color: #7d808d;
+        color: #7d808d; // gray 5
       }
-      &:read-only {
+      &:read-only:not([type="file"]) {
         color: #fff;
         background-color: #353a40;
       }
