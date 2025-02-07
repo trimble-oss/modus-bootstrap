@@ -143,3 +143,14 @@ nav.navbar-blue.sticky-top {
   background-position: 0 -760px;
   background-size: cover;
 }
+
+[data-bs-theme="dark"] pre.chroma {
+  filter: brightness(3);
+}
+
+@media (max-width: 767px) {
+  #sidebar-menu ul li {
+    display: inline-block !important;
+    width: 49% !important;
+  }
+}
