@@ -7250,7 +7250,7 @@ summary.accordion-button::-webkit-details-marker {
   display: inline-block;
   width: var(--bs-spinner-width);
   height: var(--bs-spinner-height);
-  color: #0063a3;
+  color: var(--bs-blue);
   vertical-align: var(--bs-spinner-vertical-align);
   border-radius: 50%;
   animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
