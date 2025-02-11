@@ -38,7 +38,7 @@
                 {{- if not .Params.blog -}}
                 {{- if site.Params.GitHubRepo -}}
                 <a class="btn btn-sm btn-outline-secondary mt-5 float-end"
-                  href="{{- site.Params.GitHubRepo -}}/tree/main/content/{{ .Page.File.Path | replaceRE `\\` "/" }}"
+                  href="{{- site.Params.GitHubRepo -}}/tree/main/site/content/{{ .Page.File.Path | replaceRE `\\` "/" }}"
                   title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
                 {{ end }}
                 {{ end }}
