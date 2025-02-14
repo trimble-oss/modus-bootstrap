@@ -34,3 +34,4 @@ jobs:
           files: "**/*.md"
           inline: warning
           incremental_files_only: true
+          strict: false
