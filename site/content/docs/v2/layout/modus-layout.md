@@ -8,7 +8,6 @@ toc: true
 loadModusLayout: true
 ---
 
-
 ## Basic Structure
 
 The basic structure for our Modus Layout, including the sidebar,
