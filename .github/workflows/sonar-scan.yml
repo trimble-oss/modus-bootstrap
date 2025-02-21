@@ -1,0 +1,33 @@
+name: SonarQube Scan
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+env:
+  NODE: 18
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    name: Sonar Scan Runner
+    runs-on: ubuntu-latest
+    if: github.repository == 'trimble-oss/website-modus.trimble.com'
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Sonar Scan Action
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
