@@ -26,6 +26,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "${{ env.NODE }}"
+
       - name: Run Sonar Scan Action
         uses: sonarsource/sonarqube-scan-action@master
         env:

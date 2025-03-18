@@ -14,23 +14,25 @@ Whenever possible, avoid modifying Bootstrap's core files. For Sass, that means 
 
 ```text
 your-project/
-├── scss
+├── scss/
 │   └── custom.scss
 └── node_modules/
-    └── bootstrap
-        ├── js
-        └── scss
+│   └── bootstrap/
+│       ├── js/
+│       └── scss/
+└── index.html
 ```
 
 If you've downloaded our source files and aren't using a package manager, you'll want to manually create something similar to that structure, keeping Bootstrap's source files separate from your own.
 
 ```text
 your-project/
-├── scss
+├── scss/
 │   └── custom.scss
-└── bootstrap/
-    ├── js
-    └── scss
+├── bootstrap/
+│   ├── js/
+│   └── scss/
+└── index.html
 ```
 
 ## Importing
@@ -57,8 +59,9 @@ In your `custom.scss`, you'll import Bootstrap's source Sass files. You have two
 
 // 2. Include any default variable overrides here
 
-// 3. Include remainder of required Bootstrap stylesheets
+// 3. Include remainder of required Modus Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../node_modules/modus-bootstrap/scss/variables";
+@import "../node_modules/modus-bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
 
@@ -202,6 +205,8 @@ Next to the [Sass maps]({{< docsref "/customize/color#color-sass-maps" >}}) we h
 
 You can lighten or darken colors with Bootstrap's `tint-color()` and `shade-color()` functions. These functions will mix colors with black or white, unlike Sass' native `lighten()` and `darken()` functions which will change the lightness by a fixed amount, which often doesn't lead to the desired effect.
 
+`shift-color()` combines these two functions by shading the color if the weight is positive and tinting the color if the weight is negative.
+
 {{< scss-docs name="color-functions" file="scss/_functions.scss" >}}
 
 In practice, you'd call the function and pass in the color and weight parameters.
@@ -213,6 +218,11 @@ In practice, you'd call the function and pass in the color and weight parameters
 
 .custom-element-2 {
   color: shade-color($danger, 30%);
+}
+
+.custom-element-3 {
+  color: shift-color($success, 40%);
+  background-color: shift-color($success, -60%);
 }
 ```
 
@@ -296,18 +306,18 @@ Our `scss/mixins/` directory has a ton of mixins that power parts of Bootstrap a
 
 ### Color schemes
 
-A shorthand mixin for the `prefers-color-scheme` media query is available with support for `light`, `dark`, and custom color schemes. See [the color modes documentation]({{< docsref "/customize/color-modes" >}}) for information on our color mode mixin.
+A shorthand mixin for the `prefers-color-scheme` media query is available with support for `light` and `dark` color schemes. See [the color modes documentation]({{< docsref "/customize/color-modes" >}}) for information on our color mode mixin.
 
 {{< scss-docs name="mixin-color-scheme" file="scss/mixins/_color-scheme.scss" >}}
 
 ```scss
 .custom-element {
-  @include color-scheme(dark) {
-    // Insert dark mode styles here
+  @include color-scheme(light) {
+    // Insert light mode styles here
   }
 
-  @include color-scheme(custom-named-scheme) {
-    // Insert custom color scheme styles here
+  @include color-scheme(dark) {
+    // Insert dark mode styles here
   }
 }
 ```
