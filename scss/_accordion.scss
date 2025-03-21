@@ -286,7 +286,6 @@
 .accordion:not(.accordion-wide) .accordion-header:has(.accordion-button:not(.collapsed)),
 .accordion:not(.accordion-wide) .accordion-item:has(.accordion-button:not(.collapsed)) {
   box-shadow: 4px 0 0 var(--bs-blue) inset;
-  // transition: all .2s ease-in-out; /* stylelint-disable-line property-disallowed-list */
 }
 
 .accordion:not(.accordion-wide) .accordion-item:has(.accordion-button:not(.collapsed)) button {
@@ -302,6 +301,20 @@
 
 details.accordion-item {
   box-shadow: none !important;
+
+  @media (prefers-reduced-motion: no-preference) {
+    interpolate-size: allow-keywords;
+  }
+
+  &::details-content {
+    block-size: 0;
+    overflow-y: clip;
+    transition: content-visibility .2s allow-discrete, block-size .2s; /* stylelint-disable-line property-disallowed-list */
+  }
+
+  &[open]::details-content {
+    block-size: auto;
+  }
 
   &:not([open]) {
     .accordion-button {
@@ -321,10 +334,6 @@ details.accordion-item {
     }
   }
 
-  &.accordion-header {
-    user-select: none;
-  }
-
   &:first-of-type {
     .accordion-button {
       border-top-left-radius: var(--bs-accordion-border-radius);
@@ -337,6 +346,10 @@ details.accordion-item {
       background-image: var(--bs-accordion-btn-icon);
       transform: var(--bs-accordion-btn-icon-transform);
     }
+  }
+
+  .accordion-header {
+    user-select: none;
   }
 }
 
