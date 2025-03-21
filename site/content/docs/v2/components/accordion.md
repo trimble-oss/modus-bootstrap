@@ -283,7 +283,7 @@ Add `.accordion-wide` for wide version. The size is the same as the default acco
 
 ## Details / Summary Accordion
 
-Experimental feature: You can create an accordion without requiring JavaScript using the details / summary elements. Note that this doesn't have expand / collapse animation and doesn't close with <kbd>Esc</kbd> key.
+Experimental feature: You can create an accordion without requiring JavaScript using the details / summary elements.
 
 {{< example class="bg-body-secondary bg-opacity-25" >}}
 <div class="accordion">
