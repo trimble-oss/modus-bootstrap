@@ -16,8 +16,8 @@
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}?v{{ hugo.Version }}">
 
 <!-- Load jQuery from CDN with fallback -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>');</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0-beta.2/dist/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-4.0.0-beta.2.min.js"><\/script>');</script>
 <link rel="stylesheet" href="/fonts/modus-icons.css">
 
 <!-- Loads Dark Mode Toggle JS -->
@@ -56,8 +56,8 @@
 <!-- OpenGraph Meta tags using Hugo's own built-in template -->
 {{ template "_internal/opengraph.html" . }}
 
-<!-- no need to define additional Twitter card meta tags as fallback to Open Graph -->
-<!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#twitter-cards-and-open-graph -->
+<!-- no need to define additional X card meta tags as fallback to Open Graph -->
+<!-- https://developer.x.com/en/docs/tweets/optimize-with-cards/guides/getting-started#twitter-cards-and-open-graph -->
 
 {{- if .Params.private -}}
 <meta name="robots" content="noindex, nofollow">

@@ -309,7 +309,7 @@ details.accordion-item {
   &::details-content {
     block-size: 0;
     overflow-y: clip;
-    transition: content-visibility .2s allow-discrete, block-size .2s; /* stylelint-disable-line property-disallowed-list */
+    transition: content-visibility .2s allow-discrete, block-size .2s; // stylelint-disable-line property-disallowed-list
   }
 
   &[open]::details-content {
