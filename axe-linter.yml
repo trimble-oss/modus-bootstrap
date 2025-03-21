@@ -1,0 +1,4 @@
+---
+rules:
+  aria-valid-attr-value: false
+  list: false

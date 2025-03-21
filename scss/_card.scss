@@ -243,7 +243,7 @@
 @if $enable-dark-mode {
   @include color-mode(dark) {
     .card {
-      background-color: #353a40;
+      background-color: #252a2e;
     }
   }
 }
