@@ -286,7 +286,6 @@
 .accordion:not(.accordion-wide) .accordion-header:has(.accordion-button:not(.collapsed)),
 .accordion:not(.accordion-wide) .accordion-item:has(.accordion-button:not(.collapsed)) {
   box-shadow: 4px 0 0 var(--bs-blue) inset;
-  // transition: all .2s ease-in-out; /* stylelint-disable-line property-disallowed-list */
 }
 
 .accordion:not(.accordion-wide) .accordion-item:has(.accordion-button:not(.collapsed)) button {
@@ -310,9 +309,7 @@ details.accordion-item {
   &::details-content {
     block-size: 0;
     overflow-y: clip;
-    transition:
-      content-visibility 0.2s allow-discrete,
-      block-size 0.2s;
+    transition: content-visibility .2s allow-discrete, block-size .2s; /* stylelint-disable-line property-disallowed-list */
   }
 
   &[open]::details-content {
