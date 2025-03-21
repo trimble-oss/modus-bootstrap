@@ -1,7 +1,7 @@
 .file-drop-zone {
   background-color: #f1f1f6;
   border: 2px dotted $col_gray_3;
-  /* stylelint-disable-next-line property-disallowed-list */
+  // stylelint-disable-next-line property-disallowed-list
   border-radius: $border_radius;
 
   &.disabled {
