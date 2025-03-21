@@ -303,6 +303,22 @@
 details.accordion-item {
   box-shadow: none !important;
 
+  @media (prefers-reduced-motion: no-preference) {
+    interpolate-size: allow-keywords;
+  }
+
+  &::details-content {
+    block-size: 0;
+    overflow-y: clip;
+    transition:
+      content-visibility 0.2s allow-discrete,
+      block-size 0.2s;
+  }
+
+  &[open]::details-content {
+    block-size: auto;
+  }
+
   &:not([open]) {
     .accordion-button {
       background-color: var(--bs-accordion-bg);
@@ -321,10 +337,6 @@ details.accordion-item {
     }
   }
 
-  &.accordion-header {
-    user-select: none;
-  }
-
   &:first-of-type {
     .accordion-button {
       border-top-left-radius: var(--bs-accordion-border-radius);
@@ -337,6 +349,10 @@ details.accordion-item {
       background-image: var(--bs-accordion-btn-icon);
       transform: var(--bs-accordion-btn-icon-transform);
     }
+  }
+
+  .accordion-header {
+    user-select: none;
   }
 }
 
