@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* Modus Bootstrap  v2.0.8 (https://modus-bootstrap.trimble.com/)
+* Modus Bootstrap  v2.0.9 (https://modus-bootstrap.trimble.com/)
  * Copyright 2025 Trimble Inc.
  * Licensed under MIT (https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE)
  * This a fork of Bootstrap: Initial license below
@@ -5078,7 +5078,7 @@ summary.dropdown-toggle::-webkit-details-marker {
 }
 
 [data-bs-theme=dark] .card {
-  background-color: #353a40;
+  background-color: #252a2e;
 }
 
 .accordion {
