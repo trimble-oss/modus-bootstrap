@@ -100,8 +100,8 @@ params:
   authors:              "Trimble"
   disableModusBootstrapCSS: true
 
-  current_version:      "2.0.9"
-  current_ruby_version: "2.0.9"
+  current_version:      "2.0.10"
+  current_ruby_version: "2.0.10"
   docs_version:         "v2"
   rfs_version:          "v10.0.0"
   github_org:           "https://github.com/trimble-oss"
@@ -120,10 +120,11 @@ params:
     # See https://www.srihash.org for info on how to generate the hashes
     css:              "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.0.8/dist/css/modus-bootstrap.min.css"
     css_hash:         "sha384-H1LAiuWQO+uVMokpbVIE7RjCXJ6fWA2q4/sqdnfKVRqvegxXfBf3dw9imaJqx2+O"
-    js:               "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    js_hash:          "sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    js_bundle_hash:   "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    js:               "https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.min.js"
+    js_hash:          "sha384-Re460s1NeyAhufAM5JwfIGWosokaQ7CH15ti6W5Y4wC/m4eJ5opJ2ivohxVM05Wd"
+    js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+    js_bundle_hash:   "sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+
     popper:           "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     popper_hash:      "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     popper_esm:       "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js"

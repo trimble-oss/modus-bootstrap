@@ -23,44 +23,44 @@ Progress components are built with two HTML elements, some CSS to set the width,
 Put that all together, and you have the following examples.
 
 {{< example >}}
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 0%"></div>
 </div>
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 25%"></div>
 </div>
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 50%"></div>
 </div>
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 75%"></div>
 </div>
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 100%"></div>
 </div>
 {{< /example >}}
 
 Modus Bootstrap provides a handful of [utilities for setting width]({{< docsref "/utilities/sizing" >}}). Depending on your needs, these may help with quickly configuring progress.
 
 {{< example >}}
-<div class="progress">
-  <div class="progress-bar w-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar w-75"></div>
 </div>
 {{< /example >}}
 
 ## Small Variant
 
 {{< example >}}
-<div class="progress progress-sm">
-  <div class="progress-bar w-75" role="progressbar" aria-label="Small progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress progress-sm" role="progressbar" aria-label="Small progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar w-75"></div>
 </div>
 {{< /example >}}
 
 ## XS Variant
 
 {{< example >}}
-<div class="progress progress-xs">
-  <div class="progress-bar w-75" role="progressbar" aria-label="XS progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress progress-xs" role="progressbar" aria-label="XS progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar w-75"></div>
 </div>
 {{< /example >}}
 
@@ -69,8 +69,8 @@ Modus Bootstrap provides a handful of [utilities for setting width]({{< docsref 
 An animated indeterminate state can be used with the `.progress-bar-animated` class and is set to be 50% width.
 
 {{< example >}}
-<div class="progress">
-  <div class="progress-bar progress-bar-animated" role="progressbar" aria-label="Animated progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="progress" role="progressbar" aria-label="Animated progress bar example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-animated"></div>
 </div>
 {{< /example >}}
 
