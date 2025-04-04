@@ -59,7 +59,7 @@
     "delete-unneeded-templates": "npx rimraf node_modules/@trimble-oss/modus-docs-hugo-theme/layouts/partials/col-sidebar-*.html"
   },
   "dependencies": {
-    "bootstrap": "5.3.3"
+    "bootstrap": "5.3.4"
   },
   "devDependencies": {
     "@stackblitz/sdk": "^1.11.0",
