@@ -542,6 +542,12 @@ legend {
   outline-offset: -2px; // 2
 }
 
+// Consistent color for search input cancel buttons
+[type="search"]::-webkit-search-cancel-button {
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
 // 1. A few input types should stay LTR
 // See https://rtlstyling.com/posts/rtl-styling#form-inputs
 // 2. RTL only output
