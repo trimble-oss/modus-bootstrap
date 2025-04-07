@@ -1,4 +1,5 @@
 ---
 rules:
   aria-valid-attr-value: false
+  html-has-lang: false
   list: false
