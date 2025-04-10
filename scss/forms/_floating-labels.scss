@@ -81,7 +81,7 @@
     }
   }
   > textarea:disabled ~ label::after {
-    background-color: $input-disabled-bg;
+    background-color: transparent;
   }
 
   > .form-control-plaintext {

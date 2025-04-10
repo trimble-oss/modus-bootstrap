@@ -2896,7 +2896,7 @@ input.form-control-lg[type=file] {
   border-radius: var(--bs-border-radius);
 }
 .form-floating > textarea:disabled ~ label::after {
-  background-color: var(--bs-secondary-bg-subtle);
+  background-color: transparent;
 }
 .form-floating > .form-control-plaintext ~ label {
   border-width: var(--bs-border-width) 0;
