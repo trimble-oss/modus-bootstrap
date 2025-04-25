@@ -1,10 +1,12 @@
 stackblitz.js
 **/*.min.js
+**/dist/
 **/vendor/
 /_site/
 /js/coverage/
 /js/tests/integration/
 /site/static/sw.js
+/site/static/docs/**/assets/sw.js
 /site/layouts/
 /site/*
 modus-layout.js
