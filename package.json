@@ -82,7 +82,7 @@
     "hammer-simulator": "0.0.1",
     "hugo-bin": "^0.142.0",
     "ip": "^2.0.1",
-    "lockfile-lint": "^4.14.0",
+    "lockfile-lint": "^4.14.1",
     "nodemon": "^3.1.9",
     "npm-run-all2": "^7.0.2",
     "postcss": "^8.5.3",
