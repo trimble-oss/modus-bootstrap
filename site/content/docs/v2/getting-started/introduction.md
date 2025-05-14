@@ -35,7 +35,7 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
    </html>
    ```
 
-2. **Include Modus Bootstrap CSS and Bootstrap JS.** Place the `<link>` tag in the `<head>` for our CSS, and the `<script>` tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing `</body>`. Learn more about our [CDN links](#cdn-links).
+2. **Include Modus Bootstrap CSS and Bootstrap JS.** Place the `<link>` tag in the `<head>` for our CSS, and the `<script>` tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing `</body>`. Learn more about our [CDN links](#cdn-links). You must also load Open Sans font either from Google Fonts (as shown below) or your own server.
 
    ```html
    <!doctype html>
@@ -43,6 +43,8 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
      <head>
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=fallback"/>
        <title>Modus demo</title>
        <link href="{{< param "cdn.css" >}}" rel="stylesheet">
      </head>
