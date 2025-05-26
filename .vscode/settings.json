@@ -1,0 +1,11 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "always"
+  },
+  "editor.renderWhitespace": "all",
+  "eslint.validate": ["javascript", "typescript"],
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": ["scss"]
+}
