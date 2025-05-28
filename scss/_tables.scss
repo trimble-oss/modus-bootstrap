@@ -171,3 +171,9 @@
     }
   }
 }
+
+@include color-mode(dark) {
+  .table {
+    --bs-table-border-color: #353a40;
+  }
+}
