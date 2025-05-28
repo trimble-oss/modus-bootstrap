@@ -84,7 +84,7 @@
     "ip": "^2.0.1",
     "lockfile-lint": "^4.14.1",
     "nodemon": "^3.1.10",
-    "npm-run-all2": "^8.0.2",
+    "npm-run-all2": "^8.0.4",
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
     "postcss-drop-empty-css-vars": "^0.0.0",
