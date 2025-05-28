@@ -2069,6 +2069,10 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
+[data-bs-theme=dark] .table {
+  --bs-table-border-color: #353a40;
+}
+
 .form-label {
   margin-bottom: 0.25rem;
   font-size: 0.75rem;
