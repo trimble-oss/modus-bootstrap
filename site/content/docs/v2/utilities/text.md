@@ -33,8 +33,8 @@ Note that we don't provide utility classes for justified text. While, aesthetica
 Wrap text with a `.text-wrap` class.
 
 {{< example >}}
-<div class="badge bg-primary text-wrap" style="width: 6rem;">
-  This text should wrap.
+<div class="text-wrap bg-secondary border text-wrap" style="width: 8rem;">
+  This snippet of text should wrap.
 </div>
 {{< /example >}}
 
@@ -43,6 +43,22 @@ Prevent text from wrapping with a `.text-nowrap` class.
 {{< example >}}
 <div class="text-nowrap bg-body-secondary border" style="width: 8rem;">
   This text should overflow the parent.
+</div>
+{{< /example >}}
+
+Use `.text-balance` to balance evenly distribute text across multiple lines. This is computationally expensive and is thus limited by the Chromium to six lines and by Firefox to ten lines.
+
+{{< example >}}
+<div class="text-balance mx-auto" style="width: 20rem;">
+  This text should be balanced. Here we’re writing a longer snippet of text to form a paragraph and demonstrate how the text wraps.
+</div>
+{{< /example >}}
+
+Use `.text-pretty` to prevent single words their own line (orphans). **Pretty text wrapping is not fully supported in Safari and Firefox at the moment.**
+
+{{< example >}}
+<div class="text-pretty mx-auto" style="width: 20rem;">
+  This text should be pretty. Here we’re writing a longer snippet of text to form a paragraph and demonstrate how the text wraps.
 </div>
 {{< /example >}}
 
