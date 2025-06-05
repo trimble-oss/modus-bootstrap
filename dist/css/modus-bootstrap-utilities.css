@@ -1838,6 +1838,14 @@
   white-space: nowrap !important;
 }
 
+.text-balance {
+  text-wrap: balance !important;
+}
+
+.text-pretty {
+  text-wrap: pretty !important;
+}
+
 /* rtl:begin:remove */
 .text-break {
   word-wrap: break-word !important;
