@@ -92,7 +92,7 @@
     "sass": "1.78.0",
     "sass-true": "^8.1.0",
     "shelljs": "^0.10.0",
-    "stylelint": "^16.20.0",
+    "stylelint": "^16.21.0",
     "stylelint-config-twbs-bootstrap": "^16.0.0",
     "terser": "^5.43.0",
     "vnu-jar": "24.10.17"
