@@ -72,6 +72,7 @@
 }
 // scss-docs-end alert-modifiers
 
+.alert-info,
 .alert-primary {
   background-color: rgba(220, 237, 249, .5) !important;
   --bs-alert-border-color: #0063a3 !important;
@@ -122,6 +123,7 @@
     color: #fff !important;
   }
 
+  .alert-info,
   .alert-primary {
     background-color: rgba(1, 154, 235, .5) !important;
     border-color: #019aeb !important;
