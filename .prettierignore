@@ -6,3 +6,4 @@
 *.yml
 
 postcss.config.js
+.cspell.json
