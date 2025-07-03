@@ -15,6 +15,13 @@
   }
 }
 
+.bd-example-resize {
+  min-width: 320px;
+  max-width: 777px;
+  overflow: auto;
+  resize: horizontal;
+}
+
 .bd-example {
   --bd-example-padding: 1rem;
 
