@@ -4,6 +4,8 @@
   vertical-align: middle;
   cursor: wait;
   background-color: currentcolor;
+  // stylelint-disable-next-line property-disallowed-list
+  border-radius: .5rem;
   opacity: $placeholder-opacity-max;
 
   &.btn::before {
@@ -41,7 +43,7 @@
 .placeholder-wave {
   mask-image: linear-gradient(130deg, $black 55%, rgba(0, 0, 0, (1 - $placeholder-opacity-min)) 75%, $black 95%);
   mask-size: 200% 100%;
-  animation: placeholder-wave 2s linear infinite;
+  animation: placeholder-wave 1.8s linear infinite;
 }
 
 @keyframes placeholder-wave {
