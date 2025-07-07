@@ -229,18 +229,22 @@
 
 // Active (selected) tab
 .nav-tabs .nav-item .nav-link.active {
-  color: #fff !important;
-  background-color: #217cbb !important;
+  color: var(--bs-body-color);
+  background-image: linear-gradient(to top, #0063a3 0, #0063a3 4px, transparent 4px, transparent 100%);
+  border-top-width: 0;
+  border-bottom-color: #217cbb;
+}
+
+.nav-tabs .nav-item:has(.nav-link.active) {
+  border-bottom-width: 1px;
 }
 
 // Pressed tab
 .nav-tabs .nav-item .nav-link:active {
-  color: #fff !important;
-  background-color: #0063a3 !important;
+  border-bottom-color: #cbcdd6;
 }
 
 .nav-tabs .nav-item .nav-link:not(.active):not(:active):not(:hover) {
-  color: var(--bs-body-color);
   border-bottom-color: #cbcdd6;
 }
 
@@ -261,12 +265,11 @@
         border-bottom-color: #464b52 !important;
 
         &.active {
-          background-color: rgba(1, 154, 235, .3) !important;
-          border: 1px solid #019aeb !important;
+          background-image: linear-gradient(to top, #019aeb 0, #019aeb 4px, transparent 4px, transparent 100%);
+          border-bottom-color: #019aeb;
         }
 
         &:active {
-          background-color: #019aeb !important;
           border-bottom-color: #019aeb;
         }
 
