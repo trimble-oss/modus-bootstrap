@@ -4358,6 +4358,7 @@ summary.dropdown-toggle::-webkit-details-marker {
   padding-bottom: 0.75rem;
   border-top: 2px transparent;
   border-right: 0;
+  border-bottom-width: 1px;
   border-left: 0;
   transition: none;
 }
@@ -4368,10 +4369,6 @@ summary.dropdown-toggle::-webkit-details-marker {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   font-size: 0.75rem;
-}
-
-.nav-tabs .nav-item .nav-link:not(.active) {
-  border: 1px solid transparent;
 }
 
 .nav-tabs .nav-link.active,

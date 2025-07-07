@@ -211,6 +211,7 @@
   padding-bottom: .75rem;
   border-top: 2px transparent;
   border-right: 0;
+  border-bottom-width: 1px;
   border-left: 0;
   transition: none; // stylelint-disable-line property-disallowed-list
 }
@@ -221,10 +222,6 @@
   padding-bottom: .5rem;
   padding-left: 1rem;
   font-size: .75rem;
-}
-
-.nav-tabs .nav-item .nav-link:not(.active) {
-  border: 1px solid transparent;
 }
 
 // Active (selected) tab
