@@ -228,6 +228,7 @@
 }
 
 // Active (selected) tab
+.nav-tabs .nav-link.active,
 .nav-tabs .nav-item .nav-link.active {
   color: var(--bs-body-color);
   background-image: linear-gradient(to top, #0063a3 0, #0063a3 4px, transparent 4px, transparent 100%);
@@ -239,11 +240,9 @@
   border-bottom-width: 1px;
 }
 
-// Pressed tab
-.nav-tabs .nav-item .nav-link:active {
-  border-bottom-color: #cbcdd6;
-}
-
+// Normal and Pressed tab
+.nav-tabs .nav-item .nav-link:active,
+.nav-tabs .nav-link:not(.active):not(:active):not(:hover),
 .nav-tabs .nav-item .nav-link:not(.active):not(:active):not(:hover) {
   border-bottom-color: #cbcdd6;
 }
@@ -266,6 +265,7 @@
 
         &.active {
           background-image: linear-gradient(to top, #019aeb 0, #019aeb 4px, transparent 4px, transparent 100%);
+          border-top-width: 0;
           border-bottom-color: #019aeb;
         }
 
