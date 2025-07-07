@@ -38,3 +38,8 @@
     --bd-callout-border: var(--bs-#{$variant}-border-subtle);
   }
 }
+
+[data-bs-theme="dark"] .bd-callout-danger,
+[data-bs-theme="dark"] .bd-callout-warning {
+  color: #fff;
+}
