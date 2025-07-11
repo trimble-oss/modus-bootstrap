@@ -1,7 +1,7 @@
 {
   "name": "@trimble-oss/modus-bootstrap",
   "description": "Modus Bootstrap 2 based on Bootstrap v5.x",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "config": {
     "version_short": "2.0"
   },
@@ -90,7 +90,7 @@
     "postcss-drop-empty-css-vars": "^0.0.0",
     "rtlcss": "^4.3.0",
     "sass": "1.78.0",
-    "sass-true": "^8.1.0",
+    "sass-true": "^9.0.0",
     "shelljs": "^0.10.0",
     "stylelint": "^16.21.1",
     "stylelint-config-twbs-bootstrap": "^16.1.0",
