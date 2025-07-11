@@ -1,11 +1,14 @@
+:where(.placeholder) {
+  // stylelint-disable-next-line property-disallowed-list
+  border-radius: .5rem;
+}
+
 .placeholder {
   display: inline-block;
   min-height: 1em;
   vertical-align: middle;
   cursor: wait;
   background-color: currentcolor;
-  // stylelint-disable-next-line property-disallowed-list
-  border-radius: .5rem;
   opacity: $placeholder-opacity-max;
 
   &.btn::before {
