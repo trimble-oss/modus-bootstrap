@@ -4374,7 +4374,7 @@ summary.dropdown-toggle::-webkit-details-marker {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item .nav-link.active {
   color: var(--bs-body-color);
-  background-image: linear-gradient(to top, #0063a3 0, #0063a3 4px, transparent 4px, transparent 100%);
+  background-image: linear-gradient(to top, #0063a3 0, #0063a3 4px, #fff 4px, #fff 100%);
   border-top-width: 0;
   border-bottom-color: #217cbb;
 }
@@ -4403,7 +4403,7 @@ summary.dropdown-toggle::-webkit-details-marker {
   border-bottom-color: #464b52 !important;
 }
 [data-bs-theme=dark] .nav-tabs .nav-link.active {
-  background-image: linear-gradient(to top, #019aeb 0, #019aeb 4px, transparent 4px, transparent 100%);
+  background-image: linear-gradient(to top, #019aeb 0, #019aeb 4px, #171c1e 4px, #171c1e 100%);
   border-top-width: 0;
   border-bottom-color: #019aeb;
 }

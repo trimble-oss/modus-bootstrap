@@ -669,7 +669,7 @@ Experimental feature: You can create a dropdown without requiring JavaScript usi
     Open dropdown
   </summary>
   <div>
-    <ul class="dropdown-menu" style="display: revert;">
+    <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Action</a></li>
       <li><a class="dropdown-item" href="#">Another action</a></li>
       <li><a class="dropdown-item" href="#">Something else here</a></li>
