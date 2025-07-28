@@ -7277,8 +7277,36 @@ summary.accordion-button::-webkit-details-marker {
   --bs-spinner-border-width: 5px;
 }
 
+@keyframes spinner-grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.spinner-grow {
+  --bs-spinner-width: 2rem;
+  --bs-spinner-height: 2rem;
+  --bs-spinner-vertical-align: -0.125em;
+  --bs-spinner-animation-speed: 1.3s;
+  --bs-spinner-animation-name: spinner-grow;
+  background-color: transparent;
+  border-color: currentcolor;
+  border-style: solid;
+  border-width: 1.5px;
+  opacity: 0;
+}
+
+.spinner-grow-sm {
+  --bs-spinner-width: 1rem;
+  --bs-spinner-height: 1rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .spinner-border {
+  .spinner-border,
+  .spinner-grow {
     --bs-spinner-animation-speed: 1.5s;
   }
 }
