@@ -51,9 +51,47 @@
   // scss-docs-end spinner-border-lg-css-vars
 }
 
+//
+// Growing circle
+//
+
+// scss-docs-start spinner-grow-keyframes
+@keyframes spinner-grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
+// scss-docs-end spinner-grow-keyframes
+
+.spinner-grow {
+  // scss-docs-start spinner-grow-css-vars
+  --#{$prefix}spinner-width: #{$spinner-width};
+  --#{$prefix}spinner-height: #{$spinner-height};
+  --#{$prefix}spinner-vertical-align: #{$spinner-vertical-align};
+  --#{$prefix}spinner-animation-speed: 1.3s;
+  --#{$prefix}spinner-animation-name: spinner-grow;
+  // scss-docs-end spinner-grow-css-vars
+
+  background-color: transparent;
+  border-color: currentcolor;
+  border-style: solid;
+  border-width: 1.5px;
+  opacity: 0;
+}
+
+.spinner-grow-sm {
+  --#{$prefix}spinner-width: #{$spinner-width-sm};
+  --#{$prefix}spinner-height: #{$spinner-height-sm};
+}
+
 @if $enable-reduced-motion {
   @media (prefers-reduced-motion: reduce) {
-    .spinner-border {
+    .spinner-border,
+    .spinner-grow {
       --#{$prefix}spinner-animation-speed: #{$spinner-animation-speed * 2};
     }
   }
