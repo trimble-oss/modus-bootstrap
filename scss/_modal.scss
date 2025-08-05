@@ -103,10 +103,11 @@
   background-color: var(--#{$prefix}modal-bg);
   background-clip: padding-box;
   border: var(--#{$prefix}modal-border-width) solid var(--#{$prefix}modal-border-color);
-  @include border-radius(var(--#{$prefix}modal-border-radius));
-  @include box-shadow(var(--#{$prefix}modal-box-shadow));
   // Remove focus outline from opened modal
   outline: 0;
+  box-shadow: $box-shadow-lg;
+  @include border-radius(var(--#{$prefix}modal-border-radius));
+  @include box-shadow(var(--#{$prefix}modal-box-shadow));
 }
 
 // Modal background
