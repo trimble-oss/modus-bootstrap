@@ -22,7 +22,7 @@ For accessibility purposes, each loader here includes `role="status"` and a nest
 
 Use the border spinners for a lightweight loading indicator.
 
-{{< example >}}
+{{< example class="d-flex gap-4" >}}
 <div class="spinner-border" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
@@ -40,7 +40,7 @@ Use the border spinners for a lightweight loading indicator.
 
 Use the `.spinner-border-lg` for a larger spinner.
 
-{{< example >}}
+{{< example class="d-flex gap-4" >}}
 <div class="spinner-border spinner-border-lg" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
@@ -50,6 +50,16 @@ Use the `.spinner-border-lg` for a larger spinner.
 </div>
 
 <div class="spinner-border spinner-border-lg text-tertiary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+{{< /example >}}
+
+## Growing spinner
+
+If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!
+
+{{< example >}}
+<div class="spinner-grow" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
 {{< /example >}}

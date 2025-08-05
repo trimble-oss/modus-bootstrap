@@ -1,5 +1,5 @@
 # Maintainers
 
-| Name            | Username |
-|-----------------|----------|
-| Christian Oliff | @coliff  |
+| Name            | Username                  |
+| --------------- | ------------------------- |
+| Christian Oliff | https://github.com/coliff |
