@@ -5059,9 +5059,9 @@ summary.dropdown-toggle::-webkit-details-marker {
   --bs-accordion-bg: var(--bs-body-bg);
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
-  --bs-accordion-border-width: 0;
+  --bs-accordion-border-width: var(--bs-border-width);
   --bs-accordion-border-radius: 4px;
-  --bs-accordion-inner-border-radius: 4px;
+  --bs-accordion-inner-border-radius: calc(4px - (var(--bs-border-width)));
   --bs-accordion-btn-padding-x: 1rem;
   --bs-accordion-btn-padding-y: 0.75rem;
   --bs-accordion-btn-color: var(--bs-body-color);
@@ -5131,7 +5131,6 @@ summary.dropdown-toggle::-webkit-details-marker {
 .accordion-button:focus {
   z-index: 3;
   outline: 0;
-  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
 }
 
 .accordion-header {
@@ -5204,12 +5203,7 @@ summary.dropdown-toggle::-webkit-details-marker {
 
 .accordion-item:not(:first-of-type):not(:last-of-type),
 .accordion-item:not(:last-of-type) {
-  border-bottom: 1px solid #cbcdd6;
-}
-
-[data-bs-theme=dark] .accordion-item:not(:first-of-type):not(:last-of-type),
-[data-bs-theme=dark] .accordion-item:not(:last-of-type) {
-  border-bottom: 1px solid #6a6e79;
+  border-bottom: 1px solid var(--bs-accordion-border-color);
 }
 
 .accordion.accordion-sm .accordion-header {
@@ -5229,11 +5223,6 @@ summary.dropdown-toggle::-webkit-details-marker {
 
 .accordion:has(.accordion-button:only-child) {
   border-radius: 4px;
-  box-shadow: var(--bs-box-shadow-lg);
-}
-
-.accordion:has(.accordion-button.collapsed:only-child) {
-  box-shadow: var(--bs-box-shadow);
 }
 
 .accordion-button .supporting-label {
@@ -5303,6 +5292,7 @@ summary.dropdown-toggle::-webkit-details-marker {
   }
 }
 details.accordion-item {
+  border-bottom-width: 0 !important;
   box-shadow: none !important;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -5332,6 +5322,9 @@ details.accordion-item:not([open]):last-of-type .accordion-button {
 details.accordion-item:first-of-type .accordion-button {
   border-top-left-radius: var(--bs-accordion-border-radius);
   border-top-right-radius: var(--bs-accordion-border-radius);
+}
+details.accordion-item[open] {
+  border-bottom-width: 1px !important;
 }
 details.accordion-item[open] .accordion-button::after {
   background-image: var(--bs-accordion-btn-icon);
