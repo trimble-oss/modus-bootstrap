@@ -77,7 +77,6 @@
   &:focus {
     z-index: 3;
     outline: 0;
-    box-shadow: var(--#{$prefix}accordion-btn-focus-box-shadow);
   }
 }
 
@@ -173,16 +172,7 @@
 
 .accordion-item:not(:first-of-type):not(:last-of-type),
 .accordion-item:not(:last-of-type) {
-  border-bottom: 1px solid #cbcdd6;
-}
-
-@if $enable-dark-mode {
-  @include color-mode(dark) {
-    .accordion-item:not(:first-of-type):not(:last-of-type),
-    .accordion-item:not(:last-of-type) {
-      border-bottom: 1px solid #6a6e79;
-    }
-  }
+  border-bottom: 1px solid var(--#{$prefix}accordion-border-color);
 }
 
 // Small Accordion
@@ -214,11 +204,6 @@
 
 .accordion:has(.accordion-button:only-child) {
   border-radius: 4px; // stylelint-disable-line property-disallowed-list
-  box-shadow: var(--bs-box-shadow-lg);
-}
-
-.accordion:has(.accordion-button.collapsed:only-child) {
-  box-shadow: var(--bs-box-shadow);
 }
 
 // supporting label
@@ -300,6 +285,7 @@
 }
 
 details.accordion-item {
+  border-bottom-width: 0 !important;
   box-shadow: none !important;
 
   @media (prefers-reduced-motion: no-preference) {
@@ -342,6 +328,8 @@ details.accordion-item {
   }
 
   &[open] {
+    border-bottom-width: 1px !important;
+
     .accordion-button::after {
       background-image: var(--bs-accordion-btn-icon);
       transform: var(--bs-accordion-btn-icon-transform);
