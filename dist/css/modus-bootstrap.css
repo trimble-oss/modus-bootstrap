@@ -6525,8 +6525,9 @@ summary.accordion-button::-webkit-details-marker {
   background-color: var(--bs-modal-bg);
   background-clip: padding-box;
   border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-  border-radius: var(--bs-modal-border-radius);
   outline: 0;
+  box-shadow: 0 0 8px rgba(37, 42, 46, 0.3);
+  border-radius: var(--bs-modal-border-radius);
 }
 
 .modal-backdrop {
