@@ -5,6 +5,7 @@
 .spinner-grow,
 .spinner-border {
   display: inline-block;
+  flex-shrink: 0;
   width: var(--#{$prefix}spinner-width);
   height: var(--#{$prefix}spinner-height);
   color: var(--#{$prefix}blue); // Modus customized - blue
@@ -24,7 +25,6 @@
   --#{$prefix}spinner-width: #{$spinner-width};
   --#{$prefix}spinner-height: #{$spinner-height};
   --#{$prefix}spinner-vertical-align: #{$spinner-vertical-align};
-  display: inline-block;
   // scss-docs-end spinner-border-css-vars
 
   background-color: currentcolor;
