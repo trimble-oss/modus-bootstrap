@@ -119,14 +119,38 @@
   --#{$prefix}nav-pills-link-active-bg: #{$nav-pills-link-active-bg};
   // scss-docs-end nav-pills-css-vars
 
+  --bs-nav-link-color-rgb: 27, 26, 38;
+  width: fit-content;
+  background-color: var(--bs-secondary-bg-subtle);
+  border: 5px solid var(--bs-secondary-bg-subtle);
+  border-radius: var(--bs-border-radius-pill); // stylelint-disable-line property-disallowed-list
+
   .nav-link {
     @include border-radius(var(--#{$prefix}nav-pills-border-radius));
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 50rem; // stylelint-disable-line property-disallowed-list
+
+    &:hover {
+      color: var(--bs-body-color);
+      background-color: rgb(var(--bs-nav-link-color-rgb), 10%);
+      transition: all .2s ease-in-out; // stylelint-disable-line property-disallowed-list
+    }
+
+    &:active {
+      background-color: rgb(var(--bs-nav-link-color-rgb), 25%);
+    }
   }
 
   .nav-link.active,
   .show > .nav-link {
-    color: var(--#{$prefix}nav-pills-link-active-color);
-    @include gradient-bg(var(--#{$prefix}nav-pills-link-active-bg));
+    color: var(--bs-info-text-emphasis);
+    background-color: var(--bs-body-bg);
+    transition: all .2s ease-in-out; // stylelint-disable-line property-disallowed-list
+  }
+
+  [data-bs-theme="dark"] & {
+    --bs-nav-link-color-rgb: 241, 241, 246;
   }
 }
 
