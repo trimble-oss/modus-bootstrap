@@ -64,7 +64,7 @@
   "devDependencies": {
     "@stackblitz/sdk": "^1.11.0",
     "@trimble-oss/modus-docs-hugo-theme": "1.0.0-alpha31",
-    "@trimble-oss/modus-icons": "^1.16.0",
+    "@trimble-oss/modus-icons": "^1.16.1",
     "autoprefixer": "^10.4.21",
     "bootstrap-print-css": "^1.0.1",
     "bundlewatch": "^0.4.1",
