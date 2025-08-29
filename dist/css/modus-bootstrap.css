@@ -4297,14 +4297,35 @@ summary.dropdown-toggle::-webkit-details-marker {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: #fff;
   --bs-nav-pills-link-active-bg: #217cbb;
+  --bs-nav-link-color-rgb: 27, 26, 38;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--bs-secondary-bg-subtle);
+  border: 5px solid var(--bs-secondary-bg-subtle);
+  border-radius: var(--bs-border-radius-pill);
 }
 .nav-pills .nav-link {
   border-radius: var(--bs-nav-pills-border-radius);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 50rem;
+}
+.nav-pills .nav-link:hover {
+  color: var(--bs-body-color);
+  background-color: rgb(var(--bs-nav-link-color-rgb), 10%);
+  transition: all 0.2s ease-in-out;
+}
+.nav-pills .nav-link:active {
+  background-color: rgb(var(--bs-nav-link-color-rgb), 25%);
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: var(--bs-nav-pills-link-active-color);
-  background-color: var(--bs-nav-pills-link-active-bg);
+  color: var(--bs-info-text-emphasis);
+  background-color: var(--bs-body-bg);
+  transition: all 0.2s ease-in-out;
+}
+[data-bs-theme=dark] .nav-pills {
+  --bs-nav-link-color-rgb: 241, 241, 246;
 }
 
 .nav-underline {

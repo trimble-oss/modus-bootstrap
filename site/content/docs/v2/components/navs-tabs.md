@@ -31,6 +31,24 @@ Add the `.nav-tabs` class to a `.nav` to generate a tabbed interface. Use them t
 </ul>
 {{< /example >}}
 
+### Pills
+
+You can use `.nav-pills` instead for a different look.
+
+{{< example >}}
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Details</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Events</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Routes</a>
+  </li>
+</ul>
+{{< /example >}}
+
 ### Fill and justify
 
 Force your `.nav`'s contents to extend the full available width with one of two modifier classes. To proportionately fill all available space with your `.nav-item`s, use `.nav-fill`. Notice that all horizontal space is occupied, but not every nav item has the same width.
@@ -294,6 +312,28 @@ To help fit your needs, this works with `<ul>`-based markup, as shown above, or 
   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
   <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
 </div>
+```
+
+Here's a `nav-pills` variation.
+
+<div class="bd-example">
+  <nav>
+    <div class="nav nav-pills mb-3" id="nav-pills" role="tablist">
+      <button class="nav-link active" id="nav-details-tab" data-bs-toggle="tab" data-bs-target="#nav-details" type="button" role="tab" aria-controls="nav-details" aria-selected="true">Details</button>
+      <button class="nav-link" id="nav-events-tab" data-bs-toggle="tab" data-bs-target="#nav-events" type="button" role="tab" aria-controls="nav-events" aria-selected="false">Events</button>
+      <button class="nav-link" id="nav-routes-tab" data-bs-toggle="tab" data-bs-target="#nav-routes" type="button" role="tab" aria-controls="nav-routes" aria-selected="false">Routes</button>
+    </div>
+  </nav>
+</div>
+
+```html
+<nav>
+  <div class="nav nav-pills" id="nav-pills" role="tablist">
+    <button class="nav-link active" id="nav-details-tab" data-bs-toggle="tab" data-bs-target="#nav-details" type="button" role="tab" aria-controls="nav-details" aria-selected="true">Details</button>
+    <button class="nav-link" id="nav-events-tab" data-bs-toggle="tab" data-bs-target="#nav-events" type="button" role="tab" aria-controls="nav-events" aria-selected="false">Events</button>
+    <button class="nav-link" id="nav-routes-tab" data-bs-toggle="tab" data-bs-target="#nav-routes" type="button" role="tab" aria-controls="nav-routes" aria-selected="false">Routes</button>
+  </div>
+</nav>
 ```
 
 ### Accessibility
