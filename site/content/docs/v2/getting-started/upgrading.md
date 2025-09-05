@@ -15,6 +15,7 @@ toc: true
 2. Check your JavaScript/TypeScript files don't use deprecated/renamed classes and update as necessary as the command-line script in the step above is only really for HTML-like templates.
 
 3. Update any of the CSS imports on your project to remove any `@trimbleinc/modus-bootstrap` imports and instead just use a single import which includes light mode, dark mode, modus-layout and everything else you need.:
+
 ```sass
 @import '../node_modules/@trimble-oss/modus-bootstrap/dist/css/modus-bootstrap.min.css';`
 ```
