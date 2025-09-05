@@ -1,5 +1,5 @@
 /*!
-* Modus Bootstrap Utilities v2.0.14 (https://modus-bootstrap.trimble.com/)
+* Modus Bootstrap Utilities v2.1.0 (https://modus-bootstrap.trimble.com/)
  * Copyright 2025 Trimble Inc.
  * Licensed under MIT (https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE)
  * This a fork of Bootstrap: Initial license below
@@ -351,7 +351,6 @@
   align-items: center;
   text-decoration-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 0.5));
   text-underline-offset: 0.25em;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .icon-link > .bi {

@@ -1,5 +1,5 @@
 /*!
-* Modus Bootstrap Reboot v2.0.14 (https://modus-bootstrap.trimble.com/)
+* Modus Bootstrap Reboot v2.1.0 (https://modus-bootstrap.trimble.com/)
  * Copyright 2025 Trimble Inc.
  * Licensed under MIT (https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE)
  * This a fork of Bootstrap: Initial license below
@@ -576,11 +576,6 @@ legend + * {
 
 ::-webkit-color-swatch-wrapper {
   padding: 0;
-}
-
-::-webkit-file-upload-button {
-  font: inherit;
-  -webkit-appearance: button;
 }
 
 ::file-selector-button {
