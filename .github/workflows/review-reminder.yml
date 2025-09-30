@@ -4,9 +4,15 @@ on:
   schedule:
     - cron: "0 9 * * *"
 
+permissions:
+  contents: read
+
 jobs:
   deploy:
     name: Review reminders
+    permissions:
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     if: github.repository == 'trimble-oss/modus-bootstrap'
 
