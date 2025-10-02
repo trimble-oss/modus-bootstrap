@@ -8896,6 +8896,10 @@ body :not(body) {
   box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
+.shadow-xl {
+  box-shadow: var(--bs-box-shadow-xl) !important;
+}
+
 .shadow-none {
   box-shadow: none !important;
 }
