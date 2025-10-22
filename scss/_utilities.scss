@@ -85,6 +85,19 @@ $utilities: map-merge(
       )
     ),
     // scss-docs-end utils-shadow
+    // scss-docs-start utils-blur
+    "blur": (
+      property: filter,
+      class: blur,
+      values: (
+        null: var(--#{$prefix}blur),
+        sm: var(--#{$prefix}blur-sm),
+        lg: var(--#{$prefix}blur-lg),
+        xl: var(--#{$prefix}blur-xl),
+        xxl: var(--#{$prefix}blur-xxl),
+      )
+    ),
+    // scss-docs-end utils-blur
     // scss-docs-start utils-focus-ring
     "focus-ring": (
       css-var: true,
