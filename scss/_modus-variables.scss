@@ -273,6 +273,13 @@ $box-shadow: 0 0 4px rgba(37, 42, 46, .3);
 $box-shadow-lg: 0 0 8px rgba(37, 42, 46, .3);
 $box-shadow-xl: 0 0 16px rgba(37, 42, 46, .3);
 
+// blur
+$blur-sm: blur(8px);
+$blur: blur(12px);
+$blur-lg: blur(16px);
+$blur-xl:  blur(24px);
+$blur-xxl: blur(40px);
+
 // Alerts
 
 // form-range (Sliders)
