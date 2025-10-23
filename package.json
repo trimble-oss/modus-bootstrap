@@ -80,7 +80,7 @@
     "find-unused-sass-variables": "^6.1.0",
     "globby": "^15.0.0",
     "hammer-simulator": "0.0.1",
-    "hugo-bin": "0.142.0",
+    "hugo-bin": "0.149.1",
     "ip": "^2.0.1",
     "lockfile-lint": "^4.14.1",
     "nodemon": "^3.1.10",
@@ -104,7 +104,8 @@
     "!scss/tests/**"
   ],
   "hugo-bin": {
-    "buildTags": "extended"
+    "buildTags": "extended",
+    "version": "0.145.0"
   },
   "volta": {
     "node": "22.19.0"
