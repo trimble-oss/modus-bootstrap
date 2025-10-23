@@ -104,7 +104,8 @@
     "!scss/tests/**"
   ],
   "hugo-bin": {
-    "buildTags": "extended"
+    "buildTags": "extended",
+    "version": "0.145.0"
   },
   "volta": {
     "node": "22.19.0"
