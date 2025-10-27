@@ -12,6 +12,8 @@
 <meta name="robots" content="{{ . }}">
 {{- end }}
 
-{{- $colorModeJS := resources.Get "js/color-modes/index.js" }}
+{{- $colorModeJS := resources.Get "js/color-modes/index.js" -}}
+{{- if $colorModeJS }}
 <script src="{{ $colorModeJS.Permalink | relURL }}"></script>
+{{- end }}
 {{- partial "stylesheet" . }}

@@ -133,12 +133,12 @@
 
     &:hover {
       color: var(--bs-body-color);
-      background-color: rgb(var(--bs-nav-link-color-rgb), 10%);
+      background-color: rgba(var(--bs-nav-link-color-rgb), 10%);
       transition: all .2s ease-in-out; // stylelint-disable-line property-disallowed-list
     }
 
     &:active {
-      background-color: rgb(var(--bs-nav-link-color-rgb), 25%);
+      background-color: rgba(var(--bs-nav-link-color-rgb), 25%);
     }
   }
 

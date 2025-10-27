@@ -746,8 +746,8 @@
   box-shadow: var(--bs-box-shadow-xl) !important;
 }
 
-.shadow-inner {
-  box-shadow: inset var(--bs-box-shadow) !important;
+.shadow-inset {
+  box-shadow: var(--bs-box-shadow-inset) !important;
 }
 
 .shadow-none {

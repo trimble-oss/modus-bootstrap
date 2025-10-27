@@ -4280,11 +4280,11 @@ summary.dropdown-toggle::-webkit-details-marker {
 }
 .nav-pills .nav-link:hover {
   color: var(--bs-body-color);
-  background-color: rgb(var(--bs-nav-link-color-rgb), 10%);
+  background-color: rgba(var(--bs-nav-link-color-rgb), 10%);
   transition: all 0.2s ease-in-out;
 }
 .nav-pills .nav-link:active {
-  background-color: rgb(var(--bs-nav-link-color-rgb), 25%);
+  background-color: rgba(var(--bs-nav-link-color-rgb), 25%);
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -8907,8 +8907,8 @@ body :not(body) {
   box-shadow: var(--bs-box-shadow-xl) !important;
 }
 
-.shadow-inner {
-  box-shadow: inset var(--bs-box-shadow) !important;
+.shadow-inset {
+  box-shadow: var(--bs-box-shadow-inset) !important;
 }
 
 .shadow-none {

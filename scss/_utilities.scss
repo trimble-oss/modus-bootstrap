@@ -81,6 +81,7 @@ $utilities: map-merge(
         sm: var(--#{$prefix}box-shadow-sm),
         lg: var(--#{$prefix}box-shadow-lg),
         xl: var(--#{$prefix}box-shadow-xl),
+        inset: var(--#{$prefix}box-shadow-inset),
         none: none,
       )
     ),
