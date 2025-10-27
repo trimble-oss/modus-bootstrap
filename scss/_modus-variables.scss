@@ -200,7 +200,7 @@ $pagination-hover-color:      $col_trimble_gray;
 $pagination-hover-bg:         #e0e1e9;
 
 $pagination-focus-bg:         #e0e1e9;
-$pagination-focus-box-shadow: 0 0 2px rgb(36 35 45 / 30%) !default;
+$pagination-focus-box-shadow: 0 0 2px rgba(36, 35, 45, 0.3) !default;
 
 $pagination-active-color:     $col_blue_light;
 $pagination-active-bg:        $col_blue_pale;
@@ -272,6 +272,7 @@ $box-shadow-sm: 0 0 2px rgba(37, 42, 46, .3);
 $box-shadow: 0 0 4px rgba(37, 42, 46, .3);
 $box-shadow-lg: 0 0 8px rgba(37, 42, 46, .3);
 $box-shadow-xl: 0 0 16px rgba(37, 42, 46, .3);
+$box-shadow-inset: inset 0 1px 2px rgba($black, .075);
 
 // blur
 $blur-sm: blur(8px);
