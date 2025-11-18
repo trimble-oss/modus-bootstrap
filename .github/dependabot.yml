@@ -7,6 +7,14 @@ updates:
     open-pull-requests-limit: 1
     labels:
       - skip-changelog
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
   - package-ecosystem: npm
     directory: "/"
     schedule:
@@ -15,3 +23,10 @@ updates:
     open-pull-requests-limit: 1
     labels:
       - skip-changelog
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
