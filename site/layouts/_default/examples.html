@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="{{ .Site.Params.authors }}">
     <meta name="generator" content="Hugo {{ hugo.Version }}">
     <title>{{ .Page.Title | markdownify }} · {{ .Site.Title | markdownify }} v{{ .Site.Params.docs_version }}</title>
 
@@ -141,8 +140,8 @@
     {{ .Content }}
 
     {{ if ne .Page.Params.include_js false -}}
-        <!-- JavaScript Bundle with Popper -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
       {{ range .Page.Params.extra_js -}}
         <script{{ with .async }} async{{ end }} src="{{ .src }}"{{ with .integrity }} {{ printf "integrity=%q" . | safeHTMLAttr }} crossorigin="anonymous"{{ end }}></script>
