@@ -10,7 +10,7 @@ aliases:
 
 ## Examples
 
-While shadows on components are disabled by default in Bootstrap and can be enabled via `$enable-shadows`, you can also quickly add or remove a shadow with our `box-shadow` utility classes. Includes support for `.shadow-none` and three default sizes (which have associated variables to match).
+While shadows on components are disabled by default in Bootstrap and can be enabled via `$enable-shadows`, you can also quickly add or remove a shadow with our `box-shadow` utility classes. Includes support for `.shadow-none` and five different shadow sizes (which have associated variables to match): `.shadow-sm`, `.shadow`, `.shadow-lg`, `.shadow-xl`, and `.shadow-xxl`.
 
 {{< example class="overflow-hidden" >}}
 <div class="shadow-none p-3 mb-5 bg-body-bg rounded">No shadow</div>
