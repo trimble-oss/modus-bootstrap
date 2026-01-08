@@ -87,7 +87,7 @@ To use a small chip, just add the class `.chip-sm`
 
 <button class="chip chip-sm chip-outline chip-input" type="button">
   <div class="chip-thumbnail">
-    <img src="/img/headshot.png" alt="">
+    <img src="/img/headshot.png" alt=""/>
   </div>
   <div class="chip-text">Jane</div>
   <div class="chip-delete-right">
