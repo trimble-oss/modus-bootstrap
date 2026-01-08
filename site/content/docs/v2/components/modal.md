@@ -48,7 +48,7 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
         </div>
         <div class="modal-body">
           <p>Modal body text goes here.</p>
@@ -68,7 +68,7 @@ Below is a _static_ modal example (meaning its `position` and `display` have bee
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         <p>Modal body text goes here.</p>
@@ -95,10 +95,10 @@ Toggle a working modal demo by clicking the button below. It will slide down and
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLiveLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
-        <p>Woo-hoo, you're reading this text in a modal!</p>
+        <p>Woo-hoo, you’re reading this text in a modal!</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
@@ -126,7 +126,7 @@ Toggle a working modal demo by clicking the button below. It will slide down and
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -149,7 +149,7 @@ When backdrop is set to static, the modal will not close when clicking outside o
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="staticBackdropLiveLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         <p>I will not close if you click outside of me. Don't even try to press escape key.</p>
@@ -180,7 +180,7 @@ When backdrop is set to static, the modal will not close when clicking outside o
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -229,7 +229,7 @@ You can also create a scrollable modal that allows scrolling the modal body by a
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalScrollableTitle">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
@@ -371,7 +371,7 @@ Utilize the Bootstrap grid system within a modal by nesting `.container-fluid` w
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="gridModalLabel">Grids in modals</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         <div class="container-fluid bd-example-row">
@@ -545,11 +545,11 @@ For modals that simply appear rather than fade in to view, remove the `.fade` cl
 
 ### Dynamic heights
 
-If the height of a modal changes while it is open, you should call `myModal.handleUpdate()` to readjust the modal's position in case a scrollbar appears.
+If the height of a modal changes while it is open, you should call `myModal.handleUpdate()` to readjust the modal’s position in case a scrollbar appears.
 
 ### Accessibility
 
-Be sure to add `aria-labelledby="..."`, referencing the modal title, to `.modal`. Additionally, you may give a description of your modal dialog with `aria-describedby` on `.modal`. Note that you don't need to add `role="dialog"` since we already add it via JavaScript.
+Be sure to add `aria-labelledby="..."`, referencing the modal title, to `.modal`. Additionally, you may give a description of your modal dialog with `aria-describedby` on `.modal`. Note that you don’t need to add `role="dialog"` since we already add it via JavaScript.
 
 ### Embedding YouTube videos
 
@@ -604,7 +604,7 @@ Our default modal without modifier class constitutes the "medium" size modal.
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalXlLabel">Extra large modal</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -618,7 +618,7 @@ Our default modal without modifier class constitutes the "medium" size modal.
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalLgLabel">Large modal</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -632,7 +632,7 @@ Our default modal without modifier class constitutes the "medium" size modal.
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalSmLabel">Small modal</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -678,7 +678,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalFullscreenLabel">Full screen modal</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -695,7 +695,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalFullscreenSmLabel">Full screen below sm</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -712,7 +712,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalFullscreenMdLabel">Full screen below md</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -729,7 +729,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalFullscreenLgLabel">Full screen below lg</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -746,7 +746,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalFullscreenXlLabel">Full screen below xl</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
@@ -763,7 +763,7 @@ Another override is the option to pop up a modal that covers the user viewport, 
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-4" id="exampleModalFullscreenXxlLabel">Full screen below xxl</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
       </div>
       <div class="modal-body">
         ...
