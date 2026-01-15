@@ -76,6 +76,7 @@
   pages:
     - title: Accordion
     - title: Alerts
+    - title: Avatar
     - title: Badge
     - title: Breadcrumb
     - title: Buttons

@@ -1,7 +1,7 @@
 {
   "name": "@trimble-oss/modus-bootstrap",
   "description": "Modus Bootstrap 2 based on Bootstrap v5.x",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "config": {
     "version_short": "2.0"
   },
