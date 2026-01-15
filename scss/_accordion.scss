@@ -273,7 +273,7 @@
   box-shadow: 4px 0 0 var(--bs-blue) inset;
 }
 
-.accordion:not(.accordion-wide) .accordion-item:has(.accordion-button:not(.collapsed)) button {
+.accordion:not(.accordion-wide) .accordion-item:has(.accordion-button:not(.collapsed)) button.accordion-button {
   padding-left: 12px !important;
   border-left: 4px solid var(--bs-blue) !important;
 }
