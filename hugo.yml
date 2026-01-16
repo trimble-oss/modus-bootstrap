@@ -119,7 +119,7 @@ params:
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
     css:              "https://cdn.jsdelivr.net/npm/@trimble-oss/modus-bootstrap@2.3.1/dist/css/modus-bootstrap.min.css"
-    css_hash:         "sha256-g+9n+sOv8JCIyfpi7F42H4ehNVO0W2Hpo/vyS5N7tlc="
+    css_hash:         "sha256-vCEqbLyQ6pBh2NC9EkW/6NUAU6FbvuoHMMAqEWEld9o="
     js:               "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
     js_hash:          "sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
     js_bundle:        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

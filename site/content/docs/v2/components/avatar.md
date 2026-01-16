@@ -70,19 +70,19 @@ Add a `.avatar-status` element inside the avatar to show a status indicator. Eac
 {{< example >}}
 <span class="avatar">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-online"></span>
+  <span class="avatar-status status-online" role="status" aria-label="Online"></span>
 </span>
 <span class="avatar">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-offline"></span>
+  <span class="avatar-status status-offline" role="status" aria-label="Offline"></span>
 </span>
 <span class="avatar">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-busy"></span>
+  <span class="avatar-status status-busy" role="status" aria-label="Busy"></span>
 </span>
 <span class="avatar">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-away"></span>
+  <span class="avatar-status status-away" role="status" aria-label="Away"></span>
 </span>
 {{< /example >}}
 
@@ -93,23 +93,23 @@ The status indicator scales with the avatar size.
 {{< example >}}
 <span class="avatar avatar-xs">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-online"></span>
+  <span class="avatar-status status-online" role="status" aria-label="Online"></span>
 </span>
 <span class="avatar avatar-sm">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-online"></span>
+  <span class="avatar-status status-online" role="status" aria-label="Online"></span>
 </span>
 <span class="avatar">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-online"></span>
+  <span class="avatar-status status-online" role="status" aria-label="Online"></span>
 </span>
 <span class="avatar avatar-lg">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-online"></span>
+  <span class="avatar-status status-online" role="status" aria-label="Online"></span>
 </span>
 <span class="avatar avatar-xl">
   <img class="avatar-img" src="https://github.com/coliff.png" alt="CO">
-  <span class="avatar-status status-online"></span>
+  <span class="avatar-status status-online" role="status" aria-label="Online"></span>
 </span>
 {{< /example >}}
 
