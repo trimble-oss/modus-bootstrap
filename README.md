@@ -25,6 +25,6 @@ Our default branch (main) is for development of our Modus Bootstrap v2 release.
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2025 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+Code and documentation copyright 2011-2026 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
 
-Modus Bootstrap code and documentation copyright 2025 Trimble Inc. Code released under the [MIT License](https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+Modus Bootstrap code and documentation copyright 2026 Trimble Inc. Code released under the [MIT License](https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
