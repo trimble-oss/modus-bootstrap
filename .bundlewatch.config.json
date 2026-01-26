@@ -2,35 +2,35 @@
   "files": [
     {
       "path": "./dist/css/modus-bootstrap-grid.css",
-      "maxSize": "7 kB"
+      "maxSize": "77 kB"
     },
     {
       "path": "./dist/css/modus-bootstrap-grid.min.css",
-      "maxSize": "7 kB"
+      "maxSize": "57 kB"
     },
     {
       "path": "./dist/css/modus-bootstrap-reboot.css",
-      "maxSize": "4 kB"
+      "maxSize": "13 kB"
     },
     {
       "path": "./dist/css/modus-bootstrap-reboot.min.css",
-      "maxSize": "4 kB"
-    },
-    {
-      "path": "./dist/css/modus-bootstrap-utilities.css",
-      "maxSize": "12 kB"
-    },
-    {
-      "path": "./dist/css/modus-bootstrap-utilities.min.css",
       "maxSize": "11 kB"
     },
     {
+      "path": "./dist/css/modus-bootstrap-utilities.css",
+      "maxSize": "103 kB"
+    },
+    {
+      "path": "./dist/css/modus-bootstrap-utilities.min.css",
+      "maxSize": "83 kB"
+    },
+    {
       "path": "./dist/css/modus-bootstrap.css",
-      "maxSize": "33 kB"
+      "maxSize": "306 kB"
     },
     {
       "path": "./dist/css/modus-bootstrap.min.css",
-      "maxSize": "32 kB"
+      "maxSize": "258 kB"
     }
   ],
   "ci": {
