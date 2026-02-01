@@ -65,7 +65,7 @@
     "@stackblitz/sdk": "^1.11.0",
     "@trimble-oss/modus-docs-hugo-theme": "1.0.0-alpha31",
     "@trimble-oss/modus-icons": "^1.19.0",
-    "autoprefixer": "^10.4.23",
+    "autoprefixer": "^10.4.24",
     "bootstrap-print-css": "^1.0.1",
     "bundlewatch": "^0.4.1",
     "clean-css-cli": "^5.6.3",
