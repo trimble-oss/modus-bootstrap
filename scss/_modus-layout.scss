@@ -1,3 +1,11 @@
+.modus-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 .modus-header {
   z-index: 999;
   height: 56px;
