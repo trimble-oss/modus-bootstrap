@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* Modus Bootstrap  v2.3.1 (https://modus-bootstrap.trimble.com/)
+* Modus Bootstrap  v2.3.2 (https://modus-bootstrap.trimble.com/)
  * Copyright 2026 Trimble Inc.
  * Licensed under MIT (https://github.com/trimble-oss/modus-bootstrap/blob/main/LICENSE)
  * This a fork of Bootstrap: Initial license below
@@ -2170,7 +2170,6 @@ progress {
 }
 .form-control:disabled {
   background-color: var(--bs-secondary-bg-subtle);
-  border-color: transparent;
   opacity: 1;
 }
 .form-control::file-selector-button {
@@ -2405,7 +2404,6 @@ input.form-control-lg[type=file] {
 .form-control[readonly] {
   color: #252a2e;
   background-color: #e0e1e9;
-  border-color: transparent;
 }
 
 .form-select {
@@ -2446,7 +2444,6 @@ input.form-control-lg[type=file] {
 }
 .form-select:disabled {
   background-color: var(--bs-secondary-bg-subtle);
-  border-color: transparent;
 }
 .form-select:-moz-focusring {
   color: transparent;

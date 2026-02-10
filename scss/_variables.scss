@@ -891,7 +891,7 @@ $input-font-size-lg:                    .875rem !default; // Modus Customized
 $input-bg:                              var(--#{$prefix}body-bg) !default;
 $input-disabled-color:                  null !default;
 $input-disabled-bg:                     var(--#{$prefix}secondary-bg-subtle) !default;
-$input-disabled-border-color:           transparent !default; // Modus Customized
+$input-disabled-border-color:           null !default;
 
 $input-color:                           var(--#{$prefix}secondary-color) !default; // Modus Customized
 $input-border-color:                    var(--#{$prefix}border-color) !default;
