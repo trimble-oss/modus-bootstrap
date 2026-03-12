@@ -29,7 +29,7 @@ Click the accordions below to expand/collapse the accordion content.
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         Accordion Item #1
-        <div class="supporting-label">Supporting Label</div>
+        <span class="supporting-label">Supporting Label</span>
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
@@ -157,7 +157,7 @@ Omit the `data-bs-parent` attribute on each `.accordion-collapse` to make accord
     <h2 class="accordion-header" id="individual-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#individual-collapseOne" aria-expanded="false" aria-controls="individual-collapseOne">
         Accordion Item #1
-        <div class="supporting-label">Supporting Label</div>
+        <span class="supporting-label">Supporting Label</span>
       </button>
     </h2>
     <div id="individual-collapseOne" class="accordion-collapse collapse" aria-labelledby="individual-headingOne">
@@ -229,7 +229,7 @@ Add `.accordion-wide` for wide version. The size is the same as the default acco
     <h2 class="accordion-header" id="individual-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wide-collapseOne" aria-expanded="false" aria-controls="wide-collapseOne">
         Accordion Item #1
-        <div class="supporting-label">Supporting Label</div>
+        <span class="supporting-label">Supporting Label</span>
       </button>
     </h2>
     <div id="wide-collapseOne" class="accordion-collapse collapse" aria-labelledby="wide-headingOne">
@@ -258,7 +258,7 @@ Add `.accordion-wide` for wide version. The size is the same as the default acco
     <h2 class="accordion-header" id="individual-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wideCompact-collapseOne" aria-expanded="false" aria-controls="wideCompact-collapseOne">
         Accordion Item #1
-        <div class="supporting-label">Supporting Label</div>
+        <span class="supporting-label">Supporting Label</span>
       </button>
     </h2>
     <div id="wideCompact-collapseOne" class="accordion-collapse collapse" aria-labelledby="wideCompact-headingOne">
