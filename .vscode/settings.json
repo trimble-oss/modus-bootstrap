@@ -3,6 +3,7 @@
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "always"
   },
+  "editor.formatOnSave": false,
   "editor.renderWhitespace": "all",
   "eslint.validate": ["javascript", "typescript"],
   "scss.validate": false,
