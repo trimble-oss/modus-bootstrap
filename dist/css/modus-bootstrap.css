@@ -6315,6 +6315,10 @@ summary.accordion-button::-webkit-details-marker {
   font-size: 12px;
 }
 
+.list-group-item-dark {
+  color: var(--bs-white);
+}
+
 [data-bs-theme=dark] .list-group-item {
   color: var(--bs-light);
 }

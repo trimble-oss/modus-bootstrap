@@ -219,6 +219,10 @@
   }
 }
 
+.list-group-item-dark {
+  color: var(--bs-white);
+}
+
 @if $enable-dark-mode {
   @include color-mode(dark) {
     .list-group-item {
