@@ -5219,7 +5219,6 @@ summary.dropdown-toggle::-webkit-details-marker {
   font-weight: 400;
   color: var(--bs-secondary-color);
   text-align: right;
-  opacity: 0.8;
 }
 
 .accordion-sm .accordion-button .supporting-label {
