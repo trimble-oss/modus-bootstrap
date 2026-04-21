@@ -9,12 +9,28 @@ aliases:
   - "/components/messages/"
 ---
 
+{{< deprecated-in "2.3.2" >}}
+
+{{< callout warning >}}
+The Messages component is deprecated and will be removed in a future major release. Use the info alert pattern (`.alert.alert-info`) for new work.
+{{< /callout >}}
+
 ## Overview
 
-Messages should be used within other elements to convey helpful information in
-an unobtrusive way.
+Messages are a legacy pattern that should no longer be used for new UI.
 
-## Examples
+## Recommended replacement
+
+Use an info alert to show contextual static information.
+
+{{< example >}}
+<div class="alert alert-info d-flex align-items-center" role="alert">
+  <i class="modus-icons notranslate me-1" aria-hidden="true">info</i>
+  <div>This is an informational alert.</div>
+</div>
+{{< /example >}}
+
+## Legacy examples
 
 To use a message, simply use the `.message` class followed by the appropriate `.message-{theme-color}` class to apply
 color. Use an appropriate icon before the text within a message to further convey meaning.
