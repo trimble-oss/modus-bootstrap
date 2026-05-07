@@ -21,7 +21,7 @@ Below is an example of a basic card with mixed content and a fixed width. Cards 
 
 {{< example >}}
 <div class="card" style="width: 18rem;">
-  {{< placeholder width="100%" height="180" class="card-img-top" text="Image cap" >}}
+  <img src="https://modus-bootstrap.trimble.com/img/card-img-top.webp" width="100%" height="180" class="card-img-top" alt="Image cap" />
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -123,7 +123,7 @@ Mix and match multiple content types to create the card you need, or throw every
 
 {{< example >}}
 <div class="card" style="width: 18rem;">
-  {{< placeholder width="100%" height="180" class="card-img-top" text="Image cap" >}}
+  <img src="https://modus-bootstrap.trimble.com/img/card-img-top.webp" width="100%" height="180" class="card-img-top" alt="Image cap">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
