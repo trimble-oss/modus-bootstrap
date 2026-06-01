@@ -77,7 +77,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-markdown": "^5.1.0",
     "eslint-plugin-unicorn": "56.0.1",
-    "find-unused-sass-variables": "^6.2.0",
+    "find-unused-sass-variables": "^6.2.1",
     "globby": "^16.2.0",
     "hammer-simulator": "0.0.1",
     "hugo-bin": "0.149.2",
@@ -85,7 +85,7 @@
     "lockfile-lint": "^5.0.0",
     "nodemon": "^3.1.14",
     "npm-run-all2": "^8.0.4",
-    "postcss": "^8.5.14",
+    "postcss": "^8.5.15",
     "postcss-cli": "^11.0.1",
     "postcss-drop-empty-css-vars": "^0.0.0",
     "rtlcss": "^4.3.0",
@@ -94,8 +94,8 @@
     "shelljs": "^0.10.0",
     "stylelint": "^16.26.1",
     "stylelint-config-twbs-bootstrap": "^16.1.0",
-    "terser": "^5.47.1",
-    "vnu-jar": "26.5.8"
+    "terser": "^5.48.0",
+    "vnu-jar": "26.5.29"
   },
   "files": [
     "dist/{css,js}/*.{css,js,map}",
