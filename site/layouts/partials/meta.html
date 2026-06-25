@@ -15,7 +15,7 @@
 {{ $styles := resources.Get "css/modus-docs.scss" | toCSS $sassOptions | postCSS | minify }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}?v{{ hugo.Version }}">
 
-<!-- Load jQuery with CDN fallback -->
+<!-- Load jQuery (local) -->
 <script src="/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/fonts/modus-icons.css">
 
