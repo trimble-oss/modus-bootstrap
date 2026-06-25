@@ -105,7 +105,7 @@
   ],
   "hugo-bin": {
     "buildTags": "extended",
-    "version": "0.145.0"
+    "version": "0.163.3"
   },
   "volta": {
     "node": "22.22.2"
