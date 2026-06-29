@@ -3,7 +3,7 @@
 <!-- To speed up the homepage rendering time the Modus Icons CSS load on every page except homepage where they aren't used -->
 {{- if not .IsHome -}}
 <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.19.0/dist/modus-outlined/fonts/modus-icons.css">
+  href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@1.21.0/dist/modus-outlined/fonts/modus-icons.css">
 {{ end }}
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -11,7 +11,7 @@
 
 <!-- polyfills for old browsers -->
 <script nomodule crossorigin="anonymous"
-  src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=default,Array.prototype.includes,Array.prototype.find,Number.parseFloat%2CNumber.parse"></script>
+  src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
 
 <script src="/js/jquery.min.js"></script>
-<script>var baseurl = "{{- .Site.BaseURL -}}"</script>
+<script>var baseurl = "{{- .Site.BaseURL -}}";</script>

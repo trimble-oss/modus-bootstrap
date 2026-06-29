@@ -3,6 +3,8 @@ title:                  "Modus Bootstrap"
 baseURL:                "https://modus-bootstrap.trimble.com/"
 
 security:
+  allowContent:
+    - '.*'
   enableInlineShortcodes: true
   funcs:
     getenv:
