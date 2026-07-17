@@ -14,8 +14,8 @@ Modus Bootstrap doesn't ship with a custom-built Date & Time Picker component bu
 <label for="datetime-local" class="form-label">Date/time</label>
 <input type="datetime-local" id="datetime-local" class="form-control" value="2026-02-24T13:00">
 <br>
-<label for="datetime-local" class="form-label">Date/time with seconds</label>
-<input type="datetime-local" id="datetime-local" class="form-control" value="2026-02-24T13:00:45">
+<label for="datetime-local-seconds" class="form-label">Date/time with seconds</label>
+<input type="datetime-local" id="datetime-local-seconds" class="form-control" value="2026-02-24T13:00:45">
 <br>
 <label for="date" class="form-label">Date</label>
 <input type="date" id="date" class="form-control" value="2026-02-24">
