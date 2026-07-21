@@ -3,6 +3,7 @@
 # Hugo files
 /resources/
 /.hugo_build.lock
+package-lock.json
 
 # Numerous always-ignore extensions
 *.diff
